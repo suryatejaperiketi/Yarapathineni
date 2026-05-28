@@ -5,7 +5,7 @@ import { CiFlag1} from "react-icons/ci";
 
 import { PiBuildingsFill ,PiDotsThreeCircleVertical } from "react-icons/pi";
 import { BsPeopleFill } from "react-icons/bs";
-import { FaRegBuilding,FaUserTie  } from "react-icons/fa";
+import { FaUserTie  } from "react-icons/fa";
 import { NavLink } from 'react-router-dom';
 
 

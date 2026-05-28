@@ -44,7 +44,7 @@ function ElectionPics() {
 
           {allImages.map((img, index) => (
             <div className='pics' key={index}>
-              <img src={img}  loading="lazy" alt={`Photo ${index + 1}`} />
+              <img src={img}  loading="lazy" alt={`Yarapathineni ${index + 1}`} />
             </div>
           ))}
 
