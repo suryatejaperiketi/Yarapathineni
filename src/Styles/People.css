@@ -27,27 +27,35 @@
     transition: 0.3s ease;
 }
 
-@media (max-width: 768px) {
-
-    .image-card{
-        width: 250px;
-    }
-
-}
-
-@media (max-width: 480px) {
-
-    .image-card{
-        width: 180px;
-    }
-
-}
-
 .image-card img{
     width: 100%;
     height: auto;
     object-fit: cover;
 }
+
+@media (max-width: 768px) {
+
+    .image-card{
+        width: 300px;
+    }
+       .image-card img{
+        height: 260px;
+    }
+ 
+}
+
+@media (max-width: 480px) {
+
+    .image-card{
+        width: 250px;
+    }
+       .image-card img{
+        height: 200px;
+    }
+
+}
+
+
 
 
 .image-card:hover{
