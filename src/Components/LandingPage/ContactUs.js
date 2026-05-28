@@ -121,6 +121,17 @@ function ContactUs() {
                     </select>
                   </div>
 
+                   <div className="form-group">
+                    <label>Village<span className="contact-span-req">*</span></label>
+                    <input
+                      type="text"
+                      className="form-control"
+                      id="subject"
+                      placeholder="Enter village name"
+                      required
+                    />
+                  </div>
+
                   <div className="form-group">
                     <label>Mobile Number<span className="contact-span-req">*</span></label>
                     <input
@@ -131,16 +142,7 @@ function ContactUs() {
                       required
                     />
                   </div>
-                  <div className="form-group">
-                    <label>Subject<span className="contact-span-req">*</span></label>
-                    <input
-                      type="text"
-                      className="form-control"
-                      id="subject"
-                      placeholder="Enter Subject"
-                      required
-                    />
-                  </div>
+                 
                 </div>
 
                 <br />
