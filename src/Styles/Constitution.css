@@ -1,0 +1,370 @@
+.constitution-section{
+    margin-top: 1cm;
+    background-color: #f8fafc;
+}
+
+.section-tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  color: #f59e0b;
+  font-size: 17px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+.section-tag::before, .section-tag::after {
+  content: ''; display: block; width: 20px; height: 2px; background: #f59e0b;
+}
+
+@media(min-width:992px){
+   .section-tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  color: #f59e0b;
+  font-size: 25px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+.section-tag::before, .section-tag::after {
+  content: ''; display: block; width: 20px; height: 3px; background: #f59e0b;
+}
+.mandal-card{
+    background: #ffffff;
+    border: 1.5px solid #e4dfd0;
+    border-radius: 12px;
+    padding: 18px 22px 16px;
+    max-width: 200px;
+    width: 100%;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}  
+}
+
+.mandal-section h3{
+    display: flex;
+    text-align: left;
+    border-left: 2px solid #f59e0b;
+    padding-left: 10px;
+    margin-top: 10px;
+    font-size:22px;
+    margin-bottom: 20px;
+}
+
+.mandal-card{
+    background: #ffffff;
+    border: 1.5px solid #e4dfd0;
+    border-radius: 12px;
+    padding: 18px 22px 16px;
+    max-width: 200px;
+    width: 100%;
+    gap: 20px;
+   position: relative;
+   left: 50%;
+   transform: translateX(-50%);
+   margin-top: 10px;
+   box-shadow: 3px 5px 5px 3px rgba(0, 0, 0, 0.1);
+}   
+.mandal-card h4{
+    font-size: 18px;
+    margin-bottom: 10px;
+    display: flex;
+}
+.mandal-card p{
+    font-size: 14px;
+    display: flex;
+}
+
+
+
+.row > div:nth-child(1) .mandal-card {
+  border-left: 4px solid #d6a84b;
+}
+.row > div:nth-child(2) .mandal-card {
+  border-left: 4px solid #0d6efd;
+}
+
+.row > div:nth-child(3) .mandal-card {
+  border-left: 4px solid #198754;
+}
+
+.row > div:nth-child(4) .mandal-card {
+  border-left: 4px solid #dc3545;
+}
+
+.constituency-key-stats{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    flex-direction: column;
+    align-items:center;
+    justify-content: center;
+    margin-top: 40px;
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #e4dfd0;
+    border-radius: 12px;
+}
+.constituency-key-stats {
+    text-align: center; 
+}
+
+.constituency-key-stats h3 {
+    border-bottom: 3px solid #eee;
+    padding-bottom: 10px;
+    text-align: center;
+}
+
+
+.constituency-key-stats ul {
+    display: inline-block;   
+    text-align: left;        
+    padding-left: 22px;      
+    margin: 0 auto;
+}
+
+
+.constituency-key-stats li {
+    margin-bottom: 12px;
+    line-height: 1.4;
+}
+
+
+.constituency-key-stats li::marker {
+    color: #d6a84b; 
+    font-size: 1.1rem;
+}
+
+.demographic-progress {
+  margin-top: 20px;
+}
+
+
+.progress-item {
+  display: grid;
+  /* grid-template-columns: 150px 1fr auto; */
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 12px;
+}
+
+@media(min-width: 992px) {
+  .progress-item {
+  display: grid;
+  grid-template-columns: 150px 1fr auto;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 12px;
+}
+}
+
+.progress-item .label {
+  font-size: 15px;
+  font-weight: 500;
+  text-align: left;
+}
+
+.progress-item .progress {
+  height: 8px;
+  width: 180px;
+  background: #ececec;
+  border-radius: 50px;
+  overflow: hidden;
+}
+
+.progress-item .progress-bar {
+  height: 100%;
+  border-radius: 50px;
+}
+
+.progress-item .value {
+  font-weight: 600;
+  text-align: right;
+  white-space: nowrap;
+}
+
+/* ElectionResults.css */
+
+.election-results-section {
+  padding: 40px 0;
+}
+
+
+
+.election-results-card {
+  background: #f3f89a;
+  border-radius: 16px;
+  background-image: url("../assests/tdplogodrop.png");
+  background-repeat: no-repeat;
+  overlay: rgba(173, 178, 182, 0.8) !important;
+  background-position: center center;
+  background-size: contain;
+  padding: 40px 30px;
+  text-align: center;
+  color: #ffffff;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+/* Heading */
+.election-title {
+  font-size: 28px;
+  font-weight: 700;
+  color: #ffb000;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  margin-bottom: 40px;
+}
+
+/* Stats Row */
+.results-row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+/* Each Stat Box */
+.result-box {
+  min-width: 130px;
+}
+
+.result-box h3 {
+  font-size: 30px;
+  font-weight: 700;
+  margin-bottom: 8px;
+  line-height: 1;
+}
+
+.result-box p {
+  font-size: 15px;
+  color: #333;
+  font-weight: 500;
+  margin: 0;
+}
+
+.winner-votes {
+  color: #ffb000;
+}
+
+
+.runner-votes {
+  color: #333;
+}
+
+
+.highlight-green {
+  color: #088849;
+}
+
+
+.vs-circle {
+  width: 70px;
+  height: 70px;
+  border: 2px solid #333;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+  font-weight: 700;
+  color:#333;
+}
+
+
+.vertical-divider {
+  width: 1px;
+  height: 80px;
+  background: rgba(255, 255, 255, 0.12);
+}
+
+
+.sworn-section {
+  margin-top: 50px;
+}
+
+.sworn-section h2 {
+  font-size: 35px;
+  font-weight: 700;
+  color: #5a5959;
+  margin-bottom: 10px;
+}
+
+.sworn-section p {
+  font-size: 22px;
+  color: #333;
+  margin: 0;
+  font-weight: 500;
+}
+
+
+@media (max-width: 992px) {
+  .results-row {
+    gap: 20px;
+  }
+
+  .result-box h3 {
+    font-size: 40px;
+  }
+
+  .result-box p {
+    font-size: 16px;
+  }
+
+  .sworn-section h2 {
+    font-size: 42px;
+  }
+
+  .sworn-section p {
+    font-size: 18px;
+    font-weight: 500;
+  }
+}
+
+@media (max-width: 768px) {
+  .election-results-card {
+    padding: 30px 20px;
+  }
+
+  .election-title {
+    font-size: 20px;
+    line-height: 1.5;
+  }
+
+  .results-row {
+    flex-direction: column;
+    gap: 25px;
+  }
+
+  .vertical-divider {
+    width: 80%;
+    height: 1px;
+  }
+
+  .vs-circle {
+    width: 60px;
+    height: 60px;
+    font-size: 20px;
+  }
+
+  .result-box h3 {
+    font-size: 34px;
+  }
+
+  .sworn-section h2 {
+    font-size: 36px;
+    color:#333;
+  }
+
+  .sworn-section p {
+    font-size: 16px;
+    color: #333;
+  }
+}
+
+.const-icon{
+    color: #d6a84b;
+}

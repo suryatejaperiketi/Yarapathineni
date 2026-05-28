@@ -1,0 +1,69 @@
+.people-section{
+    /* background:yellow; */
+    overflow: hidden;
+}
+
+.slider-wrapper{
+    overflow: hidden;
+    position: relative;
+}
+
+.slider-track{
+    display: flex;
+    gap: 20px;
+    width: max-content;
+    animation: scrollLeft 40s linear infinite;
+}
+
+.slider-track:hover{
+    animation-play-state: paused;
+}
+
+.image-card{
+    width: 300px;
+    border-radius: 15px;
+    overflow: hidden;
+    flex-shrink: 0;
+    transition: 0.3s ease;
+}
+
+@media (max-width: 768px) {
+
+    .image-card{
+        width: 250px;
+    }
+
+}
+
+@media (max-width: 480px) {
+
+    .image-card{
+        width: 180px;
+    }
+
+}
+
+.image-card img{
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+
+.image-card:hover{
+   
+  box-shadow: 0 0 40px yellow;
+  cursor: pointer;
+}
+
+@keyframes scrollLeft {
+
+    0%{
+        transform: translateX(0);
+    }
+
+    100%{
+        transform: translateX(-50%);
+    }
+
+}

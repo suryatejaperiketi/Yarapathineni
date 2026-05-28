@@ -1,0 +1,126 @@
+.contact-section{
+    background: rgb(215 215 20);
+    overflow-x: hidden;
+}
+
+.contact-section h2{
+   margin-bottom: 20px; 
+}
+
+  
+
+.section-tag-contact {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  color: #f59e0b;
+  font-size: 25px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+.section-tag-contact::before, .section-tag-contact::after {
+  content: ''; display: block; width: 20px; height: 3px; background: #f59e0b;
+}
+.form-grid{
+    display: grid;
+    grid-template-columns:repeat(2,1fr);
+    gap: 20px;
+}
+
+
+
+@media(max-width:768px){
+ .section-tag-contact {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  color: #f59e0b;
+  font-size: 19px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+.section-tag-contact::before, .section-tag-contact::after {
+  content: ''; display: block; width: 20px; height: 2px; background: #f59e0b;
+}
+}
+
+.contact-content{  
+    display: flex;
+    text-align: left;
+    gap: 15px;
+    padding: 20px;
+    color: white;
+}
+
+.contact-icon{
+    font-size: 30px;
+    color: #f59e0b;
+    align-items: center;
+    display: flex;
+}
+
+.contact-text h6{
+    color: #333;
+}
+
+
+.form-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.contact-form {
+    max-width: 500px;
+    width: 100%;
+    background-image: url("../assests/tdplogodrop.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+    background-color: #fff;
+    border-radius: 12px;
+    padding: 30px !important;
+    margin: auto;
+}
+
+@media (max-width: 768px) {
+    .form-grid {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .contact-form {
+    max-width: 350px;
+    width: 100%;
+    margin: auto;
+}
+}
+
+
+@media(max-width:480px){
+    .contact-form {
+    max-width: 350px;
+    width: 100%;
+    margin: auto;
+}
+}
+
+.form-group label{
+    display: flex;
+ text-align: left;
+}
+
+.contact-form label{
+    color: #333;
+    font-weight: 500;
+}
+
+.contact-span-req{
+    color: red;
+    position: relative;
+    top: 4px;
+    padding-left: 2px;
+}

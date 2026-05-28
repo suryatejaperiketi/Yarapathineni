@@ -1,23 +1,33 @@
-import logo from './logo.svg';
+
 import './App.css';
+import { Routes, Route } from 'react-router-dom';
+import Navbar from './Components/Navbar';
+import LandingPage from './Components/LandingPage/LandingPage';
+import About from './Components/LandingPage/About';
+import Work from './Components/LandingPage/Work';
+import Constitution from './Components/LandingPage/Constitution';
+import PhotosLanding from './Components/Pages/PhotosLanding';
+import VideosLanding from './Components/Pages/VideosLanding';
+import ContactUs from './Components/LandingPage/ContactUs';
+import Footer from "./Components/LandingPage/Footer";
+import People from './Components/LandingPage/People';
+
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Navbar/>
+      <Routes>
+        <Route path="/" element={<LandingPage />} />
+        <Route path="/about" element={<About/>} />
+        <Route path="/works" element={<Work/>} />
+        <Route path="/constitution" element={<Constitution/>} />
+        <Route path="/photos/*" element={<PhotosLanding/>} />
+        <Route path="/videos/*" element={<VideosLanding/>} />
+        <Route path="/people" element={<People/>} />
+        <Route path="/contact" element={<ContactUs/>} />
+      </Routes>
+        <Footer/>
     </div>
   );
 }
