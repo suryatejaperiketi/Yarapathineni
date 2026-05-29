@@ -96,12 +96,7 @@
     -webkit-overflow-scrolling: touch;
   }
 
-  .slider-track {
-    animation: none;
-    width: max-content;
-  }
-
-  .slider-wrapper::-webkit-scrollbar {
-    display: none;
-  }
+  .slider-track:hover{
+    animation-play-state: paused !important;
+}
 }

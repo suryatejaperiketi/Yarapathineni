@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useRef } from "react";
 import "../../Styles/People.css";
 import { useNavigate } from "react-router-dom";
 
@@ -22,10 +22,42 @@ import img20 from "../../assests/people13.jpg";
 import img21 from "../../assests/people14.jpg";
 import img22 from "../../assests/people15.jpg";
 
-
 function People() {
-  const navigate=useNavigate();
-  const images = [img1, img2, img4, img7, img8, img9, img10, img11, img12,img13,img14,img15,img16,img17,img18,img19,img20,img21,img22];
+  const trackRef = useRef(null);
+
+  const pauseSlider = () => {
+    if (trackRef.current) {
+      trackRef.current.style.animationPlayState = "paused";
+    }
+  };
+
+  const resumeSlider = () => {
+    if (trackRef.current) {
+      trackRef.current.style.animationPlayState = "running";
+    }
+  };
+  const navigate = useNavigate();
+  const images = [
+    img1,
+    img2,
+    img4,
+    img7,
+    img8,
+    img9,
+    img10,
+    img11,
+    img12,
+    img13,
+    img14,
+    img15,
+    img16,
+    img17,
+    img18,
+    img19,
+    img20,
+    img21,
+    img22,
+  ];
 
   return (
     <section className="people-section py-5">
@@ -33,22 +65,24 @@ function People() {
         <h2 className="section-tag mb-3">Moments with the People</h2>
 
         <div className="slider-wrapper">
-          <div className="slider-track">
+          <div
+            className="slider-track"
+            ref={trackRef}
+            onTouchStart={pauseSlider}
+            onTouchEnd={resumeSlider}
+          >
             {images.concat(images).map((img, index) => (
               <div className="card image-card border-0" key={index}>
                 <img src={img} alt="people" className="card-img-top" />
               </div>
             ))}
           </div>
-
         </div>
-        
       </div>
-  <button onClick={() => navigate("/photos")} className="view-more-btn">
-  View More
-</button>
+      <button onClick={() => navigate("/photos")} className="view-more-btn">
+        View More
+      </button>
     </section>
-    
   );
 }
 
