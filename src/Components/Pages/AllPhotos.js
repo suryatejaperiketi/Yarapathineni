@@ -11,6 +11,7 @@ import photo7 from "../../assests/spiritual.jpg";
 import photo8 from "../../assests/allpics.jpg";
 import photo9 from "../../assests/allpics4.jpg";
 import photo10 from "../../assests/allpics5.jpg";
+import photo11 from "../../assests/allpics6.jpg";
 
 function AllPhotos() {
 
@@ -23,8 +24,10 @@ function AllPhotos() {
     photo4,
     photo5,
     photo6,
+    photo11,
     photo7,
-    photo8
+    photo8,
+  
   ];
 
   return (

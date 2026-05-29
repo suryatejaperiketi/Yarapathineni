@@ -16,6 +16,7 @@ import photo12 from "../../assests/elections11.jpg";
 import photo13 from "../../assests/elections12.jpg";
 import photo14 from "../../assests/elections13.jpg";
 import photo15 from "../../assests/elections14.jpg";
+import photo16 from "../../assests/elections15.jpg";
 
 function ElectionPics() {
 
@@ -31,6 +32,7 @@ function ElectionPics() {
     photo6,
     photo7,
     photo8,
+    photo16,
     photo9,
     photo10,
     photo11,
