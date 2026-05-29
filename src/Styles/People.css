@@ -88,3 +88,20 @@
     padding: 10px 20px;
 }
 
+
+@media (max-width: 768px) {
+  .slider-wrapper {
+    overflow-x: auto;
+    overflow-y: hidden;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .slider-track {
+    animation: none;
+    width: max-content;
+  }
+
+  .slider-wrapper::-webkit-scrollbar {
+    display: none;
+  }
+}
