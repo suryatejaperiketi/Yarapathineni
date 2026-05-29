@@ -11,6 +11,7 @@ import VideosLanding from './Components/Pages/VideosLanding';
 import ContactUs from './Components/LandingPage/ContactUs';
 import Footer from "./Components/LandingPage/Footer";
 import People from './Components/LandingPage/People';
+import Accomplishment from './Components/Pages/Accomplishment';
 
 
 function App() {
@@ -22,6 +23,7 @@ function App() {
         <Route path="/about" element={<About/>} />
         <Route path="/works" element={<Work/>} />
         <Route path="/constitution" element={<Constitution/>} />
+        <Route path="/accomplishment" element={<Accomplishment/>} />
         <Route path="/photos/*" element={<PhotosLanding/>} />
         <Route path="/videos/*" element={<VideosLanding/>} />
         <Route path="/people" element={<People/>} />

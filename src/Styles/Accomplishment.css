@@ -1,0 +1,98 @@
+
+
+
+.accomplishment-sec {
+    background-color: #FFF7D9;
+    padding: 20px;
+}
+
+
+
+.card-accomp-container {
+    border-radius: 10px;
+    overflow: hidden;
+    transition: 0.3s ease;
+
+    display: flex;
+    flex-direction: column;
+
+    height: 100%;
+}
+
+
+.card-accomp-container img {
+    width: 200px !important;
+    height: 200px !important;
+    object-fit: contain;
+}
+
+
+
+.card-body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-grow: 1;
+    text-align: center;
+}
+
+.card-text {
+    margin: 0;
+    line-height: 1.7;
+    font-size: 15px;
+}
+
+
+
+.acc-heading {
+    margin-top: 1.5cm;
+    display: flex;
+
+}
+
+.card-img-overlay {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+@media (min-width: 992px) {
+
+    .card-accomp-container {
+      height: 330px !important;
+    }
+
+}
+
+@media (max-width: 991px) {
+
+    .card-accomp-container {
+        height: auto;
+    }
+
+}
+
+
+
+@media only screen and (max-width: 768px) {
+
+    .acc-heading {
+        font-size: 1rem !important;
+        margin-top: 0 !important;
+    }
+
+    .card-accomp-container {
+        height: auto;
+    }
+
+    .card-accomp-container img {
+        width: 180px !important;
+        height: 180px !important;
+    }
+
+    .card-text {
+        font-size: 16px;
+    }
+
+}

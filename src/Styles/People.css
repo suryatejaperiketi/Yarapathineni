@@ -1,5 +1,5 @@
 .people-section{
-    /* background:yellow; */
+  
     overflow: hidden;
 }
 
@@ -12,7 +12,7 @@
     display: flex;
     gap: 20px;
     width: max-content;
-    animation: scrollLeft 40s linear infinite;
+    animation: scrollLeft 120s linear infinite;
 }
 
 .slider-track:hover{
@@ -29,7 +29,7 @@
 
 .image-card img{
     width: 100%;
-    height: auto;
+    height: 250px;
     object-fit: cover;
 }
 
@@ -50,12 +50,10 @@
         width: 250px;
     }
        .image-card img{
-        height: 200px;
+        height: 180px;
     }
 
 }
-
-
 
 
 .image-card:hover{
@@ -75,3 +73,18 @@
     }
 
 }
+
+.view-more-btn{
+  
+     background-color: #ffd129;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+    display: block;
+    font-weight: 700;
+    border: none;
+    margin: 10px auto;
+    padding: 10px 20px;
+}
+

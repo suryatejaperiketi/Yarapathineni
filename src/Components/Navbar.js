@@ -28,9 +28,7 @@ function Navbar() {
       <nav className="navbar navbar-expand-lg navbar-light">
         <div className="container-fluid">
           <NavLink className="navbar-brand" to="/">
-           
-             <img src={logo} alt="" className="logo-img"/>
-           
+            <img src={logo} alt="" className="logo-img" />
           </NavLink>
 
           <button
@@ -114,6 +112,16 @@ function Navbar() {
                   onClick={closeNavbar}
                 >
                   Constitution
+                </NavLink>
+              </li>
+
+              <li className="nav-item">
+                <NavLink
+                  className="nav-link"
+                  to="/accomplishment"
+                  onClick={closeNavbar}
+                >
+                  Accomplishment
                 </NavLink>
               </li>
 
