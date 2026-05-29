@@ -21,7 +21,7 @@ import img19 from "../../assests/people12.jpg";
 import img20 from "../../assests/people13.jpg";
 import img21 from "../../assests/people14.jpg";
 import img22 from "../../assests/people15.jpg";
-import { Link } from "react-router-dom";
+
 
 function People() {
   const navigate=useNavigate();
