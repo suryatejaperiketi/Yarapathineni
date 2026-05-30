@@ -9,7 +9,7 @@ const POLITICIAN = {
   role: "MLA",
   constituency: "Gurazala",
   state: "Andhra Pradesh",
-  photo: { img }, 
+  photo: { img },
   heroStats: [
     { num: "4×", label: "Terms Elected" },
     { num: "1,28,201", label: "2024 Votes" },
@@ -40,8 +40,12 @@ const ELECTIONS = [
     title: "Won · TDP",
     detail: "1,28,201 votes · Highest ever margin",
     bars: [
-      { label: "TDP", pct: 67, color: "#FFD700"},
-      { label: "YSRCP", pct: 33, color: "linear-gradient(135deg, #0266B4 0%, #FFFFFF 50%, #008E46 100%)" },
+      { label: "TDP", pct: 67, color: "#FFD700" },
+      {
+        label: "YSRCP",
+        pct: 33,
+        color: "linear-gradient(135deg, #0266B4 0%, #FFFFFF 50%, #008E46 100%)",
+      },
     ],
   },
   {
@@ -50,7 +54,11 @@ const ELECTIONS = [
     detail: "94,827 votes · +14% margin",
     bars: [
       { label: "TDP", pct: 62, color: "#FFD700" },
-      { label: "YSRCP", pct: 38, color: "linear-gradient(135deg, #0266B4 0%, #FFFFFF 50%, #008E46 100%)" },
+      {
+        label: "YSRCP",
+        pct: 38,
+        color: "linear-gradient(135deg, #0266B4 0%, #FFFFFF 50%, #008E46 100%)",
+      },
     ],
   },
   {
@@ -59,7 +67,11 @@ const ELECTIONS = [
     detail: "72,250 votes · +4.4% margin",
     bars: [
       { label: "TDP", pct: 54, color: "#FFD700" },
-      { label: "INC", pct: 46, color: "linear-gradient(135deg, #FF9933 0%, #FFFFFF 50%, #138808 100%)" },
+      {
+        label: "INC",
+        pct: 46,
+        color: "linear-gradient(135deg, #FF9933 0%, #FFFFFF 50%, #138808 100%)",
+      },
     ],
   },
   {
@@ -68,7 +80,11 @@ const ELECTIONS = [
     detail: "62,943 votes · Inaugural win",
     bars: [
       { label: "TDP", pct: 40, color: "#FFD700" },
-      { label: "INC", pct: 30, color: "linear-gradient(135deg, #FF9933 0%, #FFFFFF 50%, #138808 100%)" },
+      {
+        label: "INC",
+        pct: 30,
+        color: "linear-gradient(135deg, #FF9933 0%, #FFFFFF 50%, #138808 100%)",
+      },
     ],
   },
 ];
@@ -224,7 +240,6 @@ function TimelineItem({ item, isLast }) {
 function TermCard({ term }) {
   return (
     <div className={`term-card ${term.cls}`}>
-
       {/* ADD THIS — only shows on t4 */}
       {term.cls === "t4" && (
         <div className="live-badge">
@@ -287,11 +302,14 @@ export default function PoliticianProfile() {
           </span>
           <div>
             <h1 className="pp-hero-name">{POLITICIAN.name}</h1>
+
             <p className="pp-hero-sub">
-              Member of Legislative Assembly — {POLITICIAN.constituency}{" "}
-              Constituency
-              <br />
-              {POLITICIAN.state} · Telugu Desam Party
+              Yarapathineni Srinivasa Rao is a senior political leader and
+              Member of the Legislative Assembly (MLA) from <strong className="about-strg">Gurazala Constituency</strong>,
+              Andhra Pradesh, representing the Telugu Desam Party  <strong className="about-strg">(TDP)</strong>.
+               With years of public service experience, he has worked
+              towards the development of infrastructure, education, agriculture,
+              and welfare programs for the people of the constituency.
             </p>
           </div>
           <div className="pp-accent-line" />

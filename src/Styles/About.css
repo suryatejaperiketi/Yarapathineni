@@ -148,7 +148,7 @@
   padding: 4px 12px;
   border-radius: 20px;
   width: fit-content;
-  border: 1px solid #c8912a ;
+  border: 1px solid #c8912a;
 }
 
 .pp-hero-name {
@@ -158,10 +158,14 @@
   line-height: 1.15;
   color: var(--text-primary);
 }
+.about-strg{
+  color: #c8912a;
+}
 
 .pp-hero-sub {
-  font-size: 15px;
-  color: var(--text-secondary);
+  font-size: 17px;
+  text-align: left;
+  color: #333;
   line-height: 1.6;
   margin-top: 6px;
 }
@@ -323,6 +327,12 @@
   border-radius: 20px;
   letter-spacing: 0.05em;
   text-transform: uppercase;
+}
+
+@media(max-width:768px){
+  .live-badge{
+    font-size: 8px;
+  }
 }
 
 .live-dot {
