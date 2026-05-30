@@ -83,7 +83,7 @@ const HIGHLIGHTS = [
     tagIcon: "ti-building-temple",
   },
   {
-    variant: "green",
+    variant: "gold  ",
     icon: "ti-building-hospital",
     title: "Raghupathi Venkata Ratnam Naidu Govt. Medical College",
     desc: "Yarapathineni Srinivasa Rao Garu personally took responsibility for establishing the Raghupathi Venkata Ratnam Naidu Government Medical College — bringing quality healthcare and medical education infrastructure to Gurazala constituency and the broader Palnadu region.",
@@ -210,9 +210,29 @@ function TimelineItem({ item, isLast }) {
   );
 }
 
+// function TermCard({ term }) {
+//   return (
+//     <div className={`term-card ${term.cls}`}>
+//       <div className="term-num">{term.ordinal}</div>
+//       <div className="term-years">{term.years}</div>
+//       <div className="term-votes">{term.votes}</div>
+//       <span className="won-badge">✓ Won</span>
+//     </div>
+//   );
+// }
+
 function TermCard({ term }) {
   return (
     <div className={`term-card ${term.cls}`}>
+
+      {/* ADD THIS — only shows on t4 */}
+      {term.cls === "t4" && (
+        <div className="live-badge">
+          <span className="live-dot" />
+          Live
+        </div>
+      )}
+
       <div className="term-num">{term.ordinal}</div>
       <div className="term-years">{term.years}</div>
       <div className="term-votes">{term.votes}</div>

@@ -141,14 +141,14 @@
   display: inline-flex;
   align-items: center;
   gap: 6px;
-  background: var(--green-pale);
-  color: var(--green-dark);
+  background: var #f0d08a;
+  color: #c8912a;
   font-size: 15px;
   font-weight: 500;
   padding: 4px 12px;
   border-radius: 20px;
   width: fit-content;
-  border: 1px solid var(--green-border);
+  border: 1px solid #c8912a ;
 }
 
 .pp-hero-name {
@@ -168,7 +168,7 @@
 
 @media(max-width:768px){
   .pp-hero-sub {
-  font-size: 12px;
+  font-size: 13px;
   }
 }
 .pp-accent-line {
@@ -302,6 +302,41 @@
   text-align: center;
   background: var(--bg-card);
   transition: transform 0.2s, box-shadow 0.2s;
+}
+.term-card {
+  position: relative; 
+}
+
+.live-badge {
+  position: absolute;
+  top: 10px;
+  left: 80%;
+  transform: translateX(-50%);
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  background: #ff4444;
+  color: #fff;
+  font-size: 10px;
+  font-weight: 600;
+  padding: 3px 10px;
+  border-radius: 20px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
+.live-dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: #fff;
+  animation: pulse 1.4s ease infinite;
+  flex-shrink: 0;
+}
+
+@keyframes pulse {
+  0%, 100% { opacity: 1; transform: scale(1); }
+  50%       { opacity: 0.4; transform: scale(0.7); }
 }
 
 .term-card:hover {
@@ -536,7 +571,7 @@
 }
 
 .pp-focus-item {
-  background: var(--green-pale);
+  background:rgb(255, 255, 153);
   border-radius: var(--radius-sm);
   padding: 12px;
   border: 1px solid var(--green-border);
@@ -626,7 +661,7 @@
 
 .pp-role-row > i {
   font-size: 25px;
-  color: var(--green-mid);
+  color: #c8912a;
   flex-shrink: 0;
 }
 
@@ -662,11 +697,11 @@
 
 .pp-role-pill {
   font-size: 15px;
-  background: var(--green-pale);
-  color: var(--green-dark);
+  background: var #f0d08a;
+  color: #c8912a;
   padding: 3px 10px;
   border-radius: 20px;
-  border: 1px solid var(--green-border);
+  border: 1px solid #c8912a;
   flex-shrink: 0;
   font-weight: 500;
 }
