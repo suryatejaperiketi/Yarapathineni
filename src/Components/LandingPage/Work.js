@@ -1,72 +1,155 @@
-import React from 'react'
+import { useEffect, useRef } from "react";
 import "../../Styles/Work.css";
-import roadimg from "../../assests/road.png";
-import cropimg from "../../assests/Crops.png";
-import irrigationimg from "../../assests/Irrigation.png";
-import educationimg from "../../assests/Education.png";
-import youthimg from "../../assests/Youth.png";
-import healthcareimg from "../../assests/Healthcare.png";
 
-function Work() {
+const stats = [
+  { icon: "📍", val: "4", lbl: "Mandals\nConnected" },
+  { icon: "🌾", val: "6", lbl: "Focus\nAreas" },
+  { icon: "👥", val: "4L+", lbl: "People\nBenefited" },
+  { icon: "🏥", val: "1", lbl: "Medical\nCollege" },
+];
+
+const mandals = ["Gurazala", "Dachepalli", "Piduguralla", "Machavaram"];
+
+export default function DevelopmentWork() {
+  const sectionRef = useRef(null);
+                                                                     
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add("dw-visible");
+          }
+        });
+      },
+      {threshold: 0.12}
+    );
+
+    const els = sectionRef.current?.querySelectorAll(".dw-animate");
+    els?.forEach((el) => observer.observe(el));
+    return () => observer.disconnect();
+  }, []);
+
   return (
-    <section className="work-section">
-        <h2 className="work-heading">Development Work For The People Of Gurzala</h2> 
-        <p className="work-description">
-          Focused On Agriculture, Infrastructure and Welfare across all 4 Mandals
-        </p>
+    <section className="dw-wrap" ref={sectionRef} aria-label="Development Work">
 
-       <div className='container'>
-          <div className='cards-grid'>
-            <div className='work-card'>
-                <img src={roadimg} alt="Road Icon" className='work-card-icon'/>
-                <h3 className='card-title'>Road & Infrastructure</h3>
-                <p className='card-description'>
-                    Promoted road upgrades, village connectivity, and transport improvements across Gurazala, Dachepalli, Piduguralla, and Machavaram, strengthening infrastructure and access throughout the constituency.     
-                </p>
-                <button className='work-card-btn'>4 Mandals Connected</button>
-            </div>
-             <div className='work-card'>
-                    <img src={cropimg} alt="Crops Icon" className='work-card-icon'/>
-                <h3 className='card-title'>Agriculture & Farmer Welfare</h3>
-                <p className='card-description'>
-                    As an agriculturist, he supported irrigation, crop assistance, and farmer welfare initiatives, advocating better water resources and agricultural infrastructure for farming families across Palnadu.
-                </p>
-                <button className='work-card-btn'>Farmer's Leader</button>
-            </div>
-             <div className='work-card'>
-                    <img src={irrigationimg} alt="Irrigation Icon" className='work-card-icon'/>
-                <h3 className='card-title'>Irrigation Projects</h3>
-                <p className='card-description'>
-                   Supported initiatives to enhance irrigation and drinking water facilities in the constituency, including efforts to secure better water resources for agriculture and rural communities.</p>
-                   <button className='work-card-btn'>Palnadu Belt</button>
-            </div>
-             <div className='work-card'>
-                    <img src={educationimg} alt="Education Icon" className='work-card-icon'/>
-                <h3 className='card-title'>Education Support</h3>
-                <p className='card-description'>
-                    Encouraged improvements in government schools, educational infrastructure, and access to quality education for students from rural areas. </p>
-                    <button className='work-card-btn'>Rural Education</button>
-            </div>
-             <div className='work-card'>
-                    <img src={youthimg} alt="Youth Icon" className='work-card-icon'/>
-                <h3 className='card-title'>Youth Employment</h3>
-                <p className='card-description'>
-                    Promoted skill development, employment awareness, and opportunities for youth to build sustainable careers and livelihoods.</p>
-                    <button className='work-card-btn'>Youth Focus</button>
-            </div>
-             <div className='work-card'>
-                    <img src={healthcareimg} alt="Healthcare Icon" className='work-card-icon'/>
-                <h3 className='card-title'>Healthcare Access</h3>
-                <p className='card-description'>
-                    Worked to improve healthcare services in the constituency and supported efforts to strengthen medical infrastructure, including the development of the Government Medical College and Hospital at Piduguralla. </p>
-                    <button className='work-card-btn'>PHC Upgrades</button>
-            </div>
-            
-            
+      {/* Header */}
+      <div className="dw-hdr dw-animate">
+        <div className="dw-hdr-left">
+          <span className="dw-eyebrow">MLA · Gurzala Constituency</span>
+          <h2 className="dw-title">Development Work</h2>
         </div>
-       </div>
-      </section>
-  )
-}
+        <p className="dw-hdr-right">
+          Agriculture · Infrastructure · Welfare<br />
+          Across all 4 Mandals of Gurzala
+        </p>
+      </div>
 
-export default Work
+      {/* Stats Strip */}
+      <div className="dw-stat-strip">
+        {stats.map((s, i) => (
+          <div className="dw-stat-chip dw-animate" key={i} style={{ "--delay": `${i * 80}ms` }}>
+            <span className="dw-stat-ico" aria-hidden="true">{s.icon}</span>
+            <div>
+              <div className="dw-stat-val">{s.val}</div>
+              <div className="dw-stat-lbl">{s.lbl}</div>
+            </div>
+          </div>
+        ))}
+      </div>
+
+   
+      <div className="dw-bento">
+
+        <div className="dw-tile dw-road dw-animate" style={{ "--delay": "0ms" }}>
+          <div className="dw-road-inner">
+            <div className="dw-road-top">
+              <div>
+                <span className="dw-ico" aria-hidden="true">🛣️</span>
+                <h3 className="dw-road-title">Road &amp; Infrastructure</h3>
+              </div>
+              <span className="dw-road-badge">01</span>
+            </div>
+            <p className="dw-tdesc">
+              Road upgrades, village connectivity, and transport improvements
+              strengthening access across the constituency.
+            </p>
+            <div className="dw-mandal-dots">
+              {mandals.map((m) => (
+                <span className="dw-mdot" key={m}>{m}</span>
+              ))}
+            </div>
+          </div>
+          <span className="dw-ghost" aria-hidden="true">01</span>
+        </div>
+
+   
+         <div className="dw-tile dw-agri dw-animate" style={{ "--delay": "80ms" }}>
+          <span className="dw-ico" aria-hidden="true">🌱</span>
+          <h3 className="dw-tname">Agriculture &amp; Farmer Welfare</h3>
+          <p className="dw-tdesc">
+            Championed irrigation, crop assistance, and water resources for
+            farming families across Palnadu.
+          </p>
+          <span className="dw-pill">Farmer's Leader</span>
+          <span className="dw-ghost" aria-hidden="true">02</span>
+        </div>
+
+  
+        <div className="dw-tile dw-irri dw-animate" style={{ "--delay": "160ms" }}>
+          <span className="dw-ico" aria-hidden="true">💧</span>
+          <h3 className="dw-tname">Irrigation Projects</h3>
+          <p className="dw-tdesc">
+            Enhanced irrigation &amp; drinking water access for agriculture and
+            rural communities in the Palnadu belt.
+          </p>
+          <span className="dw-pill">Palnadu Belt</span>
+          <span className="dw-ghost" aria-hidden="true">03</span>
+        </div>
+
+        <div className="dw-tile dw-edu dw-animate" style={{ "--delay": "240ms" }}>
+          <span className="dw-ico dw-ico-dark" aria-hidden="true">🎓</span>
+          <h3 className="dw-tname dw-tname-dark">Education Support</h3>
+          <p className="dw-tdesc dw-tdesc-dark">
+            Government school improvements and quality education access for
+            rural area students.
+          </p>
+          <span className="dw-pill dw-pill-dark">Rural Education</span>
+          <span className="dw-ghost dw-ghost-dark" aria-hidden="true">04</span>
+        </div>
+
+      
+        <div className="dw-tile dw-health dw-animate" style={{ "--delay": "320ms" }}>
+          <span className="dw-ico" aria-hidden="true">🏥</span>
+          <h3 className="dw-tname">Healthcare Access</h3>
+          <p className="dw-tdesc">  
+            Strengthened medical services including development of Govt Medical
+            College &amp; Hospital at Piduguralla.
+          </p>
+          <span className="dw-pill">PHC Upgrades</span>
+          <span className="dw-ghost" aria-hidden="true">06</span>
+        </div> 
+
+        <div className="dw-tile dw-youth dw-animate" style={{ "--delay": "400ms" }}>
+          <div className="dw-youth-left">
+            <div className="dw-youth-big">Youth</div>
+            <div className="dw-youth-lbl">Employment &amp; Skills</div>
+          </div>
+          <div className="dw-ydivider" aria-hidden="true" />
+          <div className="dw-youth-right">
+            <span className="dw-ico" aria-hidden="true">💼</span>
+            <h3 className="dw-tname">Youth Employment</h3>
+            <p className="dw-tdesc">
+              Promoted skill development, employment awareness, and sustainable
+              career opportunities for youth across the constituency to build
+              lasting livelihoods.
+            </p>
+          </div>
+          <span className="dw-pill dw-pill-abs">Youth Focus</span>
+          <span className="dw-ghost" aria-hidden="true">05</span>
+        </div> 
+
+      </div>
+    </section>
+  );
+}
