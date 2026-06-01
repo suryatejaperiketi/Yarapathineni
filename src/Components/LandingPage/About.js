@@ -13,7 +13,7 @@ const POLITICIAN = {
   heroStats: [
     { num: "4×", label: "Terms Elected" },
     { num: "1,28,201", label: "2024 Votes" },
-    { num: "30+", label: "Years of Service" },
+    { num: "32+", label: "Years of Service" },
   ],
   meta: [
     { icon: "ti-map-pin", text: "Gurazala Constituency, Andhra Pradesh" },
@@ -99,7 +99,7 @@ const HIGHLIGHTS = [
     tagIcon: "ti-building-temple",
   },
   {
-    variant: "gold  ",
+    variant: "gold",
     icon: "ti-building-hospital",
     title: "Raghupathi Venkata Ratnam Naidu Govt. Medical College",
     desc: "Yarapathineni Srinivasa Rao Garu personally took responsibility for establishing the Raghupathi Venkata Ratnam Naidu Government Medical College — bringing quality healthcare and medical education infrastructure to Gurazala constituency and the broader Palnadu region.",
@@ -196,7 +196,7 @@ function VoteBar({ label, pct, color }) {
     <div className="vbar-row">
       <span className="vbar-lbl">{label}</span>
       <div className="vbar-out">
-        <div className="vbar-in" ref={barRef} style={{ background: color }} />
+        <div className="vbar-in" ref={barRef} style={{background: color}} />
       </div>
       <span className="vbar-pct">{pct}%</span>
     </div>
@@ -226,16 +226,6 @@ function TimelineItem({ item, isLast }) {
   );
 }
 
-// function TermCard({ term }) {
-//   return (
-//     <div className={`term-card ${term.cls}`}>
-//       <div className="term-num">{term.ordinal}</div>
-//       <div className="term-years">{term.years}</div>
-//       <div className="term-votes">{term.votes}</div>
-//       <span className="won-badge">✓ Won</span>
-//     </div>
-//   );
-// }
 
 function TermCard({ term }) {
   return (

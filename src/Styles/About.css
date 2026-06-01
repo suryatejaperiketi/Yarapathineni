@@ -252,7 +252,7 @@
 }
 
 .pp-section-label {
-  font-size: 15px;
+  font-size: 17px;
   font-weight: 600;
   color: var(--text-muted);
   text-transform: uppercase;
@@ -289,6 +289,9 @@
 @media(max-width:768px){
   .pp-terms-header{
     font-size: 12px;
+  }
+  .pp-section-label {
+  font-size: 15px;
   }
 
 }
@@ -371,7 +374,7 @@
 .term-card.t4 .term-num  { color: #22c55e; }
 
 .term-years {
-  font-size: 13px;
+  font-size: 18px;
   margin-top: 3px;
 }
 
@@ -383,7 +386,7 @@
 .term-card.t4 .term-years { color: #22c55e; }
 
 .term-votes {
-  font-size: 15px;
+  font-size: 17px;
   font-weight: 500;
   color: var(--text-primary);
   margin: 10px 0 8px;
@@ -395,6 +398,10 @@
 }
 .won-badge{
   font-size: 12px !important;
+}
+.term-years {
+  font-size: 13px;
+  margin-top: 3px;
 }
 }
 
@@ -530,6 +537,11 @@
 }
 .tl-detail {
   font-size: 15px !important;
+}
+
+.pp-fi-title {
+  font-size: 16px !important;
+
 }}
 
 .tl-title {
@@ -612,7 +624,7 @@
 }
 
 .pp-fi-title {
-  font-size: 16px;
+  font-size: 18px;
   font-weight: 600;
   color: var(--text-primary);
 }
@@ -665,7 +677,7 @@
 
 
 .pp-ach-sub {
-  font-size: 15px;
+  font-size: 17px;
   color: var(--text-muted);
   margin-top: 2px;
 }
@@ -696,7 +708,9 @@
 .pp-ach-text {
   font-size: 1px !important;
 }
-}
+.pp-ach-sub {
+  font-size: 15px;
+}}
 
 .pp-role-info {
   flex: 1;
