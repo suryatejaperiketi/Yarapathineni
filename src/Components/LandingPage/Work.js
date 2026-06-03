@@ -86,7 +86,7 @@ export default function DevelopmentWork() {
    
          <div className="dw-tile dw-agri dw-animate" style={{ "--delay": "80ms" }}>
           <span className="dw-ico" aria-hidden="true">🌱</span>
-          <h3 className="dw-tname">Agriculture &amp; Farmer Welfare</h3>
+          <h3 className="dw-road-title">Agriculture &amp; Farmer Welfare</h3>
           <p className="dw-tdesc">
             Championed irrigation, crop assistance, and water resources for
             farming families across Palnadu.
@@ -98,7 +98,7 @@ export default function DevelopmentWork() {
   
         <div className="dw-tile dw-irri dw-animate" style={{ "--delay": "160ms" }}>
           <span className="dw-ico" aria-hidden="true">💧</span>
-          <h3 className="dw-tname">Irrigation Projects</h3>
+          <h3 className="dw-road-title">Irrigation Projects</h3>
           <p className="dw-tdesc">
             Enhanced irrigation &amp; drinking water access for agriculture and
             rural communities in the Palnadu belt.
@@ -109,7 +109,7 @@ export default function DevelopmentWork() {
 
         <div className="dw-tile dw-edu dw-animate" style={{ "--delay": "240ms" }}>
           <span className="dw-ico dw-ico-dark" aria-hidden="true">🎓</span>
-          <h3 className="dw-tname dw-tname-dark">Education Support</h3>
+          <h3 className="dw-road-title" style={{color:"black"}}>Education Support</h3>
           <p className="dw-tdesc dw-tdesc-dark">
             Government school improvements and quality education access for
             rural area students.
@@ -121,7 +121,7 @@ export default function DevelopmentWork() {
       
         <div className="dw-tile dw-health dw-animate" style={{ "--delay": "320ms" }}>
           <span className="dw-ico" aria-hidden="true">🏥</span>
-          <h3 className="dw-tname">Healthcare Access</h3>
+          <h3 className="dw-road-title">Healthcare Access</h3>
           <p className="dw-tdesc">  
             Strengthened medical services including development of Govt Medical
             College &amp; Hospital at Piduguralla.

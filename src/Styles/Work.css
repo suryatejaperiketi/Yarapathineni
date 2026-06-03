@@ -1,92 +1,3 @@
-/* 
-.work-section{
-    margin-top: 1cm;
-    margin-bottom: 1cm;
-}
-
-.scard-grid{
-    display: grid;
-    grid-template-columns: repeat(4,1fr);
-}
-
-.scard{
-    display: flex;
-    justify-content: stretch;
-    gap: 20px;
-    border: 1px solid#eee;
-    margin: 10px;
-    padding: 20px;
-    background-color: #eee;
-    border-radius: 8px;
-    
-}
-.scard-icon{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.scard-content{
-    display: flex;
-    flex-direction: column;
-}
-
-.work-heading {
-  display: inline-flex;
-  align-items: center;
-  gap: 6px;
-  color: #f59e0b;
-  font-size: 25px;
-  font-weight: 700;
-  letter-spacing: 2px;
-  text-transform: uppercase;
-  margin-bottom: 10px;
-}
-
-.work-heading::before,
-.work-heading::after {
-  content: '';
-  display: block;
-  width: 20px;
-  height: 3px;
-  background: #f59e0b;
-}
-
-
-@media(max-width:768px){
- .work-heading {
-  display: inline-flex;
-  align-items: center;
-  gap: 2px;
-  color: #f59e0b;
-  font-size: 17px;
-  font-weight: 700;
-  letter-spacing: 2px;
-  text-transform: uppercase;
-  margin-bottom: 10px;
-}
-
-
-.work-heading::before,
-.work-heading::after {
-  content: '';
-  display: block;
-  width: 20px;
-  height: 3px;
-  background: #f59e0b;
-}
-
-      .scard-grid{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-}
-.scard{
-    width: 180px;
-    height: auto;
-
-}
-} */
 
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:wght@400;500;600&display=swap');
 
@@ -121,13 +32,26 @@
 }
 .dw-eyebrow {
   display: block;
-  font-size: 10.5px;
+  font-size: 12.5px;
   font-weight: 600;
   letter-spacing: 0.18em;
   text-transform: uppercase;
   color: #333;
   margin-bottom: 0.3rem;
 }
+
+@media(max-width:768px){
+    .dw-eyebrow{
+    font-size: 10.5px;
+    }
+  .dw-hdr {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+    }
+}
+
+
 .dw-title {
   font-family: 'Bebas Neue', sans-serif;
   font-size: 44px;
@@ -136,18 +60,20 @@
   color: #f59e0b;
 }
 .dw-hdr-right {
-  font-size: 12px;
+  font-size: 15px;
   color: #333;
   text-align: right;
   line-height: 1.6;
   padding-bottom: 4px;
+  margin-bottom: 10px;
 }
 
 /* ── Stats Strip ── */
 .dw-stat-strip {
   display: flex;
   gap: 8px;
-  margin-bottom: 10px;
+  justify-content: center;
+  margin-bottom: 15px;
   flex-wrap: wrap;
 }
 .dw-stat-chip {
@@ -162,19 +88,32 @@
   transition: background 0.18s;
 }
 .dw-stat-chip:hover { background: #E5E7EB; }
-.dw-stat-ico { font-size: 18px; flex-shrink: 0; }
+.dw-stat-ico { font-size: 25px; flex-shrink: 0; }
 .dw-stat-val {
   font-family: 'Bebas Neue', sans-serif;
-  font-size: 26px;
+  font-size: 45px;
   line-height: 1;
   color: #111827;
 }
 .dw-stat-lbl {
-  font-size: 11px;
+  font-size: 15px;
   color: #000;
   font-weight: 500;
   line-height: 1.4;
   white-space: pre-line;
+}
+
+@media(max-width:768px){
+    .dw-stat-val{
+    font-size: 26px;
+    }
+    .dw-stat-chip {    
+     max-width: 100px;
+    width: 50%;
+}
+.dw-stat-ico{
+    font-size: 22px;
+}
 }
 
 /* ── Bento Grid ── */
@@ -218,7 +157,7 @@
 /* ── Shared text ── */
 .dw-ico { font-size: 22px; display: block; margin-bottom: 0.6rem; }
 .dw-tname {
-  font-size: 14.5px;
+  font-size: 18.5px;
   font-weight: 600;
   line-height: 1.25;
   margin-bottom: 0.35rem;
@@ -226,7 +165,7 @@
 }
 .dw-tname-dark { color: #1C1917; }
 .dw-tdesc {
-  font-size: 12px;
+  font-size: 15px;
   line-height: 1.6;
   color: rgba(255,255,255,0.75);
 }
@@ -341,7 +280,7 @@
 /* ── Youth tile ── */
 .dw-youth {
   grid-column: span 12;
-  background: #92400E;
+  background: #e6b00d;
   color: #fff;
   display: flex;
   align-items: center;
@@ -384,7 +323,7 @@
   .dw-ydivider { display: none; }
   .dw-youth-big { font-size: 40px; }
   .dw-pill-abs { position: static; margin-top: 0.8rem; }
-  .dw-stat-chip { min-width: 80px; }
+  .dw-stat-chip { min-width: 140px; }
 }
 
 @media (max-width: 480px) {

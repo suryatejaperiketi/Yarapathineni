@@ -68,7 +68,7 @@
 
 .pp-hero-img {
   flex: 0 0 46%;
-  background: linear-gradient(160deg, #1a3a20 0%, #2d5c33 60%, #1a4a1f 100%);
+  /* background: linear-gradient(160deg, #1a3a20 0%, #2d5c33 60%, #1a4a1f 100%); */
   display: flex;
   align-items: center;
   justify-content: center;
