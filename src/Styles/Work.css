@@ -165,16 +165,24 @@
 }
 .dw-tname-dark { color: #1C1917; }
 .dw-tdesc {
-  font-size: 15px;
+  font-size: 17px;
   line-height: 1.6;
   color: rgba(255,255,255,0.75);
 }
 .dw-tdesc-dark { color: #57534E; }
 
+@media(max-width:768px){
+   .dw-tdesc {
+  font-size: 15px;
+}
+.dw-pill {
+  font-size: 10px !important;
+}}
+
 .dw-pill {
   display: inline-block;
   margin-top: 0.8rem;
-  font-size: 10px;
+  font-size: 12px;
   font-weight: 600;
   letter-spacing: 0.08em;
   text-transform: uppercase;

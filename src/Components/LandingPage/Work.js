@@ -127,7 +127,7 @@ export default function DevelopmentWork() {
             College &amp; Hospital at Piduguralla.
           </p>
           <span className="dw-pill">PHC Upgrades</span>
-          <span className="dw-ghost" aria-hidden="true">06</span>
+          <span className="dw-ghost" aria-hidden="true">05</span>
         </div> 
 
         <div className="dw-tile dw-youth dw-animate" style={{ "--delay": "400ms" }}>
@@ -146,7 +146,7 @@ export default function DevelopmentWork() {
             </p>
           </div>
           <span className="dw-pill dw-pill-abs">Youth Focus</span>
-          <span className="dw-ghost" aria-hidden="true">05</span>
+          <span className="dw-ghost" aria-hidden="true">06</span>
         </div> 
 
       </div>
