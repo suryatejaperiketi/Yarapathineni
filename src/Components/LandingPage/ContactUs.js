@@ -67,7 +67,7 @@ function ContactUs() {
                 </div>
                 <div className="contact-text">
                   <h6>Office Hours</h6>
-                  <h5>Mon – Sat: 10:00 AM – 5:00 PM | <span style={{color:"red"}}>Sunday: Closed</span></h5>
+                  <h5>Mon – Sat: 10:00 AM – 5:00 PM | <span style={{color:"#ff6004"}}>Sunday: Closed</span></h5>
                 </div>
               </div>
             </div>

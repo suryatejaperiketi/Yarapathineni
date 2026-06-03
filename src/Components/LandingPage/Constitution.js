@@ -30,7 +30,7 @@ function Constitution() {
               <div className="col-md-3 col-sm-12">
                 <div className="mandal-card">
                   <h4>Gurazala</h4>
-                  <p>Constituency HQ</p>
+                  <p>Constituency (HQ)</p>
                 </div>
               </div>
               <div className="col-md-3 col-sm-12">

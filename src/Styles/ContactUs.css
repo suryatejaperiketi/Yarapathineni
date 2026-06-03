@@ -1,5 +1,5 @@
 .contact-section{
-    background: rgb(215 215 20);
+    background: rgb(229 196 15);
     overflow-x: hidden;
     padding-top: 1cm;
 }
@@ -14,7 +14,7 @@
   display: inline-flex;
   align-items: center;
   gap: 6px;
-  color: #f59e0b;
+  color: #f55e09;
   font-size: 25px;
   font-weight: 700;
   letter-spacing: 2px;
@@ -23,7 +23,7 @@
 }
 
 .section-tag-contact::before, .section-tag-contact::after {
-  content: ''; display: block; width: 20px; height: 3px; background: #f59e0b;
+  content: ''; display: block; width: 20px; height: 3px; background:#f55e09;
 }
 .form-grid{
     display: grid;
@@ -38,7 +38,7 @@
   display: inline-flex;
   align-items: center;
   gap: 6px;
-  color: #f59e0b;
+  color: #f55e09;
   font-size: 19px;
   font-weight: 700;
   letter-spacing: 2px;
@@ -46,7 +46,7 @@
   margin-bottom: 10px;
 }
 .section-tag-contact::before, .section-tag-contact::after {
-  content: ''; display: block; width: 20px; height: 2px; background: #f59e0b;
+  content: ''; display: block; width: 20px; height: 2px; background: #f55e09;
 }
 }
 
@@ -60,7 +60,7 @@
 
 .contact-icon{
     font-size: 30px;
-    color: #f59e0b;
+    color: #f55e09;
     align-items: center;
     display: flex;
 }
