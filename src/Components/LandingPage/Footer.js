@@ -80,15 +80,15 @@ const Footer = () => {
             <h4>Contact Info</h4>
 
             <p>
-              <FaMapMarkerAlt /> Gurazala, Palnadu District
+              <FaMapMarkerAlt className="foot-icons"/> Gurazala, Palnadu District
             </p>
 
             <p>
-              <FaPhoneAlt /> +91 9849355955
+              <FaPhoneAlt  className="foot-icons"/> +91 9849355955
             </p>
 
             <p>
-              <FaEnvelope /> yarapathinenimla@gmail.com
+              <FaEnvelope className="foot-icons"/> yarapathinenimla@gmail.com
             </p>
           </div>
 

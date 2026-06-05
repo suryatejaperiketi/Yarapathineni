@@ -6,10 +6,6 @@
 
 @media(max-width:768px){
 
-    .hero-section img{
-        height: 170px; 
-    }
-
     .hero-section{
         padding-top: 10px;
     }

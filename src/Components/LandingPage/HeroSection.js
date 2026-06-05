@@ -1,7 +1,7 @@
 import React from 'react'
-import banner1img from "../../assests/banner1.jpg";
+import banner1img from "../../assests/banner1.png";
 import banner2img from "../../assests/banner2.png";
-import banner3img  from "../../assests/banner3.jpg";
+import banner3img  from "../../assests/banner3.png";
 import "../../Styles/HeroSection.css";
 
 
@@ -17,10 +17,10 @@ function HeroSection() {
   </div>
   <div className="carousel-inner">
     <div className="carousel-item active">
-      <img src={banner2img} className="d-block w-100" alt="..."/>
+      <img src={banner1img} className="d-block w-100" alt="..."/>
     </div>
     <div className="carousel-item">
-      <img src={banner1img} className="d-block w-100" alt="..."/>
+      <img src={banner2img} className="d-block w-100" alt="..."/>
     </div>
     <div className="carousel-item">
       <img src={banner3img} className="d-block w-100" alt="..."/>
