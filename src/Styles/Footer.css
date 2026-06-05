@@ -1,12 +1,14 @@
 .footer {
-  background: linear-gradient(
+  /* background: linear-gradient(
     90deg,
     #1b0505,
     #2d0909,
     #1b0505
-  );
+  ); */
+  background: linear-gradient(135deg, #3B0A0A 0%, #7A2A00 50%, #ca8f21 100%);
+  
   color: #fff;
-  padding-top: 50px;
+  padding-top: 30px;
 }
 
 .footer-grid {

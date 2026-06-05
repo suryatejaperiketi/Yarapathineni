@@ -20,6 +20,8 @@ import aboutimg from "../../assests/about.png";
 import facebookimg from "../../assests/facebook.png";
 import instaimg from "../../assests/instagram.png";
 import ximg from "../../assests/twitter.png";
+import cbnimg from "../../assests/leaders1.jpg";
+import newsimg from "../../assests/others10.jpg";
 import mediahighlightsimg from "../../assests/mediahighlights.png";
 import "../../Styles/About.css";
 
@@ -166,10 +168,10 @@ function About() {
               <button onClick={()=> navigate("/photos")} className="btn btn-danger mb-3">View Gallery</button>
 
               <div className="gallery-grid">
-                <img src={aboutimg} alt="" />
-                <img src={aboutimg} alt="" />
-                <img src={aboutimg} alt="" />
-                <img src={aboutimg} alt="" />
+                <img src={cbnimg} alt="" />
+                <img src={cbnimg} alt="" />
+                <img src={cbnimg} alt="" />
+                <img src={cbnimg} alt="" />
               </div>
             </div>
 
@@ -178,7 +180,7 @@ function About() {
               <h3>Stay Updated</h3>
 
               <div className="news-item">
-                <img src={aboutimg} alt="" />
+                <img src={newsimg} alt="" />
                 <div className="news-item-content">
                 <h6>April 2026</h6>
                   <p>Yarapathineni Srinivasa Rao Addresses Public Meeting in Gurazala</p>
@@ -187,7 +189,7 @@ function About() {
               </div>
 
               <div className="news-item">
-                <img src={aboutimg} alt="" />
+                <img src={newsimg} alt="" />
                 <div className="news-item-content">
                 <h6>June 2025</h6>
                   <p>Development Projects Reviewed In Palnadu Region</p>
@@ -196,7 +198,7 @@ function About() {
               </div>
 
                 <div className="news-item">
-                <img src={aboutimg} alt="" />
+                <img src={newsimg} alt="" />
                 <div className="news-item-content">
                 <h6>May 2025</h6>
                   <p>Standing Strong For Farmer's Right</p>
