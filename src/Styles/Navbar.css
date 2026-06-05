@@ -8,6 +8,26 @@
     box-shadow: 1px 2px 3px orange;
   
 }
+@media (min-width: 992px) {
+    .navbar-expand-lg .navbar-nav .dropdown-menu {
+        position: absolute;
+        border: 1px solid orange !important;
+    }}
+
+
+    .navbar-nav .dropdown-menu  .dropdown-item  {
+    position: static;
+    text-align: center;
+   
+}
+
+
+.navbar-nav .dropdown-menu {
+    position: relative;
+    left: 50% !important;
+    transform: translateX(-50%) !important;
+    text-align: center;
+}
 
 body{
    padding-top: 80px;

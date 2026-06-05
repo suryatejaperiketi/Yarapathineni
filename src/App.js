@@ -12,6 +12,7 @@ import ContactUs from './Components/LandingPage/ContactUs';
 import Footer from "./Components/LandingPage/Footer";
 import People from './Components/LandingPage/People';
 import Accomplishment from './Components/Pages/Accomplishment';
+import SpiritualInitiatives from './Components/Pages/SpiritualInitiatives';
 
 
 function App() {
@@ -27,6 +28,7 @@ function App() {
         <Route path="/photos/*" element={<PhotosLanding/>} />
         <Route path="/videos/*" element={<VideosLanding/>} />
         <Route path="/people" element={<People/>} />
+        <Route path="/spiritual-initiatives" element={<SpiritualInitiatives/>} />
         <Route path="/contact" element={<ContactUs/>} />
       </Routes>
         <Footer/>

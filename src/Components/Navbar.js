@@ -1,7 +1,7 @@
 import React, { useRef } from "react";
 import "../Styles/Navbar.css";
 import { NavLink } from "react-router-dom";
-import logo from "../assests/logo.png";
+import logo from "../assests/logo2.png";
 
 function Navbar() {
   const navbarRef = useRef(null);
@@ -61,10 +61,53 @@ function Navbar() {
                 </NavLink>
               </li>
 
-              <li className="nav-item">
-                <NavLink className="nav-link" to="/works" onClick={closeNavbar}>
-                  Works
-                </NavLink>
+            
+              <li className="nav-item dropdown">
+                <a
+                  href="/#"
+                  className="nav-link dropdown-toggle"
+                  id="navbarDropdownMenuLink"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Achievements
+                </a>
+
+                <ul
+                  className="dropdown-menu"
+                  aria-labelledby="navbarDropdownMenuLink"
+                >
+                  <li>
+                    <NavLink
+                      className="dropdown-item"
+                      to="/works"
+                      onClick={closeNavbar}
+                    >
+                      Works
+                    </NavLink>
+                  </li>
+
+                   <li>
+                    <NavLink
+                      className="dropdown-item"
+                      to="/spiritual-initiatives"
+                      onClick={closeNavbar}
+                    >
+                      Spiritual Initiatives
+                    </NavLink>
+                  </li>
+
+                  <li>
+                    <NavLink
+                      className="dropdown-item"
+                      to="/cmr-funds"
+                      onClick={closeNavbar}
+                    >
+                      CMR Funds
+                    </NavLink>
+                  </li>
+                </ul>
               </li>
 
               <li className="nav-item dropdown">

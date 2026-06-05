@@ -13,7 +13,6 @@ function Constitution() {
         <h3>Gurazala — Our Constituency</h3>
         <p>Assembly Constituency No. 100 · Palnadu District · Andhra Pradesh</p>
         <div className="container">
-
           <iframe
             title="Gurazala Satellite View"
             src="https://maps.google.com/maps?q=Gurazala,Andhra%20Pradesh&t=k&z=13&output=embed"
@@ -21,7 +20,8 @@ function Constitution() {
             allowFullScreen
             loading="lazy"
           ></iframe>
-          
+
+
         </div>
         <div className="container">
           <div className="mandal-section">

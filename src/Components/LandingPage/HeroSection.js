@@ -17,10 +17,10 @@ function HeroSection() {
   </div>
   <div className="carousel-inner">
     <div className="carousel-item active">
-      <img src={banner1img} className="d-block w-100" alt="..."/>
+      <img src={banner2img} className="d-block w-100" alt="..."/>
     </div>
     <div className="carousel-item">
-      <img src={banner2img} className="d-block w-100" alt="..."/>
+      <img src={banner1img} className="d-block w-100" alt="..."/>
     </div>
     <div className="carousel-item">
       <img src={banner3img} className="d-block w-100" alt="..."/>
