@@ -164,8 +164,9 @@ function SpiritualInitiatives() {
         <div className="container text-center">
           <h6 className="section-tag">PHOTO GALLERY</h6>
           <h2>Moments of Devotion</h2>
-
-          <div className="row g-3 mt-4">
+      <button className="view-gallery-btn mt-4">View Full Gallery</button>
+          <div className="row g-3 mt-2">
+           
             <div className="col-lg-3 col-md-6">
               <img src={kmvimg1} alt="" className="gallery-img" />
             </div>
@@ -184,7 +185,7 @@ function SpiritualInitiatives() {
             
           </div>
 
-          <button className="gallery-btn mt-4 mb-4">View Full Gallery</button>
+         
         </div>
         
       </section>

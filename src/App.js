@@ -13,6 +13,7 @@ import Footer from "./Components/LandingPage/Footer";
 import People from './Components/LandingPage/People';
 import Accomplishment from './Components/Pages/Accomplishment';
 import SpiritualInitiatives from './Components/Pages/SpiritualInitiatives';
+import Cmrf from './Components/Pages/Cmrf';
 
 
 function App() {
@@ -25,6 +26,7 @@ function App() {
         <Route path="/works" element={<Work/>} />
         <Route path="/constitution" element={<Constitution/>} />
         <Route path="/accomplishment" element={<Accomplishment/>} />
+        <Route path="/cmr-funds" element={<Cmrf/>} />
         <Route path="/photos/*" element={<PhotosLanding/>} />
         <Route path="/videos/*" element={<VideosLanding/>} />
         <Route path="/people" element={<People/>} />
