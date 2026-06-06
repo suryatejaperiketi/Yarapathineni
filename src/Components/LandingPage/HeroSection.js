@@ -17,13 +17,13 @@ function HeroSection() {
   </div>
   <div className="carousel-inner">
     <div className="carousel-item active">
-      <img src={banner1img} className="d-block w-100" alt="..."/>
+      <img src={banner1img} className="d-block w-100" alt="Banner Img1"/>
     </div>
     <div className="carousel-item">
-      <img src={banner2img} className="d-block w-100" alt="..."/>
+      <img src={banner2img} className="d-block w-100" alt="Banner Img2"/>
     </div>
     <div className="carousel-item">
-      <img src={banner3img} className="d-block w-100" alt="..."/>
+      <img src={banner3img} className="d-block w-100" alt="Banner Img3"/>
     </div>
   </div>
   <button className="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">

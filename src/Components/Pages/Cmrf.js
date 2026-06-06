@@ -2,23 +2,18 @@ import React, { useState } from "react";
 import "../../Styles/Cmrf.css";
 import { IoPlayCircle } from "react-icons/io5";
 
-// import cmrf1 from "../essets/cmrf1.png";
-// import cmrf2 from "../essets/cmrf2.png";
-// import cmrf3 from "../essets/cmrf3.png";
-// import cmrf4 from "../essets/cmrf4.png";
-// import cmrf5 from "../essets/cmrf5.png";
-// import cmrf6 from "../essets/cmrf6.png";
-// import cmrf7 from "../essets/cmrf7.png";
-// import cmrf8 from "../essets/cmrf8.png";
+import cmrf1 from "../../assests/cmrf7.png";
+import cmrf2 from "../../assests/cmrf4.png";
+import cmrf3 from "../../assests/cmrf5.png";
+import cmrf4 from "../../assests/cmrf6.png";
 
-// import video1 from "../essets/cmrfv1.mp4";
-// import video2 from "../essets/cmrfv2.mp4";
-// import video3 from "../essets/cmrfv3.mp4";
-// import video4 from "../essets/cmrfv4.mp4";
-// import video5 from "../essets/cmrfv5.mp4";
-// import video6 from "../essets/cmrfv6.mp4";
-// import video7 from "../essets/cmrfv7.mp4";
-// import video8 from "../essets/cmrfv8.mp4";
+
+import video1 from "../../assests/cmrfv7.mp4";
+import video2 from "../../assests/cmrfv4.mp4";
+import video3 from "../../assests/cmrfv5.mp4";
+import video4 from "../../assests/cmrfv6.mp4";  
+
+
 
 const Cmrf = () => {
   const [showModal, setShowModal] = useState(false);
@@ -112,32 +107,32 @@ const Cmrf = () => {
 
   const beneficiaryDetails = [
     {
-      // imgSrc: cmrf1,
-      // videoSrc: video1,
+      imgSrc: cmrf1,
+      videoSrc: video1,
       name: "Vallam Reddy Ramanamma Garu",
       relation: "W/O Brahma Reddy",
       amount: "₹3,06,500/-",
       village: "Gudluru",
     },
     {
-      // imgSrc: cmrf2,
-      // videoSrc: video2,
+      imgSrc: cmrf2,
+      videoSrc: video2,
       name: "Abburi Pullaya",
       relation: "S/O Abburi Venkata Rao",
       amount: "₹10,00,000/-",
       village: "Kalavalla",
     },
     {
-      // imgSrc: cmrf3,
-      // videoSrc: video3,
+      imgSrc: cmrf3,
+      videoSrc: video3,
       name: "Srinivas",
       relation: "S/O Srinivas",
       amount: "₹58,000/-",
       village: "Kandukur",
     },
     {
-      // imgSrc: cmrf4,
-      // videoSrc: video4,
+      imgSrc: cmrf4,
+      videoSrc: video4,
       name: "Srinivas",
       relation: "S/O Komali",
       amount: "₹1,38,000/-",
