@@ -238,7 +238,7 @@ const Cmrf = () => {
                           <span className="cmrf-amount">
                             {" "}
                             {beneficiary.amount}
-                          </span>
+                          </span> 
                         </p>
 
                         <p>

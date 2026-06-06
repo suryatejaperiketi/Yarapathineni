@@ -2,9 +2,9 @@ import React from 'react'
 import HeroSection from './HeroSection'
 import About from './About'
 import Work from './Work'
-import Constitution from './Constitution'
 import ContactUs from './ContactUs'
 import People from './People'
+import Journey from './Journey'
 
 
 
@@ -14,7 +14,7 @@ function LandingPage() {
     <HeroSection/>
     <About/>
     <Work/>
-    <Constitution/>
+    <Journey/>
     <People/>
     <ContactUs/>
    </>

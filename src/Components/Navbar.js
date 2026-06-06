@@ -151,10 +151,10 @@ function Navbar() {
               <li className="nav-item">
                 <NavLink
                   className="nav-link"
-                  to="/constitution"
+                  to="/journey"
                   onClick={closeNavbar}
                 >
-                  Constitution
+                  Journey
                 </NavLink>
               </li>
 
