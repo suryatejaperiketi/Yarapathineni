@@ -2,8 +2,7 @@ import React from "react";
 import "../../Styles/Constitution.css";
 import { FaRegBuilding } from "react-icons/fa";
 import { TbTool } from "react-icons/tb";
-import { BsPeopleFill } from "react-icons/bs";
-import { MdOutlineBarChart } from "react-icons/md";
+
 
 function Constitution() {
   return (
