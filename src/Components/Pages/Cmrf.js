@@ -109,18 +109,18 @@ const Cmrf = () => {
     {
       imgSrc: cmrf1,
       videoSrc: video1,
-      name: "Vallam Reddy Ramanamma Garu",
+      name: "Srinivasarao Garu",
       relation: "W/O Brahma Reddy",
       amount: "₹3,06,500/-",
-      village: "Gudluru",
+      village: "Gangavaram",
     },
     {
       imgSrc: cmrf2,
       videoSrc: video2,
-      name: "Abburi Pullaya",
+      name: "Gayathri",
       relation: "S/O Abburi Venkata Rao",
       amount: "₹10,00,000/-",
-      village: "Kalavalla",
+      village: "Ramapuram",
     },
     {
       imgSrc: cmrf3,
@@ -128,7 +128,7 @@ const Cmrf = () => {
       name: "Srinivas",
       relation: "S/O Srinivas",
       amount: "₹58,000/-",
-      village: "Kandukur",
+      village: "Piduguralla",
     },
     {
       imgSrc: cmrf4,
@@ -136,7 +136,7 @@ const Cmrf = () => {
       name: "Srinivas",
       relation: "S/O Komali",
       amount: "₹1,38,000/-",
-      village: "Kandukur",
+      village: "Nagulavaram",
     },
   ];
 
