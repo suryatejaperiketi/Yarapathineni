@@ -17,7 +17,7 @@ function LandingPage() {
     <Work/>
     <Journey/>
     <People/>
-    <ContactUs/>
+    <ContactUs/> 
    </>
 
    

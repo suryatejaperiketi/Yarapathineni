@@ -84,7 +84,7 @@ function Navbar() {
                       to="/works"
                       onClick={closeNavbar}
                     >
-                      Works
+                      Development
                     </NavLink>
                   </li>
 

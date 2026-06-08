@@ -41,7 +41,7 @@ function About() {
           </div>
         </div>
       </div>
-      <div className="row mt-3">
+      <div className="row">
         <div className="col-lg-4">
           <div className="journey-img">
             <img
@@ -103,7 +103,7 @@ function About() {
           </div>
         </div>
 
-        <div className="achievements-section py-5">
+        <div className="achievements-section py-4">
           <div className="text-center">
             <span className="sub-title">COMMITTED TO PALNADU</span>
             <h2 className="achehead">Achievements & Contributions</h2>
@@ -161,7 +161,7 @@ function About() {
 
         <div className="news-gallery-section py-5">
           <div className="row">
-            <div className="col-lg-4 p-3">
+            <div className="col-lg-4">
               <h6 className="text-warning">PHOTO GALLERY</h6>
               <h3>Moments of Leadership</h3>
 
@@ -175,7 +175,7 @@ function About() {
               </div>
             </div>
 
-            <div className="col-lg-4 p-3">
+            <div className="col-lg-4">
               <h6 className="text-warning">LATEST NEWS</h6>
               <h3>Stay Updated</h3>
 

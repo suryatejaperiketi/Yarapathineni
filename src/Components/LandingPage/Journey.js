@@ -2,8 +2,9 @@ import React, { useState, useEffect, useRef } from "react";
 import "../../Styles/Journey.css";
 import { FaRegBuilding } from "react-icons/fa";
 import { TbTool } from "react-icons/tb";
-import HeroSection from "./HeroSection";
 import img1970 from "../../assests/allpics4.jpg";
+import journeymg from "../../assests/banner1.png";
+
 
 const timelineData = [
   {
@@ -124,7 +125,11 @@ function TimelineItem({ item, index }) {
 function Journey() {
   return (
     <>
-      <HeroSection />
+      <section className="journey-sec">
+ <div className="col-lg-12 col-md-12 about-image">
+            <img src={journeymg} alt="About Us" className="img-fluid w-100" />
+</div>
+      </section>
      
 
       <section className="journey-wrapper">
