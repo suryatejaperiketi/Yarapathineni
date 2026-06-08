@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useRef } from "react";
-import "../../Styles/Constitution.css";
+import "../../Styles/Journey.css";
 import { FaRegBuilding } from "react-icons/fa";
 import { TbTool } from "react-icons/tb";
 import HeroSection from "./HeroSection";

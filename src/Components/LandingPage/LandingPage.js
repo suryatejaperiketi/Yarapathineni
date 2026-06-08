@@ -5,6 +5,7 @@ import Work from './Work'
 import ContactUs from './ContactUs'
 import People from './People'
 import Journey from './Journey'
+import "../../Styles/LandingPage.css";
 
 
 
@@ -18,6 +19,8 @@ function LandingPage() {
     <People/>
     <ContactUs/>
    </>
+
+   
   )
 }
 
