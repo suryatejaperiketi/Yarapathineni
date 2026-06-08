@@ -1,9 +1,11 @@
-.row {
-    --bs-gutter-x: 0;
-}
+
 .container-fluid {
   padding-left: 0 !important;
   padding-right: 0 !important;
+}
+html,
+body{
+   overflow-x:hidden;
 }
 
 
@@ -14,6 +16,11 @@
 
 .about-image{
     position: relative;
+}
+
+.about-image img{
+   width:100%;
+   display:block;
 }
 
 .banner-buttons{
@@ -27,6 +34,23 @@
     font-weight: 600;
 }
 
+@media(max-width:768px){
+
+  .banner-buttons{
+      left:50%;
+      transform:translateX(-50%);
+      bottom:10px;
+      display:flex;
+      gap:5px;
+      width:max-content;
+  }
+
+  .banner-buttons .btn{
+      font-size:12px;
+      padding:8px 12px;
+  }
+
+}
 
 .journey-img {
     height: 430px;
