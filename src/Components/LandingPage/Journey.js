@@ -5,7 +5,6 @@ import { TbTool } from "react-icons/tb";
 import img1970 from "../../assests/allpics4.jpg";
 import journeymg from "../../assests/banner1.png";
 
-
 const timelineData = [
   {
     decade: "1970s",
@@ -102,22 +101,17 @@ function TimelineItem({ item, index }) {
       </div>
 
       <div className="content-col">
+        <div className="content-wrapper">
+          <div className="timeline-image">
+            <img src={item.image} alt={item.decade} />
+          </div>
 
-  <div className="content-wrapper">
-
-    <div className="timeline-image">
-      <img src={item.image} alt={item.decade} />
-    </div>
-
-    <div className="content-text">
-      <h3 className="item-title">{item.title}</h3>
-      <p className="item-desc">{item.description}</p>
-    </div>
-
-  </div>
-
-</div>
-       
+          <div className="content-text">
+            <h3 className="item-title">{item.title}</h3>
+            <p className="item-desc">{item.description}</p>
+          </div>
+        </div>
+      </div>
     </div>
   );
 }
@@ -126,11 +120,11 @@ function Journey() {
   return (
     <>
       <section className="journey-sec">
- <div className="col-lg-12 col-md-12 about-image">
-            <img src={journeymg} alt="About Us" className="img-fluid w-100" />
-</div>
+      <h1 className="section-tag">JOURNEY</h1>
+        <div className="col-lg-12 col-md-12 about-image">
+          <img src={journeymg} alt="About Us" className="img-fluid w-100" />
+        </div>
       </section>
-     
 
       <section className="journey-wrapper">
         <div className="journey-container">
@@ -152,8 +146,7 @@ function Journey() {
         </div>
       </section>
 
-
-       <section className="constitution-section">
+      <section className="constitution-section">
         <div className="constitution-container">
           <div className="section-tag">Constituency</div>
           <h3>Gurazala — Our Constituency</h3>

@@ -47,7 +47,7 @@ function ContactUs() {
                 </div>
                 <div className="contact-text">
                   <h6>Email</h6>
-                  <h5>support@yarapathinenisrinivasarao.com</h5>
+                  <h5>yarapathinenimla@gmail.com</h5>
                 </div>
               </div>
               <div className="contact-content">

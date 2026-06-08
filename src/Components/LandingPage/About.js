@@ -29,7 +29,7 @@ function About() {
   const navigate = useNavigate();
   return (
     <section className="about-section">
-      <div className="container-fluid">
+      <div class="container-fluid  p-0">
         <div className="row">
           <div className="col-lg-12 col-md-12 about-image">
             <img src={banner2img} alt="About Us" className="img-fluid w-100" />
