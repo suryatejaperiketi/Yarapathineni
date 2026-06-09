@@ -22,7 +22,7 @@ const Footer = () => {
             <h4>తెలుగు దేశం</h4>
 
             <p>
-              35+ Years of Dedication, Development and Service to the People of
+              46+ Years of Dedication, Development and Service to the People of
               Palnadu
             </p>
 
