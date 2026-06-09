@@ -13,6 +13,7 @@
   letter-spacing: 2px;
   text-transform: uppercase;
   margin-bottom: 10px;
+  margin-top: 1cm;
 }
 .section-tag-jr::before, .section-tag-jr::after {
   content: ''; display: block; width: 20px; height: 2px; background: #f59e0b;
