@@ -3,23 +3,7 @@
     background-color: #f8fafc;
 }
 
-.section-tag {
-  display: inline-flex;
-  align-items: center;
-  gap: 6px;
-  color: #f59e0b;
-  font-size: 17px;
-  font-weight: 700;
-  letter-spacing: 2px;
-  text-transform: uppercase;
-  margin-bottom: 10px;
-}
-.section-tag::before, .section-tag::after {
-  content: ''; display: block; width: 20px; height: 2px; background: #f59e0b;
-}
-
-@media(min-width:992px){
-   .section-tag {
+.section-tag-jr {
   display: inline-flex;
   align-items: center;
   gap: 6px;
@@ -30,116 +14,15 @@
   text-transform: uppercase;
   margin-bottom: 10px;
 }
-.section-tag::before, .section-tag::after {
-  content: ''; display: block; width: 20px; height: 3px; background: #f59e0b;
-}
-.mandal-card{
-    background: #ffffff;
-    border: 1.5px solid #e4dfd0;
-    border-radius: 12px;
-    padding: 18px 22px 16px;
-    max-width: 200px;
-    width: 100%;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-}  
+.section-tag-jr::before, .section-tag-jr::after {
+  content: ''; display: block; width: 20px; height: 2px; background: #f59e0b;
 }
 
-.mandal-section h3{
-    display: flex;
-    text-align: left;
-    border-left: 2px solid #f59e0b;
-    padding-left: 10px;
-    margin-top: 10px;
-    font-size:22px;
-    margin-bottom: 20px;
+@media(max-width:768px){
+  .section-tag-jr{
+    font-size: 20px;
+  } 
 }
-
-.mandal-card{
-    background: #ffffff;
-    border: 1.5px solid #e4dfd0;
-    border-radius: 12px;
-    padding: 18px 22px 16px;
-    max-width: 200px;
-    width: 100%;
-    gap: 20px;
-   position: relative;
-   left: 50%;
-   transform: translateX(-50%);
-   margin-top: 10px;
-   box-shadow: 3px 5px 5px 3px rgba(0, 0, 0, 0.1);
-}   
-.mandal-card h4{
-    font-size: 18px;
-    margin-bottom: 10px;
-    display: flex;
-}
-.mandal-card p{
-    font-size: 14px;
-    display: flex;
-}
-
-
-
-.row > div:nth-child(1) .mandal-card {
-  border-left: 4px solid #d6a84b;
-}
-.row > div:nth-child(2) .mandal-card {
-  border-left: 4px solid #0d6efd;
-}
-
-.row > div:nth-child(3) .mandal-card {
-  border-left: 4px solid #198754;
-}
-
-.row > div:nth-child(4) .mandal-card {
-  border-left: 4px solid #dc3545;
-}
-
-.constituency-key-stats{
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-    flex-direction: column;
-    align-items:center;
-    justify-content: center;
-    margin-top: 40px;
-    padding: 20px;
-    background-color: #fff;
-    border: 1px solid #e4dfd0;
-    border-radius: 12px;
-}
-.constituency-key-stats {
-    text-align: center; 
-}
-
-.constituency-key-stats h3 {
-    border-bottom: 3px solid #eee;
-    padding-bottom: 10px;
-    text-align: center;
-}
-
-
-.constituency-key-stats ul {
-    display: inline-block;   
-    text-align: left;        
-    padding-left: 22px;      
-    margin: 0 auto;
-}
-
-
-.constituency-key-stats li {
-    margin-bottom: 12px;
-    line-height: 1.4;
-}
-
-
-.constituency-key-stats li::marker {
-    color: #d6a84b; 
-    font-size: 1.1rem;
-}
-
-
- 
 
 
  /* ─── Google Fonts ─────────────────────────────────────────── */

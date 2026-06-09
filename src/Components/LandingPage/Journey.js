@@ -1,7 +1,5 @@
 import React, { useState, useEffect, useRef } from "react";
 import "../../Styles/Journey.css";
-import { FaRegBuilding } from "react-icons/fa";
-import { TbTool } from "react-icons/tb";
 import img1970 from "../../assests/allpics4.jpg";
 import journeymg from "../../assests/banner1.png";
 
@@ -120,7 +118,7 @@ function Journey() {
   return (
     <>
       <section className="journey-sec">
-      <h1 className="section-tag">JOURNEY</h1>
+      <h1 className="section-tag-jr">JOURNEY</h1>
         <div className="col-lg-12 col-md-12 about-image">
           <img src={journeymg} alt="About Us" className="img-fluid w-100" />
         </div>
@@ -162,79 +160,7 @@ function Journey() {
               loading="lazy"
             ></iframe>
           </div>
-          <div className="container">
-            <div className="mandal-section">
-              <h3>4 Official Mandals in Gurazala Constituency</h3>
-              <div className="row">
-                <div className="col-md-3 col-sm-12">
-                  <div className="mandal-card">
-                    <h4>Gurazala</h4>
-                    <p>Constituency (HQ)</p>
-                  </div>
-                </div>
-                <div className="col-md-3 col-sm-12">
-                  <div className="mandal-card">
-                    <h4>Dachepalli</h4>
-                    <p>Mandal</p>
-                  </div>
-                </div>
-                <div className="col-md-3 col-sm-12">
-                  <div className="mandal-card">
-                    <h4>Piduguralla</h4>
-                    <p>Mandal</p>
-                  </div>
-                </div>
-                <div className="col-md-3 col-sm-12">
-                  <div className="mandal-card">
-                    <h4>Machavaram</h4>
-                    <p>Mandal</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div className="row">
-              <div className="col-md-6 col-sm-12">
-                <div className="constituency-key-stats">
-                  <h3>
-                    <FaRegBuilding className="const-icon" />
-                    Constituency Overview
-                  </h3>
-                  <ul>
-                    <li>Gurazala — Palnadu District, AP</li>
-                    <li>Assembly Segment No: 100</li>
-                    <li>Total voters: ~2.68 lakh (2,68,469)</li>
-                    <li>Total population: ~4.5–5.0 lakh</li>
-                    <li>Total area: ~1,000+ sq. km</li>
-                    <li>District HQ: Narasaraopet</li>
-                    <li>Constituency HQ: Gurazala</li>
-                    <li>Lok Sabha: Narasaraopet segment</li>
-                    <li>Reservation: General (Unreserved)</li>
-                    <li>Current MLA: Yarapathineni Srinivasa Rao</li>
-                  </ul>
-                </div>
-              </div>
-              <div className="col-md-6 col-sm-12">
-                <div className="constituency-key-stats">
-                  <h3>
-                    <TbTool className="const-icon" /> Key Issues Addressed
-                  </h3>
-                  <ul>
-                    <li>Irrigation and water availability for farmers</li>
-                    <li>Support for chilli, cotton and paddy farmers</li>
-                    <li>Rural road connectivity across 4 mandals</li>
-                    <li>Drinking water supply to villages</li>
-                    <li>Employment through industrial projects</li>
-                    <li>Education and skill development for youth</li>
-                    <li>RTC and public transport improvements</li>
-                    <li>
-                      Industrial development — cement and limestone sector
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-          </div>
+          
         </div>
       </section>
     </>

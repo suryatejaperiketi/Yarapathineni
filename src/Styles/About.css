@@ -10,47 +10,9 @@ body{
 
 
 .about-section{
-  margin-top: 20px;
+  margin-top: 1cm;
 }
 
-
-.about-image{
-    position: relative;
-}
-
-.about-image img{
-   width:100%;
-   display:block;
-}
-
-.banner-buttons{
-    position: absolute;
-    bottom: 30px;   
-    left: 150px;   
-}
-
-.banner-buttons .btn{
-    padding: 10px 20px;
-    font-weight: 600;
-}
-
-@media(max-width:768px){
-
-  .banner-buttons{
-      left:50%;
-      transform:translateX(-50%);
-      bottom:10px;
-      display:flex;
-      gap:5px;
-      width:max-content;
-  }
-
-  .banner-buttons .btn{
-      font-size:12px;
-      padding:8px 12px;
-  }
-
-}
 
 .journey-img {
     height: 430px;
@@ -87,6 +49,10 @@ body{
   .journey-icons{
     grid-template-columns:repeat(2,1fr);
   }
+  .about-text{
+  text-align: left;
+ margin-top: 25px;
+}
 }
 
 .journey-icons::before{
@@ -141,6 +107,10 @@ body{
   font-weight: 500;
 }
 
+.about-text{
+  text-align: left;
+}
+
 .achievements-section{
   background-color:#F7F4ED;
 }
@@ -189,12 +159,12 @@ body{
 .news-item{
   display:flex;
   gap:15px;
-  margin-bottom:20px;
+  margin-bottom:8px;
 }
 
 .news-item img{
   width:130px;
-  height:120px;
+  /* height:120px; */
   object-fit:cover;
   flex-shrink:0;
   background:#fff;
