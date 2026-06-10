@@ -19,7 +19,7 @@ import aboutimg from "../../assests/about.png";
 import facebookimg from "../../assests/facebook.png";
 import instaimg from "../../assests/instagram.png";
 import ximg from "../../assests/twitter.png";
-import ldshipimg from "../../assests/publicmeet1.jpg"
+import ldshipimg from "../../assests/publicmeet1.jpg";
 import ldshipimg1 from "../../assests/publicmeet7.jpg";
 import ldshipimg2 from "../../assests/publicmeet10.jpg";
 import ldshipimg3 from "../../assests/publicmeet14.jpg";
@@ -155,113 +155,127 @@ function About() {
 
         <div className="news-gallery-section py-4 p-3">
           <div className="row">
-            <div className="col-lg-4">
-              <div className="about-text">
-                <h6 className="text-warning">PHOTO GALLERY</h6>
-                <h3>Moments of Leadership</h3>
+           
+            <div className="col-lg-4 d-flex">
+              <div className="section-card">
+                <div className="about-text">
+                  <h6 className="text-warning">PHOTO GALLERY</h6>
+                  <h3>Moments of Leadership</h3>
 
-                <button
-                  onClick={() => navigate("/photos")}
-                  className="btn btn-danger mb-3"
-                >
-                  View Gallery
+                  <button
+                    onClick={() => navigate("/photos")}
+                    className="btn btn-danger mb-3"
+                  >
+                    View Gallery
+                  </button>
+                </div>
+
+                <div className="gallery-grid">
+                  <img src={ldshipimg3} alt="" />
+                  <img src={ldshipimg1} alt="" />
+                  <img src={ldshipimg2} alt="" />
+                  <img src={ldshipimg} alt="" />
+                </div>
+              </div>
+            </div>
+
+            {/* LATEST NEWS */}
+            <div className="col-lg-4 d-flex">
+              <div className="section-card">
+                <div className="about-text">
+                  <h6 className="text-warning">LATEST NEWS</h6>
+                  <h3>Stay Updated</h3>
+                </div>
+
+                <div className="news-item">
+                  <img src={newsimg} alt="NewsImage" />
+                  <div className="news-item-content">
+                    <h6>April 2026</h6>
+                    <p>
+                      Yarapathineni Srinivasa Rao Addresses Public Meeting in
+                      Gurazala
+                    </p>
+                    <Link className="read-more" to="/article">
+                      Read More →
+                    </Link>
+                  </div>
+                </div>
+
+                <div className="news-item">
+                  <img src={newsimg1} alt="NewsImage" />
+                  <div className="news-item-content">
+                    <h6>June 2025</h6>
+                    <p>Development Projects Reviewed In Palnadu Region</p>
+                    <Link className="read-more" to="/article">
+                      Read More →
+                    </Link>
+                  </div>
+                </div>
+
+                <div className="news-item">
+                  <img src={newsimg2} alt="NewsImage" />
+                  <div className="news-item-content">
+                    <h6>May 2025</h6>
+                    <p>Standing Strong For Farmer's Right</p>
+                    <Link className="read-more" to="/article">
+                      Read More →
+                    </Link>
+                  </div>
+                </div>
+
+                <button className="btn btn-outline-danger w-100 mt-auto">
+                  View All News
                 </button>
               </div>
-
-              <div className="gallery-grid">
-                <img src={ldshipimg3} alt="" />
-                <img src={ldshipimg1} alt="" />
-                <img src={ldshipimg2} alt="" />
-                <img src={ldshipimg} alt="" />
-              </div>
             </div>
 
-            <div className="col-lg-4">
-              <div className="about-text">
-                <h6 className="text-warning">LATEST NEWS</h6>
-                <h3>Stay Updated</h3>
-              </div>
-              <div className="news-item">
-                <img src={newsimg} alt="" />
-                <div className="news-item-content">
-                  <h6>April 2026</h6>
-                  <p>
-                    Yarapathineni Srinivasa Rao Addresses Public Meeting in
-                    Gurazala
-                  </p>
-                  <Link className="read-more" to="/article">
-                    Read More →
-                  </Link>
+            {/* MEDIA HIGHLIGHTS */}
+            <div className="col-lg-4 d-flex">
+              <div className="section-card">
+                <div className="about-text">
+                  <h6 className="text-warning">MEDIA HIGHLIGHTS</h6>
+                  <h3>In the News</h3>
                 </div>
-              </div>
 
-              <div className="news-item">
-                <img src={newsimg1} alt="" />
-                <div className="news-item-content">
-                  <h6>June 2025</h6>
-                  <p>Development Projects Reviewed In Palnadu Region</p>
-                  <Link className="read-more" to="/article">
-                    Read More →
-                  </Link>
+                <img
+                  src={mediahighlightsimg}
+                  alt="About img"
+                  className="img-fluid media-banner"
+                />
+
+                <div className="media-grid">
+                  <a
+                    href="https://www.facebook.com/YarapathineniSrinu/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <img src={facebookimg} alt="Facebook" />
+                  </a>
+
+                  <a
+                    href="https://www.instagram.com/yarapathineni_srinivasarao/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <img src={instaimg} alt="Instagram" />
+                  </a>
+
+                  <a
+                    href="https://x.com/Yarapathineni_S"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <img src={ximg} alt="Twitter" />
+                  </a>
                 </div>
-              </div>
 
-              <div className="news-item">
-                <img src={newsimg2} alt="" />
-                <div className="news-item-content">
-                  <h6>May 2025</h6>
-                  <p>Standing Strong For Farmer's Right</p>
-                  <Link className="read-more" to="/article">
-                    Read More →
-                  </Link>
-                </div>
-              </div>
-
-              <button className="btn btn-outline-danger mt-3 w-100">
-                View All News
-              </button>
-            </div>
-
-            <div className="col-lg-4">
-              <div className="about-text">
-                <h6 className="text-warning">MEDIA HIGHLIGHTS</h6>
-                <h3>In the News</h3>
-              </div>
-              <img
-                src={mediahighlightsimg}
-                alt="About img"
-                className="img-fluid media-banner"
-              />
-              <div className="media-grid">
-                <a
-                  href="https://www.facebook.com/YarapathineniSrinu/"
-                  target="_blank"
-                  rel="noopener noreferrer"
+                <button
+                  onClick={() => navigate("/videos")}
+                  className="btn btn-outline-danger w-100 mt-auto"
                 >
-                  <img src={facebookimg} alt="Facebook" />
-                </a>
-                <a
-                  href="https://www.instagram.com/yarapathineni_srinivasarao/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <img src={instaimg} alt="Instagram" />
-                </a>
-                <a
-                  href="https://x.com/Yarapathineni_S"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <img src={ximg} alt="Twitter" />
-                </a>
+                  View Media
+                </button>
               </div>
-
-              <button
-                onClick={() => navigate("/videos")}
-                className="btn btn-outline-danger mt-3 w-100"
-              >
-                View Media
-              </button>
             </div>
           </div>
         </div>

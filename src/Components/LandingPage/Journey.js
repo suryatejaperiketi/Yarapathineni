@@ -16,7 +16,7 @@ const timelineData = [
     title: "Grassroots beginnings",
     color: "#c8a96e",
     description:
-      "A young, driven individual joins the party with conviction and purpose. From the ground up, he builds relationships with people, understands their struggles, and channels that energy into grassroots outreach and party work. His loyalty to the party begins here and never wavers.",
+      "A young, driven individual joins the party with conviction and purpose. He builds strong connections with people, understands their struggles, and dedicates himself to grassroots outreach and party work. His loyalty to the party remains unwavering",
   },
   {
     decade: "1980s",

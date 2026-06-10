@@ -207,3 +207,22 @@ body{
   top: -15px;
   text-decoration: none;
 }
+
+.news-gallery-section .row {
+  align-items: stretch;
+}
+
+.news-gallery-section .col-lg-4 {
+  display: flex;
+}
+
+.section-card {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+}
+
+.section-card .btn {
+  margin-top: auto;
+}

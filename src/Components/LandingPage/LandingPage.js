@@ -15,9 +15,9 @@ function LandingPage() {
     <HeroSection/>
     <About/>
     <Work/>
-    <Journey/>
+    {/* <Journey/> */}
     <People/>
-    <ContactUs/> 
+    {/* <ContactUs/>  */}
    </>
 
    
