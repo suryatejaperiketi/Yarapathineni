@@ -21,6 +21,7 @@
     .footer-col{
         text-align: left;
     }
+  
 }
 
 .footer-col h4 {
@@ -67,8 +68,30 @@
 .social-icons-foot {
   display: flex;
   gap: 12px;
+  justify-content: flex-start;
   margin-top: 15px;
 }
+
+@media (max-width: 991px) {
+  .footer-col {
+    text-align: center;
+  }
+
+  .social-icons-foot {
+    justify-content: center;
+  }
+
+  .footer-logo {
+    display: block;
+    margin: 0 auto;
+  }
+}
+
+
+
+
+
+
 
 .social-icons-foot a {
   width: 35px;
@@ -127,10 +150,8 @@
     grid-template-columns: 1fr;
     text-align:center;
   }
-
-  .social-icons{
-    justify-content:center;
-  }
+  
+ 
 
   .newsletter{
     /* flex-direction:column; */
@@ -149,3 +170,4 @@
     font-size: large;
     margin-right: 3px;
 }
+
