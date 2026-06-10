@@ -248,6 +248,7 @@
 .item-title {
   font-family: 'Playfair Display', serif;
   font-size: 25px;
+  text-align: left;
   font-weight: 600;
   color: #1a1208;
   margin-bottom: 8px;
@@ -264,6 +265,7 @@
   font-weight: 400;
   line-height: 1.7;
   color: #5a5045;
+  text-align: left;
   max-width: 520px;
 }
 
