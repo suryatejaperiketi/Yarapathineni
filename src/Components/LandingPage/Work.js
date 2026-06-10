@@ -14,8 +14,8 @@ export default function DevelopmentWork() {
  
   return (
     <>
-      <section className="development-sec">
-        <h1 className="develop-head">DEVELOPMENT</h1>
+      <section className="development-sec py-3">
+        <h2 className="develop-head">DEVELOPMENT</h2>
         <div className="container">
           <div className="development-card">
             <div className="row g-0 align-items-center">

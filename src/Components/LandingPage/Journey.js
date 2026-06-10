@@ -1,6 +1,11 @@
 import React, { useState, useEffect, useRef } from "react";
 import "../../Styles/Journey.css";
-import img1970 from "../../assests/allpics4.jpg";
+import img1970 from "../../assests/srntr.png";
+import img1980 from "../../assests/1980's.png";
+import img1990 from "../../assests/1990's.png";
+import img2000 from "../../assests/2000's.png";
+import img2010 from "../../assests/leaders1.jpg";
+import img2020 from "../../assests/allpics.jpg";
 import journeymg from "../../assests/banner1.png";
 
 const timelineData = [
@@ -16,7 +21,7 @@ const timelineData = [
   {
     decade: "1980s",
     label: "RISE",
-    image: img1970,
+    image: img1980,
     title: "Organizational strength & discipline",
     color: "#b5956a",
     description:
@@ -25,7 +30,7 @@ const timelineData = [
   {
     decade: "1990s",
     label: "INFLUENCE",
-    image: img1970,
+    image: img1990,
     title: "Rise in political influence",
     color: "#a07d55",
     description:
@@ -34,7 +39,7 @@ const timelineData = [
   {
     decade: "2000s",
     label: "ADVOCACY",
-    image: img1970,
+    image: img2000,
     title: "Advocacy for development & welfare",
     color: "#8a6840",
     description:
@@ -43,7 +48,7 @@ const timelineData = [
   {
     decade: "2010s",
     label: "LEADERSHIP",
-    image: img1970,
+    image: img2010,
     title: "Leadership & regional presence",
     color: "#755430",
     description:
@@ -52,7 +57,7 @@ const timelineData = [
   {
     decade: "2020s",
     label: "PRESENT",
-    image: img1970,
+    image: img2020,
     title: "Vision for the future",
     color: "#5e4025",
     description:
@@ -160,6 +165,7 @@ function Journey() {
               loading="lazy"
             ></iframe>
           </div>
+          <br/>
           
         </div>
       </section>

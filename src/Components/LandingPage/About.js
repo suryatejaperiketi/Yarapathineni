@@ -153,7 +153,7 @@ function About() {
           </div>
         </div>
 
-        <div className="news-gallery-section py-5 p-3">
+        <div className="news-gallery-section py-4 p-3">
           <div className="row">
             <div className="col-lg-4">
               <div className="about-text">
