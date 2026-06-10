@@ -2,7 +2,12 @@ import React from "react";
 import "../../Styles/SpiritualInitiatives.css";
 import { MdTempleHindu } from "react-icons/md";
 import { FaMapMarkerAlt } from "react-icons/fa";
-import { FaCalendarDays, FaBowlFood, FaOm, FaHandsPraying } from "react-icons/fa6";
+import {
+  FaCalendarDays,
+  FaBowlFood,
+  FaOm,
+  FaHandsPraying,
+} from "react-icons/fa6";
 
 import Kalyanamahotsavamimg from "../../assests/Kalyanamahotsavam.png";
 import gallery1 from "../../assests/allpics.jpg";
@@ -12,12 +17,10 @@ import kmvimg3 from "../../assests/kalyanamohotsavamimg3.jpg";
 import kmvimg4 from "../../assests/kalyanamohotsavamimg4.jpg";
 import muslimimg from "../../assests/muslimbg.png";
 import christianimg from "../../assests/christianbg.png";
-// import christianimg1 from "../../assests/christmascel.jpg";
-// import christianimg2 from "../../assests/christmascel1.jpg";
-// import christianimg3 from "../../assests/christmascel2.jpg";
-// import christianimg4 from "../../assests/christmascel3.jpg";
-
-const galleryImages = [kmvimg1, kmvimg2, kmvimg3, kmvimg4];
+import christianimg1 from "../../assests/christmascel.jpg";
+import christianimg2 from "../../assests/christmascel1.jpg";
+import christianimg3 from "../../assests/christmascel2.jpg";
+import christianimg4 from "../../assests/christmascel3.jpg";
 
 const spiritualEvents = [
   {
@@ -73,6 +76,7 @@ const spiritualEvents = [
     titleMain: "Merry",
     titleSpan: "Christmas Celebration",
     image: christianimg,
+    galleryImages: [christianimg1, christianimg2, christianimg3, christianimg4],
     supportWith: "Yarapathineni Srinivasa Rao Garu",
     venue: "Gangavaram",
     event: "Christmas Celebrations",
@@ -116,15 +120,15 @@ const spiritualEvents = [
     titleMain: "Blessed",
     titleSpan: "Eid Mubarak Celebrations",
     image: muslimimg,
+    galleryImages: [kmvimg1, kmvimg2, kmvimg3, kmvimg4],
     supportWith: "Yarapathineni Srinivasa Rao Garu",
     venue: "Piduguralla",
     event: "Eid Mubarak Celebrations",
     description1: (
       <>
-        Under the leadership{" "}
-        <strong>Yarapathineni Srinivasa Rao Garu</strong>, the grand Eid
-        celebrations were organized to promote the values of peace, unity,
-        compassion, and brotherhood among the people.
+        Under the leadership <strong>Yarapathineni Srinivasa Rao Garu</strong>,
+        the grand Eid celebrations were organized to promote the values of
+        peace, unity, compassion, and brotherhood among the people.
       </>
     ),
     description2:
@@ -178,7 +182,11 @@ function SpiritualInitiatives() {
                   </div>
                 </div>
                 <div className="col-lg-7 col-md-6">
-                  <img src={event.image} alt={event.event} className="spiritual-img" />
+                  <img
+                    src={event.image}
+                    alt={event.event}
+                    className="spiritual-img"
+                  />
                 </div>
               </div>
             </div>
@@ -188,21 +196,27 @@ function SpiritualInitiatives() {
           <section className="highlights-section p-3 mb-2">
             <div className="highlights-grid">
               <div className="highlights-card">
-                <div className="highlights-icon"><MdTempleHindu /></div>
+                <div className="highlights-icon">
+                  <MdTempleHindu />
+                </div>
                 <div className="highlights-content">
                   <h6>Support With</h6>
                   <h6>{event.supportWith}</h6>
                 </div>
               </div>
               <div className="highlights-card">
-                <div className="highlights-icon"><FaMapMarkerAlt /></div>
+                <div className="highlights-icon">
+                  <FaMapMarkerAlt />
+                </div>
                 <div className="highlights-content">
                   <h6>Venue</h6>
                   <h5>{event.venue}</h5>
                 </div>
               </div>
               <div className="highlights-card">
-                <div className="highlights-icon"><FaCalendarDays /></div>
+                <div className="highlights-icon">
+                  <FaCalendarDays />
+                </div>
                 <div className="highlights-content">
                   <h6>Event</h6>
                   <h5>{event.event}</h5>
@@ -251,18 +265,24 @@ function SpiritualInitiatives() {
             <div className="container text-center">
               <h6 className="section-tag">PHOTO GALLERY</h6>
               <h2>Moments of Devotion</h2>
-              <button className="view-gallery-btn mt-4">View Full Gallery</button>
+              <button className="view-gallery-btn mt-4">
+                View Full Gallery
+              </button>
               <div className="row g-3 mt-2">
-                {event.galleryImages.map((img, idx) => (
-                  <div className="col-lg-3 col-md-6" key={idx}>
-                    <img src={img} alt="" className="gallery-img" />
-                  </div>
-                ))}
+                {event.galleryImages?.length > 0 ? (
+                  event.galleryImages.map((img, idx) => (
+                    <div className="col-lg-3 col-md-6" key={idx}>
+                      <img src={img} alt="" className="gallery-img" />
+                    </div>
+                  ))
+                ) : (
+                  <p>No gallery images available</p>
+                )}
               </div>
             </div>
           </section>
 
-          {/* ── Leader Card ── */}
+     
           <section className="leader-section">
             <div className="container">
               <div className="leader-card">
@@ -283,9 +303,18 @@ function SpiritualInitiatives() {
                   </div>
                   <div className="col-lg-3">
                     <div className="leader-points">
-                      <div className="point"><span>🙏</span><p>Thousands of Devotees</p></div>
-                      <div className="point"><span>✨</span><p>Divine Blessings</p></div>
-                      <div className="point"><span>🕊️</span><p>Peace, Prosperity & Well-being</p></div>
+                      <div className="point">
+                        <span>🙏</span>
+                        <p>Thousands of Devotees</p>
+                      </div>
+                      <div className="point">
+                        <span>✨</span>
+                        <p>Divine Blessings</p>
+                      </div>
+                      <div className="point">
+                        <span>🕊️</span>
+                        <p>Peace, Prosperity & Well-being</p>
+                      </div>
                     </div>
                   </div>
                 </div>
