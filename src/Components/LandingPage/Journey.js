@@ -149,26 +149,7 @@ function Journey() {
         </div>
       </section>
 
-      <section className="constitution-section">
-        <div className="constitution-container">
-          <div className="section-tag">Constituency</div>
-          <h3>Gurazala — Our Constituency</h3>
-          <p>
-            Assembly Constituency No. 100 · Palnadu District · Andhra Pradesh
-          </p>
-          <div className="container">
-            <iframe
-              title="Gurazala Satellite View"
-              src="https://maps.google.com/maps?q=Gurazala,Andhra%20Pradesh&t=k&z=13&output=embed"
-              style={{ width: "100%", height: "70vh", border: "0" }}
-              allowFullScreen
-              loading="lazy"
-            ></iframe>
-          </div>
-          <br/>
-          
-        </div>
-      </section>
+     
     </>
   );
 }

@@ -26,7 +26,7 @@ const Footer = () => {
               Palnadu
             </p>
 
-            <div className="social-icons">
+            <div className="social-icons-foot">
                <a href="https://www.facebook.com/YarapathineniSrinu/" target="_blank" rel="noopener noreferrer">
                 <FaFacebookF />
               </a>

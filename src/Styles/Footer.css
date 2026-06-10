@@ -64,13 +64,13 @@
   color: #f8c100;
 }
 
-.social-icons {
+.social-icons-foot {
   display: flex;
   gap: 12px;
   margin-top: 15px;
 }
 
-.social-icons a {
+.social-icons-foot a {
   width: 35px;
   height: 35px;
   background: #f8c100;
