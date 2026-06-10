@@ -494,7 +494,7 @@ textarea.form-control {
 
 .contact-content {
   display: flex;
-  align-items: flex-start;
+  align-items: center;
   gap: 18px;
   padding: 15px;
   background: #fff;
@@ -521,6 +521,12 @@ textarea.form-control {
   color: #111;
   font-size: 20px;
   flex-shrink: 0;
+}
+
+@media(min-width:992px){
+    .contact-text{
+        text-align: left;
+    }
 }
 
 .contact-text h6 {

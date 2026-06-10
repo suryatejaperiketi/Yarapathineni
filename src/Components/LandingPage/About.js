@@ -217,7 +217,7 @@ function About() {
                 </div>
               </div>
 
-              <button className="btn btn-outline-danger mt-2 w-100">
+              <button className="btn btn-outline-danger mt-3 w-100">
                 View All News
               </button>
             </div>

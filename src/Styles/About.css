@@ -159,7 +159,7 @@ body{
 .news-item{
   display:flex;
   gap:15px;
-  margin-bottom:8px;
+  margin-bottom:15px;
 }
 
 .news-item img{
