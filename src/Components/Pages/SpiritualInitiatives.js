@@ -12,10 +12,10 @@ import kmvimg3 from "../../assests/kalyanamohotsavamimg3.jpg";
 import kmvimg4 from "../../assests/kalyanamohotsavamimg4.jpg";
 import muslimimg from "../../assests/muslimbg.png";
 import christianimg from "../../assests/christianbg.png";
-import christianimg1 from "../../assests/christmascel.jpg";
-import christianimg2 from "../../assests/christmascel1.jpg";
-import christianimg3 from "../../assests/christmascel2.jpg";
-import christianimg4 from "../../assests/christmascel3.jpg";
+// import christianimg1 from "../../assests/christmascel.jpg";
+// import christianimg2 from "../../assests/christmascel1.jpg";
+// import christianimg3 from "../../assests/christmascel2.jpg";
+// import christianimg4 from "../../assests/christmascel3.jpg";
 
 const galleryImages = [kmvimg1, kmvimg2, kmvimg3, kmvimg4];
 
