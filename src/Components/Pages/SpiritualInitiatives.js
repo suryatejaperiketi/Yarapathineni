@@ -1,7 +1,7 @@
 import React from "react";
 import "../../Styles/SpiritualInitiatives.css";
 import { MdTempleHindu } from "react-icons/md";
-import { FaMapMarkerAlt } from "react-icons/fa";
+import { FaMapMarkerAlt, FaChurch, FaMosque } from "react-icons/fa";
 import {
   FaCalendarDays,
   FaBowlFood,
@@ -21,6 +21,10 @@ import christianimg1 from "../../assests/christmascel.jpg";
 import christianimg2 from "../../assests/christmascel1.jpg";
 import christianimg3 from "../../assests/christmascel2.jpg";
 import christianimg4 from "../../assests/christmascel3.jpg";
+import muslimimg1 from "../../assests/muslims.jpg";
+import muslimimg2 from "../../assests/muslims1.jpg";
+import muslimimg3 from "../../assests/muslims2.jpg";
+import muslimimg4 from "../../assests/muslims3.jpg";
 
 const spiritualEvents = [
   {
@@ -31,6 +35,7 @@ const spiritualEvents = [
     image: Kalyanamahotsavamimg,
     galleryImages: [kmvimg1, kmvimg2, kmvimg3, kmvimg4],
     supportWith: "TTD & Yarapathineni Srinivasa Rao Garu",
+    supportIcon: <MdTempleHindu />,
     venue: "Piduguralla",
     event: "Sri Srinivasa Kalyana Mahotsavam",
     description1: (
@@ -72,12 +77,13 @@ const spiritualEvents = [
   },
   {
     id: 2,
-    subtitle: "Merry",
+  
     titleMain: "Merry",
     titleSpan: "Christmas Celebration",
     image: christianimg,
     galleryImages: [christianimg1, christianimg2, christianimg3, christianimg4],
     supportWith: "Yarapathineni Srinivasa Rao Garu",
+    supportIcon: <FaChurch/>,
     venue: "Gangavaram",
     event: "Christmas Celebrations",
     description1: (
@@ -91,10 +97,10 @@ const spiritualEvents = [
       </>
     ),
     description2:
-      "Thousands of devotees and Christian families gathered to receive God's blessings and participate in the grand Christmas celebrations, fostering harmony, compassion, and goodwill throughout the community.",
+      "Thousands of devotees and Christian families gathered to receive God's blessings and participate in the grand Christmas celebrations, fostering harmony, compassion, and good will throughout the community.",
     highlights: [
       {
-        icon: <MdTempleHindu />,
+        icon: <FaChurch/>,
         title: "Christmas Celebrations",
         desc: "The divine Birthday of Jesus Christ.",
       },
@@ -120,8 +126,9 @@ const spiritualEvents = [
     titleMain: "Blessed",
     titleSpan: "Eid Mubarak Celebrations",
     image: muslimimg,
-    galleryImages: [kmvimg1, kmvimg2, kmvimg3, kmvimg4],
+    galleryImages: [muslimimg1, muslimimg2, muslimimg3, muslimimg4],
     supportWith: "Yarapathineni Srinivasa Rao Garu",
+    supportIcon: <FaMosque/>,
     venue: "Piduguralla",
     event: "Eid Mubarak Celebrations",
     description1: (
@@ -135,7 +142,7 @@ const spiritualEvents = [
       "The occasion brought together families, community leaders, and well-wishers to celebrate the spirit of Eid through prayers, fellowship, charity, and festive gatherings. Eid is widely celebrated as a time of gratitude, generosity, and togetherness.",
     highlights: [
       {
-        icon: <MdTempleHindu />,
+        icon: <FaMosque />,
         title: "Eid Celebrations",
         desc: "Grand Eid gathering promoting peace, unity, and brotherhood.",
       },
@@ -197,7 +204,7 @@ function SpiritualInitiatives() {
             <div className="highlights-grid">
               <div className="highlights-card">
                 <div className="highlights-icon">
-                  <MdTempleHindu />
+                    {event.supportIcon}
                 </div>
                 <div className="highlights-content">
                   <h6>Support With</h6>
@@ -282,7 +289,6 @@ function SpiritualInitiatives() {
             </div>
           </section>
 
-     
           <section className="leader-section">
             <div className="container">
               <div className="leader-card">
