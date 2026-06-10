@@ -206,7 +206,7 @@ const Cmrf = () => {
               <div key={index} className="col-lg-6 col-md-6 col-12 mb-4">
                 <div className="card cmrf-card h-100">
                   <div className="row g-0 align-items-center h-100">
-                    {/* Image Section */}
+                 
                     <div className="col-4">
                       <div
                         className="cmrf-img-wrapper"
