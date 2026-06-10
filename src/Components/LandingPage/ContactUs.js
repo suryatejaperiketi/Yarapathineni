@@ -312,7 +312,7 @@ function ContactUs() {
             <div className="col-lg-7">
               <span className="contact-badge">CONTACT MLA GARU</span>
               <h1>
-                Reach Your MLA —<span>Your Voice Matters</span>
+                Reach Our MLA —<span>Your Voice Matters</span>
               </h1>
               <p>
                 Submit grievances, welfare requests, development suggestions and
