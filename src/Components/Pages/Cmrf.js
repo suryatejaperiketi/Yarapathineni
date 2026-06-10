@@ -143,7 +143,7 @@ const Cmrf = () => {
   const displayData = filteredData === null ? beneficiaryDetails : filteredData;
 
   return (
-    <div className="main-container-cmrf">
+    <div className="main-container-cmrf pt-3">
       <div className="container py-2">
         <h2 className="cmrf-heading ">CMRF Beneficiary Details</h2>
 

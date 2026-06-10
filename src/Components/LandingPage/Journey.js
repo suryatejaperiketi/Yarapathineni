@@ -16,7 +16,7 @@ const timelineData = [
     title: "Grassroots beginnings",
     color: "#c8a96e",
     description:
-      "A young, driven individual joins the party with conviction and purpose. From the ground up, he begins building relationships with common people, understanding their struggles, and channeling that energy into grassroots outreach and party work. His loyalty to the party begins here — and never wavers.",
+      "A young, driven individual joins the party with conviction and purpose. From the ground up, he builds relationships with people, understands their struggles, and channels that energy into grassroots outreach and party work. His loyalty to the party begins here and never wavers.",
   },
   {
     decade: "1980s",
@@ -24,8 +24,7 @@ const timelineData = [
     image: img1980,
     title: "Organizational strength & discipline",
     color: "#b5956a",
-    description:
-      "Earning a reputation as a disciplined and dependable party worker, he actively contributes to strengthening the party's organizational framework. His loyalty, persistence, and dedication earn the trust of both senior leadership and fellow cadres. One party. Always.",
+    description:"Known as a disciplined and dependable party worker, he strengthens the party's organization through loyalty, persistence, and dedication, earning the trust of leaders and cadres alike. One party. Always"
   },
   {
     decade: "1990s",
@@ -34,7 +33,7 @@ const timelineData = [
     title: "Rise in political influence",
     color: "#a07d55",
     description:
-      "Consistent public service and party contributions elevate his standing. He takes on larger responsibilities, serves as a bridge between party leadership and the people, and begins shaping community-focused development initiatives in Palnadu — still committed to the same party and vision.",
+      "His public service and party contributions earn him greater responsibilities. Bridging party leadership and the people, he helps drive community-focused development in Palnadu while remaining committed to the same party and vision",
   },
   {
     decade: "2000s",
@@ -43,7 +42,7 @@ const timelineData = [
     title: "Advocacy for development & welfare",
     color: "#8a6840",
     description:
-      "With two decades of service behind him, he champions people-first initiatives advocating for public welfare, regional development, and community empowerment across Andhra Pradesh. His voice becomes a symbol of stability within the party. His ideological principles remain unchanged.",
+      "With two decades of service, he advocates for public welfare, regional development, and community empowerment across Andhra Pradesh. A symbol of stability within the party, his principles remain unchanged",
   },
   {
     decade: "2010s",
@@ -52,7 +51,7 @@ const timelineData = [
     title: "Leadership & regional presence",
     color: "#755430",
     description:
-      "Playing a pivotal role in strengthening the party at local and national levels, he mentors younger leaders and party workers. His unwavering loyalty across political upheavals and changes sets him apart as a rare constant in Andhra Pradesh politics.",
+      "A key force in strengthening the party, he mentors young leaders and workers. His unwavering loyalty through political changes sets him apart as a rare constant in Andhra Pradesh politics.",
   },
   {
     decade: "2020s",
@@ -61,7 +60,7 @@ const timelineData = [
     title: "Vision for the future",
     color: "#5e4025",
     description:
-      "Still active and still committed — Yarapathineni Srinivasa Rao continues to inspire cadres and constituents alike. A living example of integrity, perseverance, and selfless dedication, he remains a cornerstone of the party's strength in Palnadu and beyond. 46+ years. One party. One vision.",
+      "Yarapathineni Srinivasa Rao continues to inspire cadres and constituents through his integrity, perseverance, and dedication. A pillar of the party's strength in Palnadu and beyond. 46+ years. One party. One vision.",
   },
 ];
 
