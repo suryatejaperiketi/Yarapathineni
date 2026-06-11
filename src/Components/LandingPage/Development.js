@@ -187,10 +187,10 @@ export default function Development() {
 
       </div>
 
-      <div className="lop-passbook-icons">
+      {/* <div className="lop-passbook-icons">
         <div className="lop-passbook-qr">📱</div>
         <div className="lop-passbook-lock">🔒</div>
-      </div>
+      </div> */}
     </div>
 
     <div className="lop-content-right">
