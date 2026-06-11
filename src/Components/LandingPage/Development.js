@@ -10,7 +10,7 @@ import development7img from "../../assests/Inagurations2.jpg";
 import development8img from "../../assests/Inagurations3.jpg";
 
 
-export default function DevelopmentWork() {
+export default function Development() {
  
   return (
     <>

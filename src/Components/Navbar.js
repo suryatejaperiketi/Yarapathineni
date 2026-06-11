@@ -81,7 +81,7 @@ function Navbar() {
                   <li>
                     <NavLink
                       className="dropdown-item"
-                      to="/works"
+                      to="/development"
                       onClick={closeNavbar}
                     >
                       Development
