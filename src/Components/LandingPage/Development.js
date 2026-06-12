@@ -129,7 +129,7 @@ export default function Development() {
 
 
       <section className="lop-infra">
-  <div className="lop-infra-heading">
+  <div className="lop-infra-heading mb-3 mt-3">
     <div className="lop-infra-top-icon"><FaBuilding style={{color:"green"}}/></div>
 
     <h2>Infrastructure Development</h2>

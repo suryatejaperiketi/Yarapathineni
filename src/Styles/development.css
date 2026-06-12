@@ -90,6 +90,7 @@
 @media(max-width:768px){
   .lop-infra-heading {
       background-image: url("../assests/infrabgmob.png");
+      /* margin-bottom: 10px !important; */
   }
 }
 
@@ -101,8 +102,8 @@
 }
 
 .lop-infra-top-icon {
-  width: 90px;
-  height: 90px;
+  width: 80px;
+  height: 80px;
   margin: auto;
   border-radius: 50%;
   background: #fff;
@@ -187,8 +188,8 @@
   left: 50%;
   top: 220px;
   transform: translateX(-50%);
-  width: 90px;
-  height: 90px;
+  width: 75px;
+  height: 75px;
   background: #fff;
   color: #072d72;
   border-radius: 50%;
