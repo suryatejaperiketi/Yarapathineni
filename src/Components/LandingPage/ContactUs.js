@@ -17,7 +17,7 @@ import {
 } from "react-icons/fa6";
 import { MdEmail } from "react-icons/md";
 import { FaMapMarkerAlt, FaLightbulb, FaAmbulance } from "react-icons/fa";
-import sampleimg from "../../assests/allpics.jpg";
+import sampleimg from "../../assests/allpics.png";
 import "../../Styles/ContactUs.css";
 
 function ContactUs() {

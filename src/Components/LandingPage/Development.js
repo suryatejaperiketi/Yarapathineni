@@ -5,7 +5,8 @@ import {
   FaLink,
   FaMobileAlt,
   FaRulerCombined,
-  FaLaptop
+  FaLaptop,
+  FaBuilding
 } from "react-icons/fa";
 import dbannerimg from "../../assests/developmentbanner.png";
 import roadimg from "../../assests/road.png";
@@ -130,29 +131,54 @@ export default function Development() {
       </section>
      
 
-      {/* INFRASTRUCTURE DEVELOPMENT */}
-      <section className="lop-section lop-infra">
-        <div className="lop-section-header">
-          <span className="lop-section-icon dark">🏛️</span>
-          <h2>Infrastructure Development</h2>
+
+      <section className="lop-infra">
+  <div className="lop-infra-heading">
+    <div className="lop-infra-top-icon"><FaBuilding style={{color:"green"}}/></div>
+
+    <h2>Infrastructure Development</h2>
+
+    <div className="lop-infra-divider">
+      <span></span>
+    </div>
+
+    <p>
+      Building better roads for stronger communities and a brighter future.
+    </p>
+  </div>
+
+  <div className="lop-infra-grid">
+    {infrastructureData.map((item, i) => (
+      <div key={i} className="lop-infra-card">
+
+        <div className="lop-infra-img">
+          <img src={item.img} alt={item.title} />
         </div>
-        <div className="lop-infra-grid">
-          {infrastructureData.map((item, i) => (
-            <div key={i} className="lop-infra-card">
-              <div className="lop-infra-card-header">
-                <span className="lop-infra-icon">🏙️</span>
-                <div>
-                  <h3>{item.title}</h3>
-                  <p>{item.desc}</p>
-                </div>
-              </div>
-              <div className="lop-infra-img">
-                <img src={item.img} alt={item.title} />
-              </div>
+
+        <div className="lop-floating-icon">
+          <FaBuilding/>
+        </div>
+
+        <div className="lop-card-content">
+          <h3>{item.title}</h3>
+
+          <div className="lop-card-divider">
+            <span></span>
+          </div>
+
+          <p>{item.desc}</p>
+
+          {item.amount && (
+            <div className="lop-amount">
+              ₹ {item.amount}
             </div>
-          ))}
+          )}
         </div>
-      </section>
+
+      </div>
+    ))}
+  </div>
+</section>
 
       {/* THREE COLUMN SECTION */}
       <section className="lop-section lop-three-col">

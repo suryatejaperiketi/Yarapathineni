@@ -8,7 +8,7 @@ import photo4 from "../../assests/allpics3.jpg";
 import photo5 from "../../assests/elections.jpg";
 import photo6 from "../../assests/leaders.jpg";
 import photo7 from "../../assests/spiritual.jpg";
-import photo8 from "../../assests/allpics.jpg";
+import photo8 from "../../assests/allpics.png";
 import photo9 from "../../assests/allpics4.jpg";
 import photo10 from "../../assests/allpics5.jpg";
 import photo11 from "../../assests/allpics6.jpg";

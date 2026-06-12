@@ -5,7 +5,7 @@ import img1980 from "../../assests/1980's.png";
 import img1990 from "../../assests/1990's.png";
 import img2000 from "../../assests/2000's.png";
 import img2010 from "../../assests/leaders1.jpg";
-import img2020 from "../../assests/allpics.jpg";
+import img2020 from "../../assests/allpics.png";
 import journeymg from "../../assests/banner1.png";
 
 const timelineData = [
