@@ -8,6 +8,7 @@ import img2010 from "../../assests/leaders1.jpg";
 import img2020 from "../../assests/allpics.png";
 import journeymg from "../../assests/banner1.png";
 
+
 const timelineData = [
   {
     decade: "1970s",

@@ -56,6 +56,7 @@ const impactStats = [
     value: "₹1.91+",
     label: "Crore Development Funds Utilized",
     bgColor: "#1d8a43",
+  
   },
   {
     icon: "👨‍🌾",

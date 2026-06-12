@@ -36,6 +36,10 @@
 .journey-wrapper {
   min-height: 100vh;
   background: #faf8f4;
+  background-image: url(../assests/journeybanner.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
   display: flex;
   justify-content: center;
   padding: 40px 24px 30px;
@@ -43,7 +47,7 @@
 }
 
 .journey-container {
-  width: 100%;
+  width: 80%;
   max-width: 780px;
 }
 
@@ -68,6 +72,8 @@
   }
   .journey-wrapper {
     padding: 40px 24px;
+
+  
 } }
 
 .header-title {
@@ -82,7 +88,7 @@
 .header-rule {
   /* width: 48px; */
   height: 3px;
-  background: #c8a96e;
+  background: #c8a96e;background-image: none;
   border-radius: 2px;
 }
 
@@ -144,6 +150,9 @@
     /* height:180px; */
     object-fit:cover;
   }
+  .decade-label  { 
+    font-size: 8px; 
+  }
 
 }
 
@@ -171,7 +180,7 @@
 }
 
 .decade-label {
-  font-size: 10.5px;
+  font-size: 11.5px;
   font-weight: 600;
   letter-spacing: 0.18em;
   text-transform: uppercase;
@@ -293,8 +302,8 @@
     grid-template-columns: 64px 28px 1fr;
   }
 
-  .decade-number { font-size: 12px; }
-  .decade-label  { font-size: 7px; }
+  .decade-number { font-size: 15px; }
+  .decade-label  { font-size: 8px; }
 
   .item-title { font-size: 15px; }
   .item-desc  { font-size: 13.5px; }

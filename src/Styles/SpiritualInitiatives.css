@@ -361,6 +361,10 @@
     width: auto;
 }
 
+.view-gallery-btn:hover{
+  background-color: #b87a1f;
+  color: #fff;
+}
 
 
 
