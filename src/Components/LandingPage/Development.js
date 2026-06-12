@@ -5,9 +5,10 @@ import {
   FaLink,
   FaMobileAlt,
   FaRulerCombined,
-  FaLaptop,
-  FaBuilding
+  FaBuilding,
+  FaRoad
 } from "react-icons/fa";
+import { PiTrafficConeFill } from "react-icons/pi";
 import dbannerimg from "../../assests/developmentbanner.png";
 import roadimg from "../../assests/road.png";
 import passbookimg from "../../assests/farmerpasbook.png";
@@ -78,8 +79,7 @@ const impactStats = [
 
 const passBookFeatures = [
   "Distribution of new tamper-proof Pattadar Passbooks",
-  "QR Code-enabled verification system",
-  "Blockchain-based land record security",
+ 
   "Digital ownership authentication through Aadhaar-linked e-KYC",
   "Reduction of land disputes through Resurvey 2.0",
   "Easy access to land records through the MeeBhoomi portal",
@@ -99,18 +99,14 @@ const glanceStats = [
   {
     icon: <FaMobileAlt />,
     value: "QR Code Verification",
-    label: "for instant authentication",
+    label: "for instant authentication in Seconds",
   },
   {
     icon: <FaRulerCombined />,
     value: "Resurvey 2.0",
     label: "underway across Andhra Pradesh",
   },
-  {
-    icon: <FaLaptop />,
-    value: "Digital Land Records",
-    label: "accessible online through MeeBhoomi portal",
-  },
+
 ];
 
 export default function Development() {
@@ -252,6 +248,8 @@ export default function Development() {
 
 </div>
 
+
+
         {/* URBAN DEVELOPMENT */}
         <div className="lop-urban-col">
           <div className="lop-urban-card">
@@ -281,6 +279,7 @@ export default function Development() {
               </div>
             </div>
             
+            
           </div>
           
 
@@ -306,25 +305,63 @@ export default function Development() {
     <strong>Source:</strong> The Times of India 🔗
   </p>
 </div>
+
+
         </div>
 
         {/* NUDA */}
-        <div className="lop-nuda-card">
-          <div className="lop-nuda-header">
-            <span className="lop-nuda-icon">💰</span>
-            <h3>NUDA Development Funds</h3>
-          </div>
-          <p className="lop-nuda-sub">Infrastructure &amp; Civic Improvement</p>
-          <div className="lop-nuda-amount">₹1.91 Crore</div>
-          <div className="lop-nuda-chart">
-            <div className="lop-nuda-arrow">📈</div>
-            <div className="lop-nuda-moneybag">💰</div>
-          </div>
-          <p className="lop-nuda-desc">
-            Approximately of NUDA Funds utilized for developmental activities benefiting residents and improving public
-            infrastructure.
-          </p>
-        </div>
+       <div className="lop-right-column">
+
+  {/* NUDA */}
+  <div className="lop-nuda-card">
+    <div className="lop-nuda-header">
+      <span className="lop-nuda-icon">💰</span>
+      <h3>NUDA Development Funds</h3>
+    </div>
+
+    <p className="lop-nuda-sub">
+      Infrastructure & Civic Improvement
+    </p>
+
+    <div className="lop-nuda-amount">
+      ₹1.91 Crore
+    </div>
+
+    <div className="lop-nuda-chart">
+      <div className="lop-nuda-arrow">📈</div>
+      <div className="lop-nuda-moneybag">💰</div>
+    </div>
+
+    <p className="lop-nuda-desc">
+      Approximately of NUDA Funds utilized for developmental activities
+      benefiting residents and improving public infrastructure.
+    </p>
+  </div>
+
+  {/* NEW CARD */}
+  <div className="lop-mini-card">
+    <h4>Development Highlights</h4>
+
+    <div className="lop-mini-item">
+      🛣️ 50+ KM CC Roads Developed
+    </div>
+
+    <div className="lop-mini-item">
+      💧 Drinking Water Projects
+    </div>
+
+    <div className="lop-mini-item">
+      🌳 Green Village Initiatives
+    </div>
+
+    <div className="lop-mini-item">
+      🏛️ Urban Infrastructure Upgrades
+    </div>
+  </div>
+
+</div>
+
+        
       </section>
 
       {/* CC ROADS */}
@@ -333,8 +370,8 @@ export default function Development() {
 
     <div className="lop-cc-left">
       <div className="lop-section-header">
-        <span className="lop-section-icon dark">🏛️</span>
-        <h2>🚧 CC Roads Constructed</h2>
+        
+        <h2><FaRoad className="rd-icon"/> CC Roads Constructed</h2>
       </div>
 
       <div className="lop-cc-row">
@@ -345,7 +382,7 @@ export default function Development() {
         <div className="lop-cc-divs">
           {ccDivisions.map((d) => (
             <div key={d} className="lop-cc-div">
-              <span className="lop-cc-cone">🚧</span>
+              <span className="lop-cc-cone"><PiTrafficConeFill/></span>
               <span>Division {d}</span>
             </div>
           ))}

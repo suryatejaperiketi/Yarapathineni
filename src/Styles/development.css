@@ -603,7 +603,7 @@
   display: grid;
   grid-template-columns: repeat(2, 1fr);   /* 2-col inside the side card */
   gap: 10px;
-  margin-bottom: 12px;
+  margin-bottom: 24px;
 }
 
 .lop-glance-item {
@@ -713,6 +713,30 @@
   line-height: 1.6;
 }
 
+.lop-right-column{
+  display:flex;
+  flex-direction:column;
+  gap:20px;
+}
+
+.lop-mini-card{
+  background:#fff;
+  border-radius:12px;
+  padding:20px;
+  box-shadow:0 2px 8px rgba(0,0,0,.08);
+}
+
+.lop-mini-card h4{
+  margin-bottom:15px;
+  color:#0d2f6b;
+}
+
+.lop-mini-item{
+  padding:10px 0;
+  text-align: left;
+  border-bottom:1px solid #eee;
+}
+
 /* ===== CC ROADS ===== */
 .lop-ccroads {
   background: #f9f9f9;
@@ -759,7 +783,7 @@
   border: 1px solid #ddd;
   border-radius: 8px;
   padding: 8px 12px;
-  font-size: 12px;
+  font-size: 16px;
   font-weight: 600;
   color: #7a1a1a;
 }
@@ -768,9 +792,17 @@
   font-size: 20px;
 }
 
+.rd-icon{
+  background-color: brown;
+  padding: 1px;
+  border-radius: 50%;
+  font-size: 35px;
+  color: #fff;
+}
+
 .lop-cc-desc {
   margin-top: 15px;
-  font-size: 14px;
+  font-size: 15px;
   color: #555;
   line-height: 1.6;
 }
@@ -815,6 +847,9 @@
   .lop-glance-lbl {
   font-size: 13px;
   }
+  .lop-cc-div {
+     font-size: 12px;
+    }
 }
 /* ===== IMPACT ===== */
 .lop-impact {
