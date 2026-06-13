@@ -300,25 +300,23 @@ export default function Development() {
   {/* IMPACT SECTION */}
 
 <div className="lop-glance-card">
+  <h3>Impact at a Glance</h3>
 
-    <h3>Impact at a Glance</h3>
+  <div className="lop-glance-grid">
+    {glanceStats.map((item, index) => (
+      <div className="lop-glance-box" key={index}>
+        <span className={`glance-icon ${item.iconClass}`}>
+          {item.icon}
+        </span>
 
-    <div className="lop-glance-grid">
-
-      {glanceStats.map((item,index)=>(
-        <div className="lop-glance-box" key={index}>
-      
-          <span className={`glance-icon ${item.iconClass}`}>
-  {item.icon}
-</span>
+        <div className="glance-content">
           <h4>{item.value}</h4>
           <p>{item.label}</p>
         </div>
-      ))}
-
-    </div>
-
+      </div>
+    ))}
   </div>
+</div>
 
 
   <section className="nuda-road-section">
