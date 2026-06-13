@@ -295,447 +295,334 @@
   }
 }
 
-/* ===== THREE COLUMN ===== */
-.lop-three-col {
-  display: grid;
-  grid-template-columns: 1.6fr 1.2fr 1fr;
-  gap: 20px;
-  max-width: 1400px;
-  margin: 0 auto;
-  padding: 48px;
-  align-items: start;
+
+
+.lop-achievement-section{
+  max-width:1400px;
+  margin:auto;
+  padding:40px;
 }
 
-
-
-/* LAND RECORDS CARD */
-.lop-land-card {
-  background: #fff;
-  border: 1px solid #e5e5e5;
-  border-radius: 12px;
-  padding: 24px;
-}
-
-.lop-land-header {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 12px;
-  text-align: left;
-  margin-bottom: 15px;
-}
-
-.lop-land-icon {
-  width: 48px;
-  height: 48px;
-  background: #e8f5e9;
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 26px;
-  flex-shrink: 0;
-}
-
-.lop-land-header h3 {
-  font-size: 22px;
-  font-weight: 700;
-  color: #1b5e20;
-  line-height: 1.3;
-  margin: 0;
-}
-
-.lop-land-tagline {
-  margin-top: 5px;
-  font-size: 15px;
-  color: #2e7d32;
-  font-weight: 600;
-}
-
-.lop-land-stat {
-  text-align: center;
-  margin-bottom: 20px;
-}
-
-.lop-land-big {
-  display: block;
-  font-size: 52px;
-  font-weight: 800;
-  color: #2e7d32;
-  line-height: 1;
-}
-
-.lop-land-stat-label {
-  display: block;
-  margin-top: 5px;
-  font-size: 16px;
-  font-weight: 600;
-  color: #444;
-}
-
-.lop-info-section {
-  display: flex;
-  gap: 20px;
-  align-items: flex-start;
-}
-
-.lop-passbook-visual {
-  width: auto;
-  flex-shrink: 0;
-  background: #f1f8e9;
-  padding: 15px;
-  border-radius: 8px;
-  display: flex;
-  gap: 12px;
-  flex-direction: column;
-  align-items: center;
-}
-.lop-passbook-emblem{
-  position: relative;
-}
-
-.lop-passbook-emblem img{
- height: 280px;
-  width: auto;
-  overflow: hidden;
-}
-
-
-
-.lop-passbook-icons {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-}
-
-.lop-passbook-qr,
-.lop-passbook-lock {
-  width: 42px;
-  height: 42px;
-  background: #fff;
-  border-radius: 8px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 22px;
-  box-shadow: 0 2px 5px rgba(0,0,0,.1);
-}
-
-
-.lop-content-right {
-  flex: 1;
-  text-align: left;
-}
-
-.lop-land-desc {
-  font-size: 15px;
-  line-height: 1.6;
-  color: #444;
-  margin-bottom: 10px;
-}
-
-.lop-land-features {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-
-.lop-land-features li {
-  display: flex;
-  gap: 8px;
-  align-items: flex-start;
-  font-size: 13px;
-  line-height: 1.5;
-  margin-bottom: 8px;
-}
-
-.lop-check {
-  flex-shrink: 0;
-}
-
-.lop-land-footer {
-  margin-top: 15px;
-  font-size: 14px;
-  color: #666;
-  text-align: left;
-  line-height: 1.6;
-}
-
-.lop-source {
-  margin-top: 10px;
-  font-size: 13px;
-  color: #777;
-  font-weight: 600;
-}
-
-@media (max-width: 768px) {
-
-  .lop-info-section {
-    flex-direction: column;
-  }
-
-  .lop-passbook-visual {
-    width: 100%;
-    justify-content: center;
-  }
-
-  .lop-land-big {
-    font-size: 40px;
-  }
-
-  .lop-land-header h3 {
-    font-size: 18px;
-  }
-  .lop-land-desc {
-  font-size: 13px;}
-  .lop-urban-header h3 {
-  font-size: 17px !important;
-  }
-  .lop-nuda-header h3 {
-  font-size: 17px !important;
-  }
-  .lop-urban-item p {
-  font-size: 13px !important;
-  }
-  .lop-land-footer {
-  margin-top: 15px;
-  font-size: 12px !important;
-  }
-  .lop-source {
-
-  font-size: 11px;
-  }
-}
-
-
-/* URBAN COLUMN */
-.lop-urban-col {
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-}
-
-.lop-urban-card {
-  background: #fff;
-  border: 1px solid #e8e8e8;
-  border-radius: 12px;
-  padding: 20px;
-}
-
-.lop-urban-header {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  margin-bottom: 16px;
-  padding-bottom: 12px;
-  border-bottom: 1px solid #f0f0f0;
-}
-
-.lop-urban-icon {
-  font-size: 24px;
-  background: #e3f2fd;
-  border-radius: 50%;
-  width: 40px;
-  height: 40px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.lop-urban-header h3 {
-  font-size: 18px;
-  font-weight: 700;
-  color: #1a3a5a;
-}
-
-.lop-urban-item {
-  display: flex;
-  gap: 12px;
-  align-items:center;
-  text-align: left;
-  margin-bottom: 14px;
-}
-
-.lop-urban-item:last-child {
-  margin-bottom: 0;
-}
-
-.lop-urban-item-icon {
-  font-size: 22px;
-  background: #e3f2fd;
-  border-radius: 50%;
-  width: 36px;
-  height: 36px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-shrink: 0;
-}
-
-.lop-urban-item h4 {
-  font-size: 13px;
-  font-weight: 700;
-  color: #1a3a5a;
-  margin-bottom: 4px;
-}
-
-.lop-urban-item p {
-  font-size: 14px;
-  color: #555;
-  line-height: 1.5;
-}
-
-.lop-glance-card {
-  background: #fff;
-  border: 1px solid #e8e8e8;
-  border-radius: 12px;
-  padding: 20px;
-}
-
-.lop-glance-title {
-  font-size: 18px;
-  font-weight: 700;
-  text-align: center;
-  margin-bottom: 16px;
-  color: #1a1a1a;
-}
-
-.lop-glance-grid {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);   /* 2-col inside the side card */
-  gap: 10px;
-  margin-bottom: 24px;
-}
-
-.lop-glance-item {
-  display: flex;
-  gap: 10px;
-  text-align: left;
-  align-items: center;
-}
-
-.lop-glance-icon {
-  font-size: 20px;
-  width: 32px;
-  flex-shrink: 0;
-  text-align: center;
-    font-size: 22px;
-  background: #a3eca1;
-  border-radius: 50%;
-  width: 36px;
-  height: 36px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-shrink: 0;
-}
-
-.lop-glance-val {
-  font-size: 12px;
-  font-weight: 700;
-  color: #1a3a5a;
-}
-
-.lop-glance-lbl {
-  font-size: 14px;
-  color: #666;
-}
-
-/* NUDA CARD */
-.lop-nuda-card {
-  background: #fff;
-  border: 1px solid #e8e8e8;
-  border-radius: 12px;
-  padding: 20px;
-  text-align: center;
-}
-
-.lop-nuda-header {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 10px;
-  margin-bottom: 8px;
-}
-
-.lop-nuda-icon {
-  font-size: 26px;
-  background: #fff8e1;
-  border-radius: 50%;
-  width: 40px;
-  height: 40px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.lop-nuda-header h3 {
-  font-size: 17px;
-  font-weight: 700;
-  color: #7a5a00;
-}
-
-.lop-nuda-sub {
-  font-size: 12px;
-  color: #8a6a00;
-  margin-bottom: 16px;
-  font-weight: 600;
-}
-
-.lop-nuda-amount {
-  font-size: 32px;
-  font-weight: 800;
-  color: #d4a017;
-  margin-bottom: 16px;
-  line-height: 1;
-}
-
-.lop-nuda-chart {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 16px;
-  margin-bottom: 16px;
-  font-size: 48px;
-}
-
-.lop-nuda-arrow {
-  font-size: 40px;
-}
-
-.lop-nuda-moneybag {
-  font-size: 52px;
-}
-
-.lop-nuda-desc {
-  font-size: 14px;
-  color: #555;
-  text-align: left;
-  line-height: 1.6;
-}
-
-.lop-right-column{
-  display:flex;
-  flex-direction:column;
+.lop-top-grid{
+  display:grid;
+  grid-template-columns:2fr 1fr;
   gap:20px;
 }
 
-.lop-mini-card{
+/* LAND */
+
+/* LAND RECORDS CARD */
+
+.lop-land-card{
   background:#fff;
-  border-radius:12px;
-  padding:20px;
-  box-shadow:0 2px 8px rgba(0,0,0,.08);
+  border:1px solid #e5e5e5;
+  background-image: url(../assests/passbook2.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  border-radius:10px;
+  padding:24px;
 }
 
-.lop-mini-card h4{
-  margin-bottom:15px;
-  color:#0d2f6b;
-}
-
-.lop-mini-item{
-  padding:10px 0;
+.lop-main-title{
+  font-size:28px;
+  line-height:1.15;
+  color:#114d22;
   text-align: left;
-  border-bottom:1px solid #eee;
+  font-weight:700;
+  margin-bottom:8px;
+}
+
+.lop-main-title span{
+  display:block;
+}
+
+.lop-subtitle{
+  font-size:16px;
+  color:#244f24;
+  text-align: left;
+  font-weight:600;
+  margin-bottom:20px;
+}
+
+.lop-stat-card{
+  width:420px;
+  max-width:100%;
+  display:flex;
+  align-items:center;
+  gap:18px;
+  border:1px solid #d9e4d6;
+  background:#fff;
+  border-radius:10px;
+  padding:16px 20px;
+  margin-bottom:20px;
+}
+
+.lop-stat-icon{
+  width:70px;
+  height:70px;
+  border-radius:50%;
+  background:#1b5e20;
+  color:#fff;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  font-size:28px;
+  flex-shrink:0;
+}
+
+.lop-stat-card h3{
+  margin:0;
+  font-size:42px;
+  color:#1d7a2d;
+  line-height:1;
+}
+
+.lop-stat-card p{
+  margin:4px 0 0;
+  font-size:20px;
+  font-weight:700;
+  color:#222;
+}
+
+.lop-land-content{
+  display:flex;
+  gap:30px;
+  align-items:flex-start;
+}
+
+.lop-land-text{
+  flex:0 0 58%;
+  text-align: left;
+}
+
+.lop-land-text p{
+  font-size:14px;
+  line-height:1.6;
+  color:#333;
+}
+
+.lop-land-text ul{
+  list-style:none;
+  padding:0;
+  margin:15px 0;
+}
+
+.lop-land-text li{
+  position:relative;
+  padding-left:28px;
+  margin-bottom:10px;
+  line-height:1.5;
+  font-size:14px;
+}
+
+.lop-land-text li::before{
+  content:"✔";
+  position:absolute;
+  left:0;
+  top:2px;
+  width:18px;
+  height:18px;
+  border-radius:50%;
+  background:#198f34;
+  color:#fff;
+  font-size:11px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+}
+
+.lop-footer-text{
+  margin-top:15px;
+  font-size:14px;
+  line-height:1.6;
+  color:#444;
+}
+
+.lop-source{
+  margin-top:12px;
+  font-size:13px;
+  font-weight:600;
+  color:#e44c4c;
+}
+
+
+
+
+@media(max-width:768px){
+
+   .lop-achievement-section{
+    padding:10px !important;
+  }
+
+  .lop-top-grid{
+    grid-template-columns:1fr;
+    gap:15px;
+  }
+
+ 
+
+  .lop-main-title{
+    font-size:22px;
+    text-align:left;
+  }
+
+  .lop-subtitle{
+    font-size:14px;
+  }
+
+  .lop-land-text{
+    width:100%;
+  }
+
+  .lop-stat-card{
+    width:100%;
+  }
+
+  .lop-stat-card h3{
+    font-size:28px;
+  }
+
+  .lop-stat-card p{
+    font-size:15px;
+  }
+
+}
+/* URBAN */
+
+.lop-urban-card{
+  background:#fff;
+  border:1px solid #e5e5e5;
+  border-radius:10px;
+  padding:20px;
+}
+
+.lop-urban-header{
+  font-size:28px;
+  font-weight:700;
+  color:#8b1e1e;
+  margin-bottom:20px;
+}
+
+.lop-urban-item{
+  display:flex;
+  gap:15px;
+  margin-bottom:20px;
+}
+
+.lop-urban-item img{
+  /* width:120px; */
+  height:120px;
+  object-fit:cover;
+  border-radius:8px;
+}
+.urban-cont{
+  text-align: left;
+}
+
+.urban-icon{
+  width: 40px;
+  height: 40px;
+  background: #6d0f0f;
+  color: #fff;
+  border-radius: 50%;
+  padding: 6px;
+  margin-right: 12px;
+  vertical-align: middle;
+}
+
+.urban-cont h4{
+  display: flex;
+  align-items: center;
+  color: #6d0f0f;
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.lop-urban-item h4{
+  color:#8b1e1e;
+  font-size: 18px;
+  margin-bottom:6px;
+}
+
+.lop-urban-item p{
+  font-size:14px;
+  color:#555;
+}
+
+/* IMPACT */
+
+.lop-glance-card{
+  margin-top:20px;
+  border:1px solid #e5e5e5;
+  border-radius:10px;
+  background:#fff;
+  padding:25px;
+}
+
+.lop-glance-card h3{
+  text-align:center;
+  margin-bottom:25px;
+  color:#8b1e1e;
+}
+
+.lop-glance-grid{
+  display:grid;
+  grid-template-columns:repeat(4,1fr);
+  gap:15px;
+}
+
+.lop-glance-box{
+  border:1px solid #eee;
+  border-radius:10px;
+  padding:15px;
+  text-align:center;
+}
+
+.lop-glance-box span{
+  font-size:30px;
+}
+
+.lop-glance-box h4{
+  margin-top:10px;
+  color:#1b5e20;
+}
+
+
+
+
+/* MOBILE */
+
+@media(max-width:991px){
+
+
+  .lop-land-content{
+    flex-direction:column;
+  }
+
+
+  .lop-glance-grid{
+    grid-template-columns:repeat(2,1fr);
+  }
+
+}
+
+@media(max-width:576px){
+
+  .lop-main-title{
+    font-size:26px;
+  }
+
+  .lop-stat-card h3{
+    font-size:34px;
+  }
+
+  .lop-glance-grid{
+    grid-template-columns:1fr;
+  }
+
 }
 
 /* ===== CC ROADS ===== */

@@ -5,12 +5,16 @@ import {
   FaLink,
   FaMobileAlt,
   FaRulerCombined,
-  FaLaptop,
-  FaBuilding
+  FaBuilding,
+  FaRoad
 } from "react-icons/fa";
+import { PiTrafficConeFill } from "react-icons/pi";
 import dbannerimg from "../../assests/developmentbanner.png";
 import roadimg from "../../assests/road.png";
 import passbookimg from "../../assests/farmerpasbook.png";
+import gurazalaImg from "../../assests/road.png";
+import rentapallaImg from "../../assests/road.png";
+import gogulapaduImg from "../../assests/road.png";
 
 const infrastructureData = [
   {
@@ -37,6 +41,27 @@ const infrastructureData = [
 
 const ccDivisions = [3, 16, 20, 22, 24, 25, 30];
 
+
+
+
+const urbanData = [
+  {
+    image: gurazalaImg,
+    title: "Gurazala Municipality",
+    desc: "Development works initiated in several wards to improve civic amenities and public infrastructure."
+  },
+  {
+    image: rentapallaImg,
+    title: "Rentapalla Municipality",
+    desc: "Multiple development projects launched across various wards for better urban facilities and citizen services."
+  },
+  {
+    image: gogulapaduImg,
+    title: "Gogulapadu Municipality",
+    desc: "Multiple development projects launched across various wards for better urban facilities and citizen services."
+  }
+];
+
 const impactStats = [
   {
     icon: "🏙️",
@@ -55,6 +80,7 @@ const impactStats = [
     value: "₹1.91+",
     label: "Crore Development Funds Utilized",
     bgColor: "#1d8a43",
+  
   },
   {
     icon: "👨‍🌾",
@@ -78,8 +104,7 @@ const impactStats = [
 
 const passBookFeatures = [
   "Distribution of new tamper-proof Pattadar Passbooks",
-  "QR Code-enabled verification system",
-  "Blockchain-based land record security",
+ 
   "Digital ownership authentication through Aadhaar-linked e-KYC",
   "Reduction of land disputes through Resurvey 2.0",
   "Easy access to land records through the MeeBhoomi portal",
@@ -99,18 +124,14 @@ const glanceStats = [
   {
     icon: <FaMobileAlt />,
     value: "QR Code Verification",
-    label: "for instant authentication",
+    label: "for instant authentication in Seconds",
   },
   {
     icon: <FaRulerCombined />,
     value: "Resurvey 2.0",
     label: "underway across Andhra Pradesh",
   },
-  {
-    icon: <FaLaptop />,
-    value: "Digital Land Records",
-    label: "accessible online through MeeBhoomi portal",
-  },
+
 ];
 
 export default function Development() {
@@ -133,7 +154,7 @@ export default function Development() {
 
 
       <section className="lop-infra">
-  <div className="lop-infra-heading">
+  <div className="lop-infra-heading mb-3 mt-3">
     <div className="lop-infra-top-icon"><FaBuilding style={{color:"green"}}/></div>
 
     <h2>Infrastructure Development</h2>
@@ -181,158 +202,121 @@ export default function Development() {
 </section>
 
       {/* THREE COLUMN SECTION */}
-      <section className="lop-section lop-three-col">
-        {/* LAND RECORDS */}
-   <div className="lop-land-card">
+     <section className="lop-achievement-section">
 
-  <div className="lop-land-header">
-    <span className="lop-land-icon">🌱</span>
+  {/* TOP AREA */}
+  <div className="lop-top-grid">
 
-    <div className="lop-land-header-content">
-      <h3>Andhra Pradesh Land Records & Pattadar Passbook Reforms</h3>
-      <p className="lop-land-tagline">
+    {/* LEFT */}
+    <div className="lop-land-card">
+
+      <h2 className="lop-main-title">
+        Andhra Pradesh Land Records &
+        <span>Pattadar Passbook Reforms</span>
+      </h2>
+
+      <p className="lop-subtitle">
         Secure Land Ownership for Farmers
       </p>
-    </div>
-  </div>
 
-  <div className="lop-land-stat">
-    <span className="lop-land-big">1.12 Crore+</span>
-    <span className="lop-land-stat-label">
-      Tamper-Proof Pattadar Passbooks
-    </span>
-  </div>
-
-  <div className="lop-info-section">
-
-    <div className="lop-passbook-visual">
-      <div className="lop-passbook-book">
-        <div className="lop-passbook-emblem">
-          <img src={passbookimg} alt="passbook"/>
+      <div className="lop-stat-card">
+        <div className="lop-stat-icon">
+          📗
         </div>
 
-      </div>
-
-      {/* <div className="lop-passbook-icons">
-        <div className="lop-passbook-qr">📱</div>
-        <div className="lop-passbook-lock">🔒</div>
-      </div> */}
-    </div>
-
-    <div className="lop-content-right">
-
-      <p className="lop-land-desc">
-        The Government of Andhra Pradesh has launched a comprehensive
-        land records modernization program to ensure transparent and
-        secure land ownership for farmers. The initiative includes:
-      </p>
-
-      <ul className="lop-land-features">
-        {passBookFeatures.map((f, i) => (
-          <li key={i}>
-            <span className="lop-check">✅</span>
-            {f}
-          </li>
-        ))}
-      </ul>
-
-    </div>
-
-  </div>
-
-  <p className="lop-land-footer">
-    This initiative aims to provide farmers with legally secure land
-    ownership documents while improving transparency and efficiency in
-    land administration across Andhra Pradesh.
-  </p>
-
-  <p className="lop-source">
-    <strong>Source:</strong> The Times of India
-  </p>
-
-</div>
-
-
-
-        {/* URBAN DEVELOPMENT */}
-        <div className="lop-urban-col">
-          <div className="lop-urban-card">
-            <div className="lop-urban-header">
-              <span className="lop-urban-icon">🏙️</span>
-              <h3>Urban Development</h3>
-            </div>
-            <div className="lop-urban-item">
-              <span className="lop-urban-item-icon">🏛️</span>
-              <div>
-                <h4>Gurazala Municipality</h4>
-                <p>Development works initiated in several wards to improve civic amenities and public infrastructure.</p>
-              </div>
-            </div>
-            <div className="lop-urban-item">
-              <span className="lop-urban-item-icon">🏛️</span>
-              <div>
-                <h4>Rentapalla Municipality</h4>
-                <p>Multiple development projects launched across various wards for better urban facilities and citizen services.</p>
-              </div>
-            </div>
-             <div className="lop-urban-item">
-              <span className="lop-urban-item-icon">🏛️</span>
-              <div>
-                <h4>Gogulapadu Municipality</h4>
-                <p>Multiple development projects launched across various wards for better urban facilities and citizen services.</p>
-              </div>
-            </div>
-            
-            
-          </div>
-          
-
-          {/* GLANCE */}
-          <div className="lop-glance-card">
-  <h4 className="lop-glance-title">Impact at a Glance</h4>
-
-  <div className="lop-glance-grid">
-  {glanceStats.map((s, i) => (
-    
-    <div key={i} className="lop-glance-item">
-      <span className="lop-glance-icon">{s.icon}</span>
-
-      <div className="lop-glance-content">
-        <div className="lop-glance-val">{s.value}</div>
-        <div className="lop-glance-lbl">{s.label}</div>
-      </div>
-    </div>
-  ))}
-</div>
-
-  <p className="lop-source">
-    <strong>Source:</strong> The Times of India 🔗
-  </p>
-</div>
-
-
+        <div>
+          <h3>1.12 Crore+</h3>
+          <p>Tamper-Proof Pattadar Passbooks</p>
         </div>
+      </div>
 
-        {/* NUDA */}
-        <div className="lop-nuda-card">
-          <div className="lop-nuda-header">
-            <span className="lop-nuda-icon">💰</span>
-            <h3>NUDA Development Funds</h3>
-          </div>
-          <p className="lop-nuda-sub">Infrastructure &amp; Civic Improvement</p>
-          <div className="lop-nuda-amount">₹1.91 Crore</div>
-          <div className="lop-nuda-chart">
-            <div className="lop-nuda-arrow">📈</div>
-            <div className="lop-nuda-moneybag">💰</div>
-          </div>
-          <p className="lop-nuda-desc">
-            Approximately of NUDA Funds utilized for developmental activities benefiting residents and improving public
-            infrastructure.
+      <div className="lop-land-content">
+
+        <div className="lop-land-text">
+
+          <p>
+            The Government of Andhra Pradesh has launched
+            a comprehensive land records modernization
+            program.
           </p>
+
+          <ul>
+            {passBookFeatures.map((item,index)=>(
+              <li key={index}>{item}</li>
+            ))}
+          </ul>
+
+          <p className="lop-footer-text">
+            This initiative aims to provide farmers
+            with legally secure land ownership.
+          </p>
+
+          <div className="lop-source">
+            Source: The Times of India
+          </div>
+
         </div>
 
-        
-      </section>
+        <div className="lop-passbook-area">
+          <img src={passbookimg} alt="" />
+          <div className="lop-shield">
+            ✔
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+
+    {/* RIGHT */}
+    <div className="lop-urban-card">
+
+      <div className="lop-urban-header">
+        🏙️ Urban Development
+      </div>
+
+      {urbanData.map((item,index)=>(
+        <div className="lop-urban-item" key={index}>
+
+          <img src={item.image} alt="" />
+
+          <div>
+            <h4>{item.title}</h4>
+            <p>{item.desc}</p>
+          </div>
+
+        </div>
+      ))}
+
+    </div>
+
+  </div>
+
+
+
+  
+
+</section>
+
+  {/* IMPACT SECTION */}
+
+<div className="lop-glance-card">
+
+    <h3>Impact at a Glance</h3>
+
+    <div className="lop-glance-grid">
+
+      {glanceStats.map((item,index)=>(
+        <div className="lop-glance-box" key={index}>
+          <span>{item.icon}</span>
+          <h4>{item.value}</h4>
+          <p>{item.label}</p>
+        </div>
+      ))}
+
+    </div>
+
+  </div>
 
       {/* CC ROADS */}
       <section className="lop-section lop-ccroads">
@@ -340,8 +324,8 @@ export default function Development() {
 
     <div className="lop-cc-left">
       <div className="lop-section-header">
-        <span className="lop-section-icon dark">🏛️</span>
-        <h2>🚧 CC Roads Constructed</h2>
+        
+        <h2><FaRoad className="rd-icon"/> CC Roads Constructed</h2>
       </div>
 
       <div className="lop-cc-row">
@@ -352,7 +336,7 @@ export default function Development() {
         <div className="lop-cc-divs">
           {ccDivisions.map((d) => (
             <div key={d} className="lop-cc-div">
-              <span className="lop-cc-cone">🚧</span>
+              <span className="lop-cc-cone"><PiTrafficConeFill/></span>
               <span>Division {d}</span>
             </div>
           ))}
