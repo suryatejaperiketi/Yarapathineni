@@ -112,21 +112,25 @@ const passBookFeatures = [
 const glanceStats = [
   {
     icon: <FaUsers />,
+    iconClass: "icon-users",
     value: "1.12 Crore+",
     label: "Pattadar Passbooks to be distributed",
   },
   {
     icon: <FaLink />,
+    iconClass: "icon-blockchain",
     value: "Blockchain Security",
     label: "for land ownership protection",
   },
   {
     icon: <FaMobileAlt />,
+    iconClass: "icon-qr",
     value: "QR Code Verification",
     label: "for instant authentication in Seconds",
   },
   {
     icon: <FaRulerCombined />,
+     iconClass: "icon-resurvey",
     value: "Resurvey 2.0",
     label: "underway across Andhra Pradesh",
   },
@@ -292,11 +296,6 @@ export default function Development() {
       </div>
 
     </div>
-
-
-
-    
-
   </section>
 
   {/* IMPACT SECTION */}
@@ -309,7 +308,10 @@ export default function Development() {
 
       {glanceStats.map((item,index)=>(
         <div className="lop-glance-box" key={index}>
-          <span>{item.icon}</span>
+      
+          <span className={`glance-icon ${item.iconClass}`}>
+  {item.icon}
+</span>
           <h4>{item.value}</h4>
           <p>{item.label}</p>
         </div>
@@ -319,46 +321,121 @@ export default function Development() {
 
   </div>
 
-      {/* CC ROADS */}
-      <section className="lop-section lop-ccroads">
-  <div className="lop-cc-wrap">
 
-    <div className="lop-cc-left">
-      <div className="lop-section-header">
-        
-        <h2><FaRoad className="rd-icon"/> CC Roads Constructed</h2>
+  <section className="nuda-road-section">
+
+  {/* NUDA CARD */}
+  <div className="nuda-card">
+
+    <h2 className="nuda-title">
+      NUDA Development Funds
+    </h2>
+
+    <p className="nuda-subtitle">
+      Infrastructure & Civic Improvement
+    </p>
+
+    <div className="nuda-fund-box">
+
+      <div className="nuda-money">
+        💰
       </div>
 
-      <div className="lop-cc-row">
-        <span className="lop-cc-label">
-          Major CC Road works completed in:
-        </span>
+      <div>
+        <h3>₹1.91 Crore</h3>
 
-        <div className="lop-cc-divs">
-          {ccDivisions.map((d) => (
-            <div key={d} className="lop-cc-div">
-              <span className="lop-cc-cone"><PiTrafficConeFill/></span>
-              <span>Division {d}</span>
-            </div>
-          ))}
-        </div>
+        <p>
+          Approximately of NUDA Funds utilized for
+          developmental activities benefiting residents
+          and improving public infrastructure.
+        </p>
       </div>
 
-      <p className="lop-cc-desc">
-        These projects have significantly improved road connectivity,
-        drainage management, public safety, and overall quality of life
-        for citizens.
-      </p>
     </div>
 
-    <div className="lop-cc-img">
-      <img
-        src={roadimg}
-        alt="CC Road"
-      />
+    <h4 className="development-heading">
+      Development Highlights
+    </h4>
+
+    <div className="nuda-highlights">
+
+      <div className="highlight-box">
+        <div className="icon">🛣️</div>
+        <span>50+ KM CC Roads Developed</span>
+      </div>
+
+      <div className="highlight-box">
+        <div className="icon">💧</div>
+        <span>Drinking Water Projects</span>
+      </div>
+
+      <div className="highlight-box">
+        <div className="icon">🌱</div>
+        <span>Green Village Initiatives</span>
+      </div>
+
+      <div className="highlight-box">
+        <div className="icon">🏢</div>
+        <span>Urban Infrastructure Upgrades</span>
+      </div>
+
     </div>
 
   </div>
+
+  {/* CC ROADS CARD */}
+
+  <div className="cc-card">
+
+    <div className="cc-content">
+
+      <div className="cc-left">
+
+        <h2 className="cc-title">
+          CC Roads Constructed
+        </h2>
+
+        <h5>
+          Major CC Road works completed in:
+        </h5>
+
+        <div className="division-grid">
+
+          <div>✔ Division 3</div>
+          <div>✔ Division 24</div>
+
+          <div>✔ Division 16</div>
+          <div>✔ Division 25</div>
+
+          <div>✔ Division 20</div>
+          <div>✔ Division 30</div>
+
+          <div>✔ Division 22</div>
+
+        </div>
+
+        <p className="cc-desc">
+          These projects have significantly improved
+          road connectivity, drainage management,
+          public safety, and overall quality of life
+          for citizens.
+        </p>
+
+      </div>
+
+      <div className="cc-image">
+
+        <img
+          src={roadimg}
+          alt="CC Road"
+        />
+
+      </div>
+
+    </div>
+
+  </div>
+
 </section>
 
       {/* IMPACT AT A GLANCE */}

@@ -519,7 +519,6 @@
     gap:15px;
     margin-bottom:20px;
     justify-items:center; 
-    
     text-align:center;    
   }
  .urban-cont{
@@ -647,109 +646,226 @@
 }
 
 /* ===== CC ROADS ===== */
-.lop-ccroads {
-  background: #f9f9f9;
-  padding: 30px;
+
+.nuda-road-section{
+    display:grid;
+    grid-template-columns:1fr 1.25fr;
+    gap:15px;
+    margin:30px 0;
 }
 
-.lop-cc-wrap {
-  max-width: 1200px;
-  margin: 0 auto;
-  display: flex;
-  gap: 24px;
-  align-items: center;
+/* COMMON CARD */
+
+.nuda-card,
+.cc-card{
+    background:#faf7f4;
+    border:1px solid #eadfda;
+    border-radius:12px;
+    padding:16px;
 }
 
-.lop-cc-left {
-  flex: 1;
+/* NUDA */
+
+.nuda-title{
+    color:#6b1d1d;
+    font-size:30px;
+    font-weight:700;
+    text-align: left;
+    margin-bottom:2px;
 }
 
-.lop-cc-row {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 12px;
-  align-items: center;
+.nuda-subtitle{
+    font-size:16px;
+    font-weight:600;
+    text-align: left;
+    margin-bottom:12px;
 }
 
-.lop-cc-label {
-  font-size: 14px;
-  font-weight: 600;
-  color: #444;
+.nuda-fund-box{
+    background:linear-gradient(
+    135deg,
+    #7c0d0d,
+    #a51414
+    );
+
+    color:white;
+    border-radius:10px;
+
+    padding:14px;
+
+    display:flex;
+    align-items:center;
+    gap:15px;
 }
 
-.lop-cc-divs {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 12px;
+.nuda-money{
+    font-size:42px;
 }
 
-.lop-cc-div {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 4px;
-  background: #fff;
-  border: 1px solid #ddd;
-  border-radius: 8px;
-  padding: 8px 12px;
-  font-size: 16px;
-  font-weight: 600;
-  color: #7a1a1a;
+.nuda-fund-box h3{
+    margin:0;
+    font-size:34px;
+    color: orange;
+    text-align: left;
+    font-weight:700;
 }
 
-.lop-cc-cone {
-  font-size: 20px;
+.nuda-fund-box p{
+    margin:0;
+    font-size:15px;
+    text-align: left;
+    line-height:1.5;
 }
 
-.rd-icon{
-  background-color: brown;
-  padding: 1px;
-  border-radius: 50%;
-  font-size: 35px;
+.development-heading{
+    text-align:center;
+    margin:10px 0;
+    color:#6b1d1d;
+    font-weight:700;
+}
+
+.nuda-highlights{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:8px;
+}
+
+.highlight-box{
+    background:#fff;
+    border:1px solid #ececec;
+    border-radius:8px;
+
+    text-align:center;
+    padding:10px;
+}
+
+.highlight-box .icon{
+    font-size:24px;
+    margin-bottom:5px;
+}
+
+.highlight-box span{
+    display:block;
+    font-size:11px;
+    line-height:1.3;
+    font-weight:600;
+}
+
+/* CC ROADS */
+
+.cc-content{
+    display:flex;
+    justify-content:space-between;
+    gap:25px;
+}
+
+.cc-left{
+    flex:1;
+}
+
+.cc-title{
+    color:#6b1d1d;
+    text-align: left;
+    font-size:30px;
+    font-weight:700;
+    margin-bottom:10px;
+}
+
+.cc-left h5{
+    font-size:14px;
+    font-weight:600;
+    text-align: left;
+    margin-bottom:15px;
+}
+
+.division-grid{
+    display:grid;
+    grid-template-columns:repeat(2,max-content);
+    column-gap:60px;
+    row-gap:10px;
+
+    color:#6b1d1d;
+    font-weight:600;
+    font-size:14px;
+}
+
+.cc-desc{
+    margin-top:20px;
+    color:#222;
+    text-align: left;   
+    font-size:15px;
+    line-height:1.7;
+    max-width:420px;
+}
+
+.cc-image{
+    width:280px;
+}
+
+.cc-image img{
+    width:100%;
+    /* height:160px; */
+    object-fit:cover;
+    border-radius:10px;
+}
+
+/* MOBILE */
+
+@media(max-width:991px){
+
+    .nuda-road-section{
+        grid-template-columns:1fr;
+    }
+
+    .cc-content{
+        flex-direction:column;
+    }
+
+    .cc-image{
+        width:100%;
+    }
+
+    .nuda-highlights{
+        grid-template-columns:repeat(2,1fr);
+    }
+    .nuda-fund-box p{
+    
+    font-size:13px;
+    }
+}
+
+.glance-icon{
+   font-size: 30px;
   color: #fff;
+  border-radius: 50%;
+  width: 52px;
+  height: 52px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
 }
 
-.lop-cc-desc {
-  margin-top: 15px;
-  font-size: 15px;
-  color: #555;
-  line-height: 1.6;
+.icon-users {
+  background: #7a1a1a;
 }
 
-.lop-cc-img {
-  width: 300px;
-  flex-shrink: 0;
+.icon-blockchain {
+  background: #0d6efd;
 }
 
-.lop-cc-img img {
-  width: 100%;
-  border-radius: 10px;
-  display: block;
+.icon-qr {
+  background: #198754;
+}
+
+.icon-resurvey {
+  background: #fd7e14;
 }
 
 /* Mobile */
 @media (max-width: 768px) {
-  .lop-cc-wrap {
-    flex-direction: column;
-    align-items: flex-start;
-  }
+ 
 
-  .lop-cc-img {
-    width: 100%;
-  }
-
-  .lop-cc-row {
-    flex-direction: column;
-    align-items: flex-start;
-  }
-
-  .lop-cc-divs {
-    width: 100%;
-    justify-content:center;
-  }
-  .lop-nuda-desc {
-  font-size: 12px;
-  }
   .lop-glance-title {
   font-size: 16px;
   }
