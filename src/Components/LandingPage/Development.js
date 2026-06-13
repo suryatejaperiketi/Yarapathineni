@@ -37,7 +37,7 @@ const infrastructureData = [
   },
 ];
 
-const ccDivisions = [3, 16, 20, 22, 24, 25, 30];
+
 
 
 
