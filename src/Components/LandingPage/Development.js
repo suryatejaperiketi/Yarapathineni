@@ -6,9 +6,8 @@ import {
   FaMobileAlt,
   FaRulerCombined,
   FaBuilding,
-  FaRoad
 } from "react-icons/fa";
-import { PiTrafficConeFill } from "react-icons/pi";
+
 import dbannerimg from "../../assests/developmentbanner.png";
 import roadimg from "../../assests/road.png";
 import gurazalaImg from "../../assests/road.png";
