@@ -1,4 +1,3 @@
-
 import './App.css';
 import { Routes, Route } from 'react-router-dom';
 import Navbar from './Components/Navbar';
@@ -14,7 +13,6 @@ import SpiritualInitiatives from './Components/Pages/SpiritualInitiatives';
 import Cmrf from './Components/Pages/Cmrf';
 import Journey from './Components/LandingPage/Journey';
 import Development from './Components/LandingPage/Development';
-
 
 
 function App() {

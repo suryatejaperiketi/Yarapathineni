@@ -14,15 +14,15 @@ function Videos() {
 
 
   return (
-    <section className='Photo-gallery-section'>
+    <section className='video-gallery-section'>
          <div className="section-tag">Video Gallery</div>
          <h3>Moments of Service & Leadership</h3>
          <p>Official videos from events, inaugurations and constituency visits — Gurazala, Palnadu</p>
-  <div className='photos-container'>
-        <div className='pics-grid'>
+  <div className='video-container'>
+        <div className='vedios-grid'>
 
           {allVideos.map((video, index) => (
-            <div className='pics' key={index}>
+            <div className='videos' key={index}>
              <iframe
                 src={video}
                 title={`Video ${index + 1}`}
