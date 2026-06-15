@@ -126,7 +126,7 @@ const spiritualEvents = [
   },
   {
     id: 3,
-    subtitle: "Blessed",
+  
     titleMain: "Blessed",
     titleSpan: "Eid Mubarak Celebrations",
     image: muslimimg,

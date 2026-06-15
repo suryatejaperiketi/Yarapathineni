@@ -5,6 +5,7 @@ import {
   FaFacebookF,
   FaInstagram,
   FaWhatsapp,
+  FaXTwitter,
   FaPhone,
   FaClock,
   FaYoutube,
@@ -145,9 +146,9 @@ function ContactUs() {
                 <div className="connect-section">
                   <h6>Connect With Us</h6>
                   <div className="social-icons">
-                    <a href="#!" className="social-btn facebook"><FaFacebookF /></a>
-                    <a href="#!" className="social-btn instagram"><FaInstagram /></a>
-                    <a href="#!" className="social-btn whatsapp"><FaWhatsapp /></a>
+                    <a href="https://www.facebook.com/YarapathineniSrinu/" className="social-btn facebook"><FaFacebookF /></a>
+                    <a href="https://www.instagram.com/yarapathineni_srinivasarao/" className="social-btn instagram"><FaInstagram /></a>
+                    <a href="https://x.com/Yarapathineni_S" className="social-btn twitter"><FaXTwitter/></a>
                     <a href="#!" className="social-btn youtube"><FaYoutube /></a>
                   </div>
                 </div>
