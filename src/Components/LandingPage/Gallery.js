@@ -13,7 +13,7 @@ import { NavLink } from 'react-router-dom';
 function Gallery() {
   return (
     <section className='Photo-gallery-section'>
-         <div className="section-tag"> Photo Gallery</div>
+         <div className="gallery-heading"> Photo Gallery</div>
          <h3>Moments of Service & Leadership</h3>
          <p>Official photos from events, inaugurations and constituency visits — Gurazala, Palnadu</p>
     <div className='container'>

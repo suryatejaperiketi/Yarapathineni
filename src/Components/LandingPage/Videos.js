@@ -15,7 +15,7 @@ function Videos() {
 
   return (
     <section className='video-gallery-section'>
-         <div className="section-tag">Video Gallery</div>
+         <div className="vedio-gall-heading">Video Gallery</div>
          <h3>Moments of Service & Leadership</h3>
          <p>Official videos from events, inaugurations and constituency visits — Gurazala, Palnadu</p>
   <div className='video-container'>
