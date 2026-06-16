@@ -27,13 +27,25 @@ const Footer = () => {
             </p>
 
             <div className="social-icons-foot">
-               <a href="https://www.facebook.com/YarapathineniSrinu/" target="_blank" rel="noopener noreferrer">
+              <a
+                href="https://www.facebook.com/YarapathineniSrinu/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <FaFacebookF />
               </a>
-              <a href="https://x.com/Yarapathineni_S" target="_blank" rel="noopener noreferrer">
+              <a
+                href="https://x.com/Yarapathineni_S"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <FaTwitter />
               </a>
-              <a href="https://www.instagram.com/yarapathineni_srinivasarao/" target="_blank" rel="noopener noreferrer">
+              <a
+                href="https://www.instagram.com/yarapathineni_srinivasarao/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <FaInstagram />
               </a>
             </div>
@@ -54,7 +66,7 @@ const Footer = () => {
                 <a href="/about">About</a>
               </li>
               <li>
-                <a href="/media">Media</a>
+                <a href="/photos">Media</a>
               </li>
 
               <li>
@@ -65,12 +77,11 @@ const Footer = () => {
               </li>
 
               <li>
-                <a href="/gallery">Achievements</a>
+                <a href="/development">Achievements</a>
               </li>
-             
 
               <li>
-                <a href="/contact">Gallery</a>
+                <a href="/photos">Gallery</a>
               </li>
             </ul>
           </div>
@@ -80,15 +91,27 @@ const Footer = () => {
             <h4>Contact Info</h4>
 
             <p>
-              <FaMapMarkerAlt className="foot-icons"/> Gurazala, Palnadu District
+              <FaMapMarkerAlt className="foot-icons" /> Gurazala, Palnadu
+              District
             </p>
 
             <p>
-              <FaPhoneAlt  className="foot-icons"/> +91 9849355955
+              <FaPhoneAlt className="foot-icons" />
+
+              <a href="tel:+919849355955" className="email-link">
+                +91 9849355955
+              </a>
             </p>
 
             <p>
-              <FaEnvelope className="foot-icons"/> yarapathinenimla@gmail.com
+              <FaEnvelope className="foot-icons" />
+
+              <a
+                href="mailto:yarapathinenimla@gmail.com"
+                className="email-link"
+              >
+                yarapathinenimla@gmail.com
+              </a>
             </p>
           </div>
 

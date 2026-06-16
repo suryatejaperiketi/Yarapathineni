@@ -62,6 +62,16 @@
     background:#f5f5f5;
 }
 
+.menu-link {
+  text-decoration: none;
+  color: #222;
+  display: block;
+}
+
+.menu-link:hover {
+  color: #c00;
+}
+
 .sidebar-box .active{
     color:#b30000;
 

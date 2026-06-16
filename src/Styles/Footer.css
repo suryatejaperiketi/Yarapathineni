@@ -88,9 +88,10 @@
 }
 
 
-
-
-
+.email-link {
+  text-decoration: none; 
+  color: inherit;     
+}
 
 
 .social-icons-foot a {
