@@ -3,16 +3,16 @@ import "../../Styles/development.css";
 import {
   FaUsers,
   FaLink,
-  FaMobileAlt,
   FaRulerCombined,
   FaBuilding,
 } from "react-icons/fa";
+import { BsQrCodeScan } from "react-icons/bs";
 
 import dbannerimg from "../../assests/developmentbanner.png";
 import roadimg from "../../assests/road.png";
-import gurazalaImg from "../../assests/road.png";
-import rentapallaImg from "../../assests/road.png";
-import gogulapaduImg from "../../assests/road.png";
+import gurazalaImg from "../../assests/GurazalaMunicipality.png";
+import rentapallaImg from "../../assests/RentapallaMunicipality.png";
+import gogulapaduImg from "../../assests/GogulapaduMunicipality.png";
 
 const infrastructureData = [
   {
@@ -116,7 +116,7 @@ const glanceStats = [
     label: "for land ownership protection",
   },
   {
-    icon: <FaMobileAlt />,
+    icon: <BsQrCodeScan />,
     iconClass: "icon-qr",
     value: "QR Code Verification",
     label: "for instant authentication in Seconds",
