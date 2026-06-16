@@ -92,8 +92,10 @@ function News() {
 
           <div className="news-header">
 
-            <h2>All News</h2>
-
+          <div className="headingg">
+          <h2>All News</h2>
+         <p>Stay Updated with Latest News, Updates, and Announcements</p>
+          </div>
             <div className="header-right">
 
               {/* Search */}

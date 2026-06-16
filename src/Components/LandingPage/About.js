@@ -194,7 +194,7 @@ function About() {
                       Yarapathineni Srinivasa Rao Addresses Public Meeting in
                       Gurazala
                     </p>
-                    <Link className="read-more" to="/article">
+                    <Link className="read-more" to="/#">
                       Read More →
                     </Link>
                   </div>
@@ -205,7 +205,7 @@ function About() {
                   <div className="news-item-content">
                     <h6>June 2025</h6>
                     <p>Development Projects Reviewed In Palnadu Region</p>
-                    <Link className="read-more" to="/article">
+                    <Link className="read-more" to="/#">
                       Read More →
                     </Link>
                   </div>
@@ -216,7 +216,7 @@ function About() {
                   <div className="news-item-content">
                     <h6>May 2025</h6>
                     <p>Standing Strong For Farmer's Right</p>
-                    <Link className="read-more" to="/article">
+                    <Link className="read-more" to="/#">
                       Read More →
                     </Link>
                   </div>
