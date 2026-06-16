@@ -14,7 +14,6 @@ import { IoWaterOutline } from "react-icons/io5";
 import { BsGraphUpArrow } from "react-icons/bs";
 import { FaPeopleGroup } from "react-icons/fa6";
 import { useNavigate } from "react-router-dom";
-
 import aboutimg from "../../assests/about.png";
 import facebookimg from "../../assests/facebook.png";
 import instaimg from "../../assests/instagram.png";
@@ -223,9 +222,11 @@ function About() {
                   </div>
                 </div>
 
-                <button className="btn btn-outline-danger w-100 mt-auto">
+                <button onClick={() => navigate("/news")}
+                 className="btn btn-outline-danger w-100 mt-auto">
                   View All News
                 </button>
+
               </div>
             </div>
 

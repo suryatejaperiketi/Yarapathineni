@@ -13,6 +13,7 @@ import SpiritualInitiatives from './Components/Pages/SpiritualInitiatives';
 import Cmrf from './Components/Pages/Cmrf';
 import Journey from './Components/LandingPage/Journey';
 import Development from './Components/LandingPage/Development';
+import News from './Components/Pages/News';
 
 
 function App() {
@@ -31,6 +32,7 @@ function App() {
         <Route path="/people" element={<People/>} />
         <Route path="/spiritual-initiatives" element={<SpiritualInitiatives/>} />
         <Route path="/contact" element={<ContactUs/>} />
+        <Route path="/news" element={<News/>} />
       </Routes>
         <Footer/>
     </div>
