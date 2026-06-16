@@ -294,3 +294,32 @@
 }
 
 }
+
+
+.news-details-container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.news-details-container img{
+  width: 500px;
+  max-width: 100%;
+}
+
+.news-details-container span{
+  margin-top: 15px;
+  font-size: 18px;
+  color: #666;
+}
+
+.news-details-container h1{
+  margin-top: 10px;
+  text-align: center;
+}
+
+.news-details-container p{
+  max-width: 900px;
+  text-align: center;
+  line-height: 1.8;
+}

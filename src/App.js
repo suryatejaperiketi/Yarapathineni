@@ -14,6 +14,7 @@ import Cmrf from './Components/Pages/Cmrf';
 import Journey from './Components/LandingPage/Journey';
 import Development from './Components/LandingPage/Development';
 import News from './Components/Pages/News';
+import NewsDetails from "./Components/Pages/NewsDetails";
 
 
 function App() {
@@ -33,6 +34,7 @@ function App() {
         <Route path="/spiritual-initiatives" element={<SpiritualInitiatives/>} />
         <Route path="/contact" element={<ContactUs/>} />
         <Route path="/news" element={<News/>} />
+        <Route path="/news/:slug" element={<NewsDetails/>} />
       </Routes>
         <Footer/>
     </div>

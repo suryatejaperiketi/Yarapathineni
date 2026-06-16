@@ -1,43 +1,41 @@
-import React from "react";
+import React, { useState } from "react";
+
 import { Link } from "react-router-dom";
+
 import "../../Styles/News.css";
 
-import newsimg from "../../assests/others10.jpg";
-import newsimg1 from "../../assests/others11.jpg";
-import newsimg2 from "../../assests/people9.jpg";
+import { newsData } from "../../data/newsData";
 
 function News() {
 
-  const newsData = [
-    {
-      image: newsimg,
-      month: "April 2026",
-      title:
-        "Yarapathineni Srinivasa Rao Addresses Public Meeting in Gurazala",
-      desc:
-        "MLA Yarapathineni Srinivasa Rao addressed a large public meeting in Gurazala.",
-    },
+  const [search, setSearch] = useState("");
 
-    {
-      image: newsimg1,
-      month: "June 2025",
-      title: "Development Projects Reviewed In Palnadu Region",
+  const [sortOrder, setSortOrder] = useState("latest");
 
-      desc:
-        "A review meeting was held to assess the progress of various development projects.",
-    },
+  const filteredNews = [...newsData]
 
-    {
-      image: newsimg2,
-      month: "May 2025",
-      title: "Standing Strong For Farmer's Right",
+    .filter((item) =>
 
-      desc:
-        "Discussion held on farmers issues and solutions. Our commitment to protect and support farmers continues.",
-    },
-  ];
+      item.title.toLowerCase().includes(search.toLowerCase()) ||
+
+      item.desc.toLowerCase().includes(search.toLowerCase())
+
+    )
+
+    .sort((a, b) => {
+
+      if (sortOrder === "latest") {
+
+        return new Date(b.date) - new Date(a.date);
+
+      }
+
+      return new Date(a.date) - new Date(b.date);
+
+    });
 
   return (
+
     <section className="news-page">
 
       <div className="news-container">
@@ -74,7 +72,13 @@ function News() {
 
             <p>Subscribe to get latest updates.</p>
 
-            <input type="email" placeholder="Enter your email"/>
+            <input
+
+              type="email"
+
+              placeholder="Enter your email"
+
+            />
 
             <button>Subscribe</button>
 
@@ -92,13 +96,49 @@ function News() {
 
             <div className="header-right">
 
-              <input type="text" placeholder="Search news..." />
+              {/* Search */}
 
-              <select>
+              <input
 
-                <option>Latest First</option>
+                type="text"
 
-                <option>Oldest First</option>
+                placeholder="Search news..."
+
+                value={search}
+
+                onChange={(e) =>
+
+                  setSearch(e.target.value)
+
+                }
+
+              />
+
+              {/* Sort */}
+
+              <select
+
+                value={sortOrder}
+
+                onChange={(e) =>
+
+                  setSortOrder(e.target.value)
+
+                }
+
+              >
+
+                <option value="latest">
+
+                  Latest First
+
+                </option>
+
+                <option value="oldest">
+
+                  Oldest First
+
+                </option>
 
               </select>
 
@@ -106,38 +146,68 @@ function News() {
 
           </div>
 
-          {newsData.map((item, index) => (
+          {/* News List */}
 
-            <div className="news-card" key={index}>
+          {filteredNews.length === 0 ? (
 
-              <img src={item.image} alt="" />
+            <p>No news found.</p>
 
-              <div className="news-details">
+          ) : (
 
-                <span>{item.month}</span>
+            filteredNews.map((item) => (
 
-                <h3>{item.title}</h3>
+              <div
 
-                <p>{item.desc}</p>
+                className="news-card"
 
-                <Link to="/article" className="read-more">
+                key={item.slug}
 
-                  Read More →
+              >
 
-                </Link>
+                <img
+
+                  src={item.image}
+
+                  alt={item.title}
+
+                />
+
+                <div className="news-details">
+
+                  <span>{item.month}</span>
+
+                  <h3>{item.title}</h3>
+
+                  <p>{item.desc}</p>
+
+                  <Link
+
+                    to={`/news/${item.slug}`}
+
+                    className="read-more"
+
+                  >
+
+                    Read More →
+
+                  </Link>
+
+                </div>
 
               </div>
 
-            </div>
+            ))
 
-          ))}
+          )}
 
         </div>
 
       </div>
 
     </section>
+
   );
+
 }
 
 export default News;
