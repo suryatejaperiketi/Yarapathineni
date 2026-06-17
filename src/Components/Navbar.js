@@ -1,10 +1,11 @@
 import React, { useRef } from "react";
 import "../Styles/Navbar.css";
-import { NavLink } from "react-router-dom";
+import { Navigate, NavLink, useNavigate} from "react-router-dom";
 import logo from "../assests/logo2.png";
 
 function Navbar() {
   const navbarRef = useRef(null);
+  const navigate = useNavigate()
 
   const closeNavbar = () => {
     setTimeout(() => {
@@ -61,7 +62,6 @@ function Navbar() {
                 </NavLink>
               </li>
 
-            
               <li className="nav-item dropdown">
                 <a
                   href="/#"
@@ -88,7 +88,7 @@ function Navbar() {
                     </NavLink>
                   </li>
 
-                   <li>
+                  <li>
                     <NavLink
                       className="dropdown-item"
                       to="/spiritual-initiatives"
@@ -176,6 +176,10 @@ function Navbar() {
                 >
                   Contact
                 </NavLink>
+              </li>
+
+              <li className="nav-item">
+                <button className="login-btn" onClick={()=>navigate("/login")}>LOGIN</button>
               </li>
             </ul>
           </div>

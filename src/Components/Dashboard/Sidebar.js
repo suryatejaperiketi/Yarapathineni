@@ -1,0 +1,118 @@
+import React, { useState } from "react";
+import { NavLink } from "react-router-dom";
+import "../../Styles/Sidebar.css";
+import {FaChevronDown,FaChevronUp} from  "react-icons/fa";
+
+function Sidebar() {
+  const [openMenus, setOpenMenus] = useState({});
+
+  const toggleMenu = (menu) => {
+    setOpenMenus((prev) => ({
+      ...prev,
+      [menu]: !prev[menu],
+    }));
+  };
+
+  return (
+    <div className="admin-sidebar">
+      <ul className="sidebar-menu">
+
+        <li>
+          <NavLink to="/dashboard" end className="menu-item">
+            Dashboard
+          </NavLink>
+        </li>
+
+        {/* Student Dropdown */}
+        
+        <li>
+          <div
+            className="menu-item dropdown-header"
+            onClick={() => toggleMenu("student")}
+          >
+            <span>Contact Us</span>
+            <span>{openMenus.student ? <FaChevronUp /> : <FaChevronDown />}</span>
+          </div>
+
+          {openMenus.student && (
+            <ul className="submenu">
+              <li>
+                <NavLink
+                  to="/dashboard/student/add"
+                  className="submenu-item"
+                >
+                  Achievements
+                </NavLink>
+              </li>
+
+              <li>
+                <NavLink
+                  to="/dashboard/student/view"
+                  className="submenu-item"
+                >
+                  Development
+                </NavLink>
+              </li>
+
+                <li>
+                <NavLink
+                  to="/dashboard/student/view"
+                  className="submenu-item"
+                >
+                  CMRF funds
+                </NavLink>
+              </li>
+            </ul>
+          )}
+        </li>
+
+        {/* Employee Dropdown */}
+        <li>
+          <div
+            className="menu-item dropdown-header"
+            onClick={() => toggleMenu("employee")}
+          >
+            <span>Multimedia</span>
+            <span>{openMenus.employee ? <FaChevronUp /> : <FaChevronDown />}</span>
+          </div>
+
+          {openMenus.employee && (
+            <ul className="submenu">
+              <li>
+                <NavLink
+                  to="/dashboard/employee/add"
+                  className="submenu-item"
+                >
+                  Gallery
+                </NavLink>
+              </li>
+
+              <li>
+                <NavLink
+                  to="/dashboard/employee/view"
+                  className="submenu-item"
+                >
+                  Videos
+                </NavLink>
+              </li>
+
+               <li>
+                <NavLink
+                  to="/dashboard/employee/view"
+                  className="submenu-item"
+                >
+                  Press
+                </NavLink>
+              </li>
+            </ul>
+          )}
+        </li>
+
+       
+
+      </ul>
+    </div>
+  );
+}
+
+export default Sidebar;
