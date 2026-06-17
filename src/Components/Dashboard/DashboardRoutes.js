@@ -1,19 +1,9 @@
-import React from "react";
-import { Routes, Route } from "react-router-dom";
-// import DashboardHome from "./DashboardHome";
-
-
+import React from 'react'
 
 function DashboardRoutes() {
   return (
-
-    <Routes>
-      {/* <Route path="/" element={<DashboardHome />} /> */}
-      
-
-    </Routes>
-
-  );
+    <div>DashboardRoutes</div>
+  )
 }
 
-export default DashboardRoutes;
+export default DashboardRoutes
