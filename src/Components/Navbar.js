@@ -1,6 +1,6 @@
 import React, { useRef } from "react";
 import "../Styles/Navbar.css";
-import { Navigate, NavLink, useNavigate} from "react-router-dom";
+import { NavLink, useNavigate} from "react-router-dom";
 import logo from "../assests/logo2.png";
 
 function Navbar() {
