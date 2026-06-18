@@ -91,20 +91,7 @@ body{
   text-align:center;
 }
 
-.login-btn{
-  width:100%;
-  height:50px;
-  border:none;
-  border-radius:30px;
-  background:#0b2388;
-  color:#fff;
-  font-size:18px;
-  cursor:pointer;
-}
 
-.login-btn:hover{
-  opacity:0.9;
-}
 
 @media(max-width:768px){
 

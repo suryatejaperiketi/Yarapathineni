@@ -1,4 +1,13 @@
 
+
+a.adminnav-title-link {
+  text-decoration: none !important;
+}
+
+a.adminnav-title-link span {
+  text-decoration: none !important;
+}
+
 .admin-sidebar {
   width: 270px;
   background: #ffffff;
@@ -213,4 +222,13 @@
     padding: 8px 10px;
     border-radius: 0 4px 4px 0;
 }
+}
+
+.dropdown-header {
+    display: block;
+    padding: 15px !important;
+    margin-bottom: 0;
+    font-size: .875rem;
+    color: var(--bs-dropdown-header-color);
+    white-space: nowrap;
 }
