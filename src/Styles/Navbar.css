@@ -91,13 +91,15 @@ body{
   position: relative;
   
 }
-}
+.login-btn {
+   padding: 5px 20px !important;
+}}
 
 .login-btn {
   background: linear-gradient(135deg, #d4af37, #b8860b);
   color: white;
   border: none;
-  padding: 10px 25px;
+  padding: 8px 23px;
   border-radius: 30px;
   font-weight: 600;
   letter-spacing: 0.5px;

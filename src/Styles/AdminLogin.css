@@ -1,6 +1,6 @@
-body{
-  margin:0 !important;
-  padding-top: 0%;
+body.login-page {
+  padding-top: 0 !important;
+  margin: 0 !important;
 }
 
 #root{
