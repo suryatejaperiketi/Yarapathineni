@@ -134,7 +134,7 @@ a.adminnav-title-link span {
   min-width: 22px;
 }
 
-.admin-ico {
+.admin-icon {
   margin-right: 12px;
   color: #003366;
   min-width: 22px;
@@ -142,6 +142,12 @@ a.adminnav-title-link span {
   font-weight: 600;
   
 }
+
+.menu-item:hover .admin-icon{
+  color: #fff !important;
+}
+
+
 
 
 .admin-submenu {

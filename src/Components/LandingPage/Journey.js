@@ -84,41 +84,122 @@ function TimelineItem({ item, index }) {
     return () => observer.disconnect();
   }, [index]);
 
-  return (
-    <div
-      ref={ref}
-      className={`timeline-item ${visible ? "visible" : ""}`}
-      style={{ "--accent": item.color }}
-    >
-      <div className="decade-col">
-        <span className="decade-number">{item.decade}</span>
-        <span className="decade-label">{item.label}</span>
+return (
+
+<div
+  ref={ref}
+  className={`timeline-item ${
+    index % 2 === 0 ? "left" : "right"
+  } ${visible ? "visible" : ""}`}
+>
+
+  {index % 2 === 0 ? (
+
+    <>
+
+      {/* IMAGE LEFT */}
+
+      <div className="timeline-image">
+
+        <img
+          src={item.image}
+          alt={item.decade}
+        />
+
       </div>
 
-      <div className="spine-col">
-        <div className="spine-line top" />
+      {/* CENTER */}
+
+      <div className="timeline-center">
+
+        <span className="decade-number">
+          {item.decade}
+        </span>
+
+        <span className="decade-label">
+          {item.label}
+        </span>
+
         <div className="spine-dot">
-          <div className="dot-inner" />
+
+          <div className="dot-inner"></div>
+
         </div>
-        <div className="spine-line bottom" />
+
       </div>
 
-      <div className="content-col">
-        <div className="content-wrapper">
-          <div className="timeline-image">
-            <img src={item.image} alt={item.decade} />
-          </div>
+      {/* CONTENT RIGHT */}
 
-          <div className="content-text">
-            <h3 className="item-title">{item.title}</h3>
-            <p className="item-desc">{item.description}</p>
-          </div>
-        </div>
+      <div className="timeline-content">
+
+        <h3 className="item-title">
+          {item.title}
+        </h3>
+
+        <p className="item-desc">
+          {item.description}
+        </p>
+
       </div>
-    </div>
-  );
-}
 
+    </>
+
+  ) : (
+
+    <>
+
+      {/* CONTENT LEFT */}
+
+      <div className="timeline-content">
+
+        <h3 className="item-title">
+          {item.title}
+        </h3>
+
+        <p className="item-desc">
+          {item.description}
+        </p>
+
+      </div>
+
+      {/* CENTER */}
+
+      <div className="timeline-center">
+
+        <span className="decade-number">
+          {item.decade}
+        </span>
+
+        <span className="decade-label">
+          {item.label}
+        </span>
+
+        <div className="spine-dot">
+
+          <div className="dot-inner"></div>
+
+        </div>
+
+      </div>
+
+      {/* IMAGE RIGHT */}
+
+      <div className="timeline-image">
+
+        <img
+          src={item.image}
+          alt={item.decade}
+        />
+
+      </div>
+
+    </>
+
+  )}
+
+</div>
+
+);}
 function Journey() {
   return (
     <>

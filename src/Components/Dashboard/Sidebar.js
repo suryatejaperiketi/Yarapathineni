@@ -1,7 +1,10 @@
 import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
 import "../../Styles/Sidebar.css";
-import {FaChevronDown,FaChevronUp} from  "react-icons/fa";
+import { IoIosContact } from "react-icons/io";
+import { MdPermMedia } from "react-icons/md";
+
+import {FaChevronDown,FaChevronUp,FaBriefcase} from  "react-icons/fa";
 
 function Sidebar() {
   const [openMenus, setOpenMenus] = useState({});
@@ -18,19 +21,19 @@ function Sidebar() {
       <ul className="sidebar-menu">
 
         <li>
-          <NavLink to="/dashboard" end className="menu-item">
-            Dashboard
+        
+          <NavLink to="/dashboard/admincontact" end className="menu-item">
+           <IoIosContact className="admin-icon" />  Contact Us
           </NavLink>
         </li>
-
-        {/* Student Dropdown */}
         
         <li>
           <div
             className="menu-item dropdown-header"
-            onClick={() => toggleMenu("student")}
-          >
-            <span>Contact Us</span>
+            onClick={() => toggleMenu("student")}>
+             <FaBriefcase className="admin-icon" />
+
+            <span>Works</span>
             <span>{openMenus.student ? <FaChevronUp /> : <FaChevronDown />}</span>
           </div>
 
@@ -72,6 +75,7 @@ function Sidebar() {
             className="menu-item dropdown-header"
             onClick={() => toggleMenu("employee")}
           >
+          <MdPermMedia className="admin-icon"/>
             <span>Multimedia</span>
             <span>{openMenus.employee ? <FaChevronUp /> : <FaChevronDown />}</span>
           </div>
