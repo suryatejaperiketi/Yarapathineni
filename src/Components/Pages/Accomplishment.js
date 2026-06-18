@@ -1,14 +1,14 @@
 import React from "react";
 import "../../Styles/Accomplishment.css";
-import accomplbannerimg from "../../assests/accomp-banner12.png";
-import accompimg1 from "../../assests/accomp-img1.png";
-import accompimg2 from "../../assests/accomp-img2.png";
-import accompimg3 from "../../assests/accomp-img3.png";
-import accompimg4 from "../../assests/accomp-img4.png";
-import accompimg5 from "../../assests/accomp-img5.png";
-import accompimg6 from "../../assests/accomp-img6.png";
-import accompimg7 from "../../assests/accomp-img7.png";
-import accompimg8 from "../../assests/accomp-img8.png";
+import accomplbannerimg from "../../assests/accomp-banner.png";
+import accompimg1 from "../../assests/house.png";
+import accompimg2 from "../../assests/cbnbheema.png";
+import accompimg3 from "../../assests/acrf.png";
+import accompimg4 from "../../assests/pension.png";
+import accompimg5 from "../../assests/aagriculture.png";
+import accompimg6 from "../../assests/dwakra.png";
+import accompimg7 from "../../assests/aroad.png";
+import accompimg8 from "../../assests/agas.png";
 import bannerbottomimg from "../../assests/bottom-banner.png";
 
 import {
