@@ -4,12 +4,14 @@ import About from "./About";
 import Work from "./Development";
 import People from "./People";
 import "../../Styles/LandingPage.css";
+import PoliticalPulse from "./PoliticalPulse";
 
 function LandingPage() {
   return (
     <>
       <HeroSection />
-      <About />
+      <PoliticalPulse/>
+      {/* <About /> */}
       <Work />
       {/* <Journey/> */}
       <People />
