@@ -74,7 +74,7 @@ body{
 .icon{
   width:70px;
   height:70px;
-  background:#8b0000;
+  /* background:#8b0000; */
   color:#f4b400;
   border-radius:50%;
   display:flex;
