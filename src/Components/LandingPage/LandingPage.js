@@ -1,6 +1,5 @@
 import React from "react";
 import HeroSection from "./HeroSection";
-import About from "./About";
 import Work from "./Development";
 import People from "./People";
 import "../../Styles/LandingPage.css";
@@ -10,12 +9,9 @@ function LandingPage() {
   return (
     <>
       <HeroSection />
-      <PoliticalPulse/>
-      {/* <About /> */}
+      <PoliticalPulse />
       <Work />
-      {/* <Journey/> */}
       <People />
-      {/* <ContactUs/>  */}
     </>
   );
 }
