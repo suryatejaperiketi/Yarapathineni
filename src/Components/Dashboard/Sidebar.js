@@ -3,6 +3,7 @@ import { NavLink } from "react-router-dom";
 import "../../Styles/Sidebar.css";
 import { IoIosContact } from "react-icons/io";
 import { MdPermMedia } from "react-icons/md";
+import { LuLayoutDashboard } from "react-icons/lu";
 
 import {FaChevronDown,FaChevronUp,FaBriefcase} from  "react-icons/fa";
 
@@ -20,8 +21,13 @@ function Sidebar() {
     <div className="admin-sidebar">
       <ul className="sidebar-menu">
 
+       <li>
+          <NavLink to="/dashboard/dashboard-home" end className="menu-item">
+           <LuLayoutDashboard  className="admin-icon" />  Dashboard
+          </NavLink>
+        </li>
+
         <li>
-        
           <NavLink to="/dashboard/admincontact" end className="menu-item">
            <IoIosContact className="admin-icon" />  Contact Us
           </NavLink>
@@ -59,7 +65,7 @@ function Sidebar() {
 
                 <li>
                 <NavLink
-                  to="/dashboard/student/view"
+                  to="/dashboard/crm-funds"
                   className="submenu-item"
                 >
                   CMRF funds
