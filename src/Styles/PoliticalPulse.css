@@ -19,7 +19,9 @@ color:
 }
 .pulseTitle p{
 font-size:20px;
-color:#666;
+color:#222;
+font-weight: 400;
+
 }
 .heroSection{
 display:grid;
