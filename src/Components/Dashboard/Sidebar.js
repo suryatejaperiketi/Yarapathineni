@@ -65,7 +65,7 @@ function Sidebar() {
 
                 <li>
                 <NavLink
-                  to="/dashboard/crm-funds"
+                  to="/dashboard/cmr-funds"
                   className="submenu-item"
                 >
                   CMRF funds

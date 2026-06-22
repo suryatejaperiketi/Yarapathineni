@@ -1,7 +1,9 @@
 import React from 'react'
 import "../../Styles/CrmFunds.css";
+import { useNavigate } from "react-router-dom";
 
-function CrmFunds() {
+function CmrFunds() {
+    const navigate =useNavigate();
   return (
    <>
     <section className='crmfund'>
@@ -35,7 +37,7 @@ function CrmFunds() {
             <td>₹10,00,000/-</td>
             <td>Kalavalla</td>
             <td>
-                <button>View</button>
+                <button onClick={()=>navigate("/dashboard/cmr-funds-details")}>View</button>
             </td>
         </tr>
 
@@ -46,7 +48,7 @@ function CrmFunds() {
             <td>₹58,000/-</td>
             <td>Kandukur</td>
             <td>
-                <button>View</button>
+               <button onClick={()=>navigate("/dashboard/cmr-funds-details")}>View</button>
             </td>
         </tr>
 
@@ -57,7 +59,7 @@ function CrmFunds() {
             <td>₹28,500/-</td>
             <td>Muthyalapadu</td>
             <td>
-                <button>View</button>
+                <button onClick={()=>navigate("/dashboard/cmr-funds-details")}>View</button>
             </td>
         </tr>
 
@@ -70,4 +72,4 @@ function CrmFunds() {
   )
 }
 
-export default CrmFunds
+export default CmrFunds
