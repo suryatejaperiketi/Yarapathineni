@@ -26,7 +26,7 @@ function ViewContact() {
 
         {/* Left Section */}
 
-        <div className="contact-form">
+        <div className="contact-form-admin">
 
           <div className="form-row">
             <label>Voter ID</label>
