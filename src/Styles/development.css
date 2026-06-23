@@ -16,7 +16,6 @@
    padding: 30px !important;
 }
 
- 
 .lop-cta-btn {
   background: #d4a017;
   color: #fff;
@@ -296,7 +295,6 @@
 }
 
 
-
 .lop-achievement-section{
   max-width:1400px;
   margin:auto;
@@ -308,15 +306,12 @@
   grid-template-columns:2fr 1fr;
   gap:20px;
 }
-
-/* LAND */
-
 /* LAND RECORDS CARD */
 
 .lop-land-card{
   background:#fff;
   border:1px solid #e5e5e5;
-  background-image: url(../assests/passbook2.png);
+  background-image: url(../assests/passbook2.jpeg);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
