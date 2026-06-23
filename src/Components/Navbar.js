@@ -1,29 +1,12 @@
-import React, { useRef } from "react";
+import React from "react";
 import "../Styles/Navbar.css";
 import { NavLink, useNavigate} from "react-router-dom";
 import logo from "../assests/logo2.png";
 
 function Navbar() {
-  const navbarRef = useRef(null);
   const navigate = useNavigate()
 
-  const closeNavbar = () => {
-    setTimeout(() => {
-      if (
-        navbarRef.current &&
-        navbarRef.current.classList.contains("show") &&
-        window.bootstrap
-      ) {
-        const bsCollapse =
-          window.bootstrap.Collapse.getInstance(navbarRef.current) ||
-          new window.bootstrap.Collapse(navbarRef.current, {
-            toggle: false,
-          });
-
-        bsCollapse.hide();
-      }
-    }, 100);
-  };
+  
   return (
     <section className="navbar">
       <nav className="navbar navbar-expand-lg navbar-light">
@@ -45,19 +28,18 @@ function Navbar() {
           </button>
 
           <div
-            ref={navbarRef}
             className="collapse navbar-collapse justify-content-center"
             id="navbarNavDropdown"
           >
             <ul className="navbar-nav">
               <li className="nav-item">
-                <NavLink className="nav-link" to="/" end onClick={closeNavbar}>
+                <NavLink className="nav-link" to="/" end>
                   Home
                 </NavLink>
               </li>
 
               <li className="nav-item">
-                <NavLink className="nav-link" to="/about" onClick={closeNavbar}>
+                <NavLink className="nav-link" to="/about">
                   About
                 </NavLink>
               </li>
@@ -82,7 +64,6 @@ function Navbar() {
                     <NavLink
                       className="dropdown-item"
                       to="/development"
-                      onClick={closeNavbar}
                     >
                       Development
                     </NavLink>
@@ -92,7 +73,6 @@ function Navbar() {
                     <NavLink
                       className="dropdown-item"
                       to="/spiritual-initiatives"
-                      onClick={closeNavbar}
                     >
                       Spiritual Initiatives
                     </NavLink>
@@ -102,7 +82,6 @@ function Navbar() {
                     <NavLink
                       className="dropdown-item"
                       to="/cmr-funds"
-                      onClick={closeNavbar}
                     >
                       CMR Funds
                     </NavLink>
@@ -130,7 +109,6 @@ function Navbar() {
                     <NavLink
                       className="dropdown-item"
                       to="/photos"
-                      onClick={closeNavbar}
                     >
                       Gallery
                     </NavLink>
@@ -140,7 +118,6 @@ function Navbar() {
                     <NavLink
                       className="dropdown-item"
                       to="/videos"
-                      onClick={closeNavbar}
                     >
                       Videos
                     </NavLink>
@@ -152,7 +129,6 @@ function Navbar() {
                 <NavLink
                   className="nav-link"
                   to="/journey"
-                  onClick={closeNavbar}
                 >
                   Journey
                 </NavLink>
@@ -162,7 +138,6 @@ function Navbar() {
                 <NavLink
                   className="nav-link"
                   to="/accomplishment"
-                  onClick={closeNavbar}
                 >
                   Accomplishment
                 </NavLink>
@@ -172,7 +147,6 @@ function Navbar() {
                 <NavLink
                   className="nav-link"
                   to="/contact"
-                  onClick={closeNavbar}
                 >
                   Contact
                 </NavLink>
